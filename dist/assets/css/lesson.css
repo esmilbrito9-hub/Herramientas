@@ -1,0 +1,365 @@
+
+/* ========================================
+   ENCABEZADO DE LA LECCIÓN
+======================================== */
+
+.lesson-header {
+    padding: 55px 0 65px;
+    background: var(--light);
+}
+
+.lesson-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 45px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.lesson-breadcrumb a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.lesson-label {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.lesson-header h1 {
+    margin: 15px 0;
+    color: var(--dark);
+    font-size: clamp(34px, 5vw, 48px);
+}
+
+.lesson-header p {
+    max-width: 700px;
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   CONTENIDO DE LA LECCIÓN
+======================================== */
+
+.lesson-main {
+    padding: 65px 0;
+}
+
+.lesson-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 45px;
+    align-items: start;
+}
+
+.lesson-content h2 {
+    margin: 35px 0 15px;
+    color: var(--dark);
+    font-size: 25px;
+}
+
+.lesson-content p {
+    margin-bottom: 18px;
+    color: var(--text);
+    line-height: 1.9;
+}
+
+.lesson-section {
+    margin-top: 35px;
+}
+
+.lesson-outline { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 26px 0 34px; padding: 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--light); }
+.lesson-outline strong { flex-basis: 100%; color: var(--dark); }
+.lesson-outline a { padding: 7px 11px; border: 1px solid var(--border); border-radius: 999px; color: var(--primary); background: var(--background); font-size: .88rem; font-weight: 700; transition: transform .18s ease, border-color .18s ease; }
+.lesson-outline a:hover { transform: translateY(-2px); border-color: var(--primary); }
+
+.lesson-example {
+    margin: 25px 0;
+    padding: 25px;
+    border-left: 4px solid var(--primary);
+    border-radius: 10px;
+    background: var(--light);
+}
+
+.lesson-example strong {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--dark);
+}
+
+.lesson-example p {
+    margin-bottom: 10px;
+}
+
+.lesson-summary {
+    margin-top: 40px;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.lesson-pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 0 0 60px;
+}
+.lesson-pagination a { color: var(--primary); font-weight: 700; }
+
+
+/* ========================================
+   TARJETA DEL EXAMEN
+======================================== */
+
+.lesson-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.exam-card {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background: white;
+}
+
+.exam-card h2 {
+    margin: 15px 0;
+    color: var(--dark);
+    font-size: 22px;
+}
+
+.exam-card p {
+    margin-bottom: 25px;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   SECCIÓN DEL EXAMEN
+======================================== */
+
+.exam-section {
+    padding: 75px 0;
+    background: var(--light);
+}
+
+.exam-heading {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.exam-heading h2 {
+    margin: 12px 0;
+    color: var(--dark);
+    font-size: 32px;
+}
+
+.exam-heading p {
+    color: var(--text);
+}
+
+.exam-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.question-card {
+    margin-bottom: 22px;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: white;
+}
+
+.question-card h3 {
+    margin-bottom: 20px;
+    color: var(--dark);
+    font-size: 18px;
+}
+
+.question-options {
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+}
+
+.question-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.question-option:hover {
+    border-color: var(--primary);
+    background: var(--light);
+}
+
+.question-option input {
+    accent-color: var(--primary);
+}
+
+.correct-answer {
+    border-color: #269b69;
+    background: #effaf4;
+}
+
+.incorrect-answer {
+    border-color: #d95d5d;
+    background: #fff2f2;
+}
+
+.question-explanation {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 8px;
+    background: #f5f3fa;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+#examResults {
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+}
+
+#examResults h3 {
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+#examResults p {
+    margin-bottom: 10px;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.secondary-button {
+    margin-top: 20px;
+    padding: 13px 22px;
+    border: 1px solid var(--primary);
+    border-radius: 9px;
+    background: white;
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    background: var(--light);
+}
+
+:root[data-theme="dark"] .lesson-header,
+:root[data-theme="dark"] .exam-section {
+    background: #202720;
+}
+
+:root[data-theme="dark"] .lesson-header h1,
+:root[data-theme="dark"] .lesson-content h2,
+:root[data-theme="dark"] .exam-heading h2,
+:root[data-theme="dark"] .question-card h3,
+:root[data-theme="dark"] .exam-card h2,
+:root[data-theme="dark"] #examResults h3 {
+    color: var(--dark);
+}
+
+:root[data-theme="dark"] .lesson-breadcrumb,
+:root[data-theme="dark"] .lesson-header p,
+:root[data-theme="dark"] .lesson-content p,
+:root[data-theme="dark"] .exam-heading p,
+:root[data-theme="dark"] .exam-card p,
+:root[data-theme="dark"] .question-option,
+:root[data-theme="dark"] .question-explanation,
+:root[data-theme="dark"] #examResults p {
+    color: var(--text);
+}
+
+:root[data-theme="dark"] .lesson-summary,
+:root[data-theme="dark"] .lesson-outline,
+:root[data-theme="dark"] .exam-card,
+:root[data-theme="dark"] .question-card,
+:root[data-theme="dark"] .question-option,
+:root[data-theme="dark"] .question-explanation,
+:root[data-theme="dark"] #examResults,
+:root[data-theme="dark"] .secondary-button {
+    background: #29332a;
+    border-color: var(--border);
+}
+
+:root[data-theme="dark"] .lesson-label,
+:root[data-theme="dark"] .lesson-outline strong,
+:root[data-theme="dark"] .lesson-breadcrumb a,
+:root[data-theme="dark"] .lesson-pagination a {
+    color: #a9d19e;
+}
+
+:root[data-theme="dark"] .correct-answer {
+    background: #17352b;
+    border-color: #269b69;
+}
+
+:root[data-theme="dark"] .incorrect-answer {
+    background: #3a2428;
+    border-color: #d95d5d;
+}
+
+.primary-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 850px) {
+
+    .lesson-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-sidebar {
+        position: static;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .lesson-header {
+        padding: 35px 0 45px;
+    }
+
+    .lesson-main,
+    .exam-section {
+        padding: 50px 0;
+    }
+
+    .question-card {
+        padding: 18px;
+    }
+
+    .exam-heading h2 {
+        font-size: 26px;
+    }
+
+}

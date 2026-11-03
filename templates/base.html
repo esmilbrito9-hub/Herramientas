@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="{{ locale|default('es') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="{% block description %}NEXORA: aprende, explora y desarrolla nuevas habilidades.{% endblock %}">
+
+    <meta name="robots" content="{% block robots %}{% if site_url %}index,follow,max-image-preview:large{% else %}noindex,nofollow{% endif %}{% endblock %}">
+    {% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
+    <meta property="og:title" content="{{ self.title()|striptags|trim }}">
+    <meta property="og:description" content="{{ self.description()|striptags|trim }}">
+    <meta property="og:type" content="website">
+    {% if canonical_url %}<meta property="og:url" content="{{ canonical_url }}">{% endif %}
+    <meta name="twitter:card" content="summary">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+
+    <title>{% block title %}NEXORA | Aprende. Explora. Desarrolla.{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ base_path|default('') }}assets/css/style.css">
+
+    {% block extra_css %}{% endblock %}
+
+    <script src="{{ base_path|default('') }}assets/js/main.js" defer></script>
+    {% if site_url %}<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "name": "NEXORA", "url": site_url}|tojson }}</script>{% endif %}
+</head>
+
+<body>
+
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="{{ 'Reading progress' if locale == 'en' else 'Progreso de lectura' }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+    {% include "partials/header.html" %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include "partials/footer.html" %}
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="{{ t.back_top if locale == 'en' else 'Volver arriba' }}" title="{{ t.back_top if locale == 'en' else 'Volver arriba' }}" hidden>↑</button>
+
+    {% block extra_js %}{% endblock %}
+
+</body>
+</html>

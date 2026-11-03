@@ -1,0 +1,7 @@
+{"questions":[
+ {"question":"¿Qué caracteriza la recuperación activa?","options":["Intentar recordar antes de consultar el material","Copiar el texto varias veces sin leerlo","Subrayar cada oración"],"answer":0,"explanation":"La técnica consiste en recuperar información de memoria y luego comprobarla."},
+ {"question":"¿Qué pregunta ayuda más a comprobar comprensión?","options":["¿De qué color es el título?","¿Por qué se relacionan estas dos ideas?","¿Cuántas páginas tiene el capítulo?"],"answer":1,"explanation":"Una pregunta explicativa requiere relacionar conceptos y expresar el razonamiento."},
+ {"question":"¿Cómo conviene tratar un error en la práctica?","options":["Ocultarlo","Usarlo para identificar qué revisar y corregir","Dejar de estudiar el tema"],"answer":1,"explanation":"La retroalimentación sobre errores orienta el repaso y una nueva pregunta."},
+ {"question":"¿Qué significa distribuir los repasos?","options":["Practicar el contenido en sesiones separadas por tiempo","Estudiar todo en una sola sesión","Evitar volver a revisar"],"answer":0,"explanation":"Los repasos distribuidos ocurren en más de una sesión, dejando intervalos entre intentos."},
+ {"question":"Si fallas repetidamente al recordar un tema, ¿qué ajuste es razonable?","options":["Nunca volver a intentarlo","Acortar el intervalo y consultar la explicación","Cambiar las respuestas para que parezcan correctas"],"answer":1,"explanation":"Reducir el intervalo y revisar la fuente ayuda a ajustar la práctica al nivel de recuerdo actual."}
+]}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | NEXORA{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+{% block content %}
+<section class="category-hero"><div class="container"><nav class="breadcrumb" aria-label="{{ 'Breadcrumb' if locale == 'en' else 'Ruta de navegación' }}"><a href="index.html">{{ t.home if locale == 'en' else 'Inicio' }}</a><span aria-hidden="true">›</span><span aria-current="page">{{ page.title }}</span></nav><span class="section-label">{{ t.site_information if locale == 'en' else 'INFORMACIÓN DEL SITIO' }}</span><h1>{{ page.title }}</h1><p>{{ page.description }}</p></div></section>
+<section class="category-content"><article class="container legal-content">
+    {% for section in page.sections %}<section><h2>{{ section.heading }}</h2>{% for paragraph in section.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</section>{% endfor %}
+    {% if page.slug == "contacto" %}
+        {% if contact_email %}<p class="contact-action"><a class="btn-primary" href="mailto:{{ contact_email }}">{{ t.write_nexora if locale == 'en' else 'Escribir a NEXORA' }}</a></p>
+        {% else %}<p class="empty-state">{{ t.contact_not_configured if locale == 'en' else 'El canal de contacto se publicará cuando se configure una dirección de correo en la información del sitio.' }}</p>{% endif %}
+    {% endif %}
+    {% if page.requires_publisher and not publisher %}<p class="empty-state">{{ t.publisher_missing if locale == 'en' else 'Antes de publicar esta página, completa la identidad del responsable y sus datos de contacto en la configuración del sitio.' }}</p>{% endif %}
+</article></section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{
+  "title": "Ciencia: convertir una curiosidad en una pregunta investigable",
+  "description": "Formula preguntas que puedan responderse mediante observaciones y evidencia verificable.",
+  "category": "Ciencia y tecnología",
+  "subcategory": "Ciencia",
+  "introduction": "Una investigación empieza con curiosidad, pero necesita una pregunta delimitada para guiar las observaciones. Una pregunta clara permite decidir qué medir, comparar o describir.",
+  "sections": [
+    {
+      "title": "Delimita la pregunta y las variables",
+      "paragraphs": [
+        "“Las plantas” es un tema, no una pregunta que indique qué evidencia recoger. “¿Cómo cambia la altura de una planta de frijol durante cuatro semanas?” delimita organismo, variable y periodo.",
+        "Una pregunta descriptiva registra qué ocurre. Una pregunta comparativa observa diferencias entre condiciones. Ambas pueden ser investigables si se especifica qué evidencia se necesita.",
+        "Identifica la variable o característica que registrarás, las unidades y el momento de la observación. Si mides altura, usa la misma unidad y un procedimiento consistente.",
+        "Anota qué condiciones mantendrás similares para que la comparación sea interpretable. En experimentos, cambia de forma deliberada una condición y observa otra; no concluyas causalidad a partir de una coincidencia.",
+        "Plantilla rápida: ¿Cómo cambia [lo que mediré] cuando modifico o comparo [condición], durante [periodo] y en [organismo o lugar]? Por ejemplo, puedes registrar la altura de plantas de la misma especie durante tres semanas bajo condiciones de luz definidas."
+      ]
+    },
+    {
+      "title": "Recoge datos con un método repetible",
+      "paragraphs": [
+        "Escribe el procedimiento antes de empezar: materiales, pasos, frecuencia y forma de registrar. Así otra persona puede entender cómo se obtuvo la evidencia.",
+        "Registra los resultados aunque no coincidan con lo esperado. Repetir observaciones puede revelar variación y ayuda a no basar una conclusión en un dato aislado.",
+        "Usa una tabla sencilla con fecha, condición, medida, unidad y observaciones. Repite la medición con el mismo instrumento y, cuando sea posible, observa más de un caso; anota cambios del procedimiento para no confundirlos con el resultado."
+      ]
+    },
+    {
+      "title": "Interpreta resultados y reconoce límites",
+      "paragraphs": [
+        "Una conclusión debe responder a la pregunta con los datos disponibles y señalar límites: tamaño de la muestra, condiciones o mediciones inciertas.",
+        "Si el resultado no apoya la predicción, revisa el método o formula una nueva pregunta. La evidencia guía la explicación; no hace falta ocultar resultados inesperados.",
+        "Al comunicarlo, separa observación de explicación: “La planta A creció 2 cm más” es un dato; “la luz causó el cambio” necesita un diseño que descarte otras diferencias. Indica qué no mediste y limita la conclusión a tus condiciones."
+      ]
+    }
+  ],
+  "summary": "Una buena pregunta investigable delimita qué se observará y durante cuánto tiempo. Define un método repetible, registra datos y ajusta la conclusión a la evidencia y a sus límites.",
+  "practice": {
+    "question": "¿Qué variable registrarías para responder: ¿cómo cambia la altura de una planta en cuatro semanas?",
+    "answer": "altura",
+    "hint": "Busca la característica que cambia y que se puede medir en centímetros."
+  }
+}

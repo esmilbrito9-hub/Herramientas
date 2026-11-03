@@ -1,0 +1,369 @@
+{
+  "en": {
+    "ui": {
+      "home": "Home",
+      "explore": "Explore",
+      "about": "About",
+      "resources": "Resources",
+      "start_learning": "Start learning",
+      "language_switch": "Español",
+      "change_language": "Change language to Spanish",
+      "tagline": "Learn. Explore. Develop.",
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "terms": "Terms",
+      "contact": "Contact",
+      "visual_credits": "Image credits",
+      "categories": "Categories",
+      "search": "Search",
+      "search_categories": "Search categories",
+      "explore_category": "Explore category",
+      "explore_nexora": "EXPLORE NEXORA",
+      "learning_areas": "Learning areas",
+      "other_categories": "Other categories",
+      "start_here": "START HERE",
+      "open_lesson": "Open lesson and quiz",
+      "coming_soon": "Reviewed lessons and resources will be published here soon.",
+      "empty_category": "We are preparing reviewed materials for this category. Explore the other areas while new content is being published.",
+      "guide": "PRACTICAL GUIDE",
+      "family_ai": "AI families and capabilities",
+      "choose_task": "Choose by task",
+      "free_options": "Free options",
+      "paid_options": "Paid options",
+      "all": "All",
+      "free": "Free",
+      "paid": "Paid",
+      "game_access": "Filter games by access type",
+      "all_games": "All",
+      "free_games": "Free",
+      "freemium_games": "Free option",
+      "licensed_games": "Paid or licensed",
+      "interactive_resources": "INTERACTIVE RESOURCES",
+      "learn_playing": "LEARN BY PLAYING",
+      "games_for": "Learn through games",
+      "lesson": "LEARNING LESSON",
+      "introduction": "Introduction",
+      "lesson_sections": "Lesson sections",
+      "in_this_lesson": "In this lesson",
+      "result": "Result:",
+      "lesson_summary": "Lesson summary",
+      "test_learning": "TEST YOUR LEARNING",
+      "lesson_exam": "Lesson quiz",
+      "answer_check": "Answer the questions to check what you have learned.",
+      "start_exam": "Start quiz",
+      "quick_practice": "QUICK PRACTICE",
+      "check_understanding": "Check your understanding",
+      "your_answer": "Your answer",
+      "check": "Check",
+      "show_hint": "Show hint",
+      "interactive_tool": "INTERACTIVE TOOL",
+      "convert": "Convert",
+      "exam": "QUIZ",
+      "check_knowledge": "Check your knowledge",
+      "select_answer": "Select one answer for each question.",
+      "answered": "questions answered",
+      "submit_exam": "Submit quiz",
+      "retry_exam": "Try again",
+      "lesson_navigation": "Navigate between lessons",
+      "study_in_your_pace": "LEARN AT YOUR OWN PACE",
+      "browse_content": "Explore content",
+      "meet_nexora": "About NEXORA",
+      "suggest_lesson": "Suggest a lesson",
+      "new_idea": "A new idea can be the first step.",
+      "learn_something": "Learn something new",
+      "knowledge_tool": "Knowledge is a tool for moving forward.",
+      "find_what": "FIND WHAT YOU NEED",
+      "what_learn": "What would you like to learn today?",
+      "search_placeholder": "Search a category or lesson...",
+      "search_button": "Search",
+      "discover_categories": "Discover our categories",
+      "find_lessons": "Find information, lessons, and resources to build new skills.",
+      "no_search": "No results match your search.",
+      "our_platform": "OUR PLATFORM",
+      "learning_possibility": "Learning should always be within reach.",
+      "about_text": "NEXORA is an educational and technology platform created to make knowledge more accessible. We bring different learning areas together so you can explore, practice, and develop new skills.",
+      "begin_explore": "Start exploring",
+      "practice": "PRACTICE AT YOUR OWN PACE",
+      "practice_text": "Learning is not only about reading. It is also about practice.",
+      "practice_detail": "NEXORA brings together lessons, examples, exercises, and short quizzes to help you check what you have learned.",
+      "discover_content": "Discover learning content",
+      "site_information": "SITE INFORMATION",
+      "write_nexora": "Contact NEXORA",
+      "contact_not_configured": "A contact channel will be available once an email address is added to the site settings.",
+      "publisher_missing": "Before publishing this page, add the responsible party's identity and contact details to the site settings.",
+      "exam_result": "Quiz results",
+      "completed": "QUIZ COMPLETED",
+      "your_result": "Your result",
+      "preparing_result": "Preparing your quiz summary.",
+      "review_answers": "Review answers",
+      "review_lesson": "Review lesson",
+      "retry_lesson": "Try again",
+      "back_home": "Back to home",
+      "error_title": "This page is unavailable.",
+      "error_detail": "The link may have changed or the address may be incorrect.",
+      "back_top": "Back to top",
+      "lesson_image_credit": "View image",
+      "image_source": "Open image source",
+      "lesson_quick_answer": "Try recalling the answer before viewing the hint.",
+      "ai_task_label": "I need help with…",
+      "ai_task_placeholder": "Choose a task",
+      "ai_task_status": "Choose a task to see recommended AI tools.",
+      "ai_free_heading": "Free recommendations",
+      "ai_paid_heading": "Paid recommendations",
+      "ai_open": "Open",
+      "ai_plan_details": "Plan and details",
+      "language_es": "Spanish",
+      "language_en": "English",
+      "footer_rights": "All rights reserved.",
+      "more_categories": "Other categories"
+    },
+    "categories": {
+      "inteligencia-artificial": {
+        "name": "Artificial Intelligence",
+        "description": "Understand AI types, check their answers, and compare tools for different tasks.",
+        "subcategories": {
+          "Fundamentos de IA": {
+            "name": "AI fundamentals",
+            "description": "Concepts, history, system types, and the limitations of artificial intelligence."
+          },
+          "Herramientas de IA": {
+            "name": "AI tools",
+            "description": "How to choose writing, design, study, and productivity tools."
+          },
+          "Tutoriales": {
+            "name": "Tutorials",
+            "description": "Practical guides to writing prompts and working with AI assistants."
+          },
+          "Comparativas": {
+            "name": "Comparisons",
+            "description": "Compare capabilities, access, privacy, and use cases."
+          }
+        }
+      },
+      "academia": {
+        "name": "Academics",
+        "description": "Learn mathematics, language arts, natural sciences, and social studies.",
+        "subcategories": {
+          "Matemáticas": {
+            "name": "Mathematics",
+            "description": "Arithmetic, algebra, geometry, and reasoned problem solving."
+          },
+          "Lengua y literatura": {
+            "name": "Language arts and literature",
+            "description": "Reading comprehension, writing, grammar, and text analysis."
+          },
+          "Ciencias naturales": {
+            "name": "Natural sciences",
+            "description": "Biology, physics, chemistry, and understanding the natural world."
+          },
+          "Ciencias sociales": {
+            "name": "Social studies",
+            "description": "History, geography, citizenship, and the study of societies."
+          }
+        }
+      },
+      "idiomas": {
+        "name": "Languages",
+        "description": "Learn English, Spanish, and French through lessons, exercises, and quizzes.",
+        "subcategories": {
+          "Inglés A1": {
+            "name": "English A1",
+            "description": "Beginner CEFR level: everyday expressions and very basic communication."
+          },
+          "Inglés A2": {
+            "name": "English A2",
+            "description": "Elementary CEFR level: simple exchanges about familiar topics."
+          },
+          "Inglés B1": {
+            "name": "English B1",
+            "description": "Intermediate CEFR level: everyday situations and familiar topics."
+          },
+          "Inglés B2": {
+            "name": "English B2",
+            "description": "Upper-intermediate CEFR level: complex texts and fluent conversation."
+          },
+          "Inglés C1": {
+            "name": "English C1",
+            "description": "Advanced CEFR level: broad understanding and flexible expression."
+          },
+          "Inglés C2": {
+            "name": "English C2",
+            "description": "Proficient CEFR level: precise understanding and expression in complex contexts."
+          },
+          "Español A1": {
+            "name": "Spanish A1",
+            "description": "Beginner CEFR level: everyday expressions and very basic communication."
+          },
+          "Español A2": {
+            "name": "Spanish A2",
+            "description": "Elementary CEFR level: simple exchanges about familiar topics."
+          },
+          "Español B1": {
+            "name": "Spanish B1",
+            "description": "Intermediate CEFR level: everyday situations and familiar topics."
+          },
+          "Español B2": {
+            "name": "Spanish B2",
+            "description": "Upper-intermediate CEFR level: complex texts and fluent conversation."
+          },
+          "Español C1": {
+            "name": "Spanish C1",
+            "description": "Advanced CEFR level: broad understanding and flexible expression."
+          },
+          "Español C2": {
+            "name": "Spanish C2",
+            "description": "Proficient CEFR level: precise understanding and expression in complex contexts."
+          },
+          "Francés A1": {
+            "name": "French A1",
+            "description": "Beginner CEFR level: everyday expressions and very basic communication."
+          },
+          "Francés A2": {
+            "name": "French A2",
+            "description": "Elementary CEFR level: simple exchanges about familiar topics."
+          },
+          "Francés B1": {
+            "name": "French B1",
+            "description": "Intermediate CEFR level: everyday situations and familiar topics."
+          },
+          "Francés B2": {
+            "name": "French B2",
+            "description": "Upper-intermediate CEFR level: complex texts and fluent conversation."
+          },
+          "Francés C1": {
+            "name": "French C1",
+            "description": "Advanced CEFR level: broad understanding and flexible expression."
+          },
+          "Francés C2": {
+            "name": "French C2",
+            "description": "Proficient CEFR level: precise understanding and expression in complex contexts."
+          },
+          "Cómo aprender idiomas": {
+            "name": "How to learn languages",
+            "description": "Vocabulary, listening, reading, and communication strategies."
+          }
+        }
+      },
+      "programacion": {
+        "name": "Programming",
+        "description": "Build programming skills and learn to create your own projects.",
+        "subcategories": {
+          "Fundamentos": {
+            "name": "Fundamentals",
+            "description": "Logic, algorithms, variables, conditionals, and loops."
+          },
+          "Python": {
+            "name": "Python",
+            "description": "Python syntax and problem solving."
+          },
+          "Desarrollo web": {
+            "name": "Web development",
+            "description": "HTML, CSS, and JavaScript for accessible web experiences."
+          },
+          "Proyectos": {
+            "name": "Projects",
+            "description": "Guided practice for planning, building, and reviewing projects."
+          }
+        }
+      },
+      "ciencia-tecnologia": {
+        "name": "Science and Technology",
+        "description": "Explore scientific advances, technology, and innovation in today's world.",
+        "subcategories": {
+          "Ciencia": {
+            "name": "Science",
+            "description": "The scientific method, disciplines, and critical reading of evidence."
+          },
+          "Tecnología": {
+            "name": "Technology",
+            "description": "Systems, devices, and the principles behind everyday technologies."
+          },
+          "Robótica": {
+            "name": "Robotics",
+            "description": "Sensors, actuators, control, and robotic system design."
+          },
+          "Seguridad digital": {
+            "name": "Digital safety",
+            "description": "Basic practices to protect devices, data, and digital identity."
+          }
+        }
+      },
+      "metodos-estudio": {
+        "name": "Study Methods",
+        "description": "Discover ways to organize your work, understand more, and make good use of your time.",
+        "subcategories": {
+          "Memoria y comprensión": {
+            "name": "Memory and understanding",
+            "description": "Active recall, spaced practice, and concept elaboration."
+          },
+          "Planificación": {
+            "name": "Planning",
+            "description": "Time management, goals, and progress tracking."
+          },
+          "Toma de apuntes": {
+            "name": "Note-taking",
+            "description": "Ways to record, connect, and review information."
+          },
+          "Preparación de exámenes": {
+            "name": "Exam preparation",
+            "description": "Review, practice questions, and test strategies."
+          }
+        }
+      },
+      "videojuegos": {
+        "name": "Learning Through Games",
+        "description": "Discover games and interactive experiences that help you practice NEXORA skills, from mathematics and languages to programming and science.",
+        "subcategories": {
+          "Matemáticas y academia": {
+            "name": "Math and academics",
+            "description": "Games for exploring numbers, operations, algebra, and other academic concepts."
+          },
+          "Idiomas": {
+            "name": "Languages",
+            "description": "Games for building vocabulary and practicing pronunciation in another language."
+          },
+          "Programación e inteligencia artificial": {
+            "name": "Programming and AI",
+            "description": "Interactive challenges for practicing code, computational thinking, and AI literacy."
+          },
+          "Ciencia, tecnología y estudio": {
+            "name": "Science, technology, and study",
+            "description": "Simulations and review games for exploring ideas and remembering what you learn."
+          }
+        }
+      },
+      "recursos": {
+        "name": "Tools and Resources",
+        "description": "Use calculators, exercises, quizzes, and other resources to practice.",
+        "subcategories": {
+          "Calculadoras": {
+            "name": "Calculators",
+            "description": "Calculation tools with explained operations and results."
+          },
+          "Cuestionarios": {
+            "name": "Quizzes",
+            "description": "Self-marking quizzes for practicing published lessons."
+          },
+          "Material descargable": {
+            "name": "Downloadable materials",
+            "description": "Guides and worksheets linked to specific lessons."
+          },
+          "Glosarios": {
+            "name": "Glossaries",
+            "description": "Contextual definitions of terms by learning area."
+          }
+        }
+      }
+    },
+    "ai_tasks": {
+      "assistant": "Explain, study, or write",
+      "research": "Research online with sources",
+      "study": "Study notes or PDFs",
+      "coding": "Code or debug",
+      "translate": "Translate or improve text",
+      "images": "Create or edit images",
+      "video": "Create or edit videos",
+      "audio": "Create voice, narration, or audio"
+    }
+  }
+}

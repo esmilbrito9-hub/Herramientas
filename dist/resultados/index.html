@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Consulta tu puntuación, las respuestas y las explicaciones del examen de NEXORA.">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="Resultado del examen | NEXORA">
+    <meta property="og:description" content="Consulta tu puntuación, las respuestas y las explicaciones del examen de NEXORA.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Resultado del examen | NEXORA</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+<link rel="stylesheet" href="../assets/css/results.css">
+
+    <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="../index.html" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../index.html">
+                Inicio
+            </a>
+
+            <a href="../index.html#categorias">
+                Explorar
+            </a>
+
+            <a href="../index.html#nosotros">
+                Nosotros
+            </a>
+
+            <a href="../index.html#busqueda">
+                Recursos
+            </a>
+
+        </nav>
+
+        <a class="language-toggle" href="../en/resultados/index.html" hreflang="en" lang="en" aria-label="Cambiar idioma a inglés">EN</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">☾</button>
+
+        <a
+            href="../index.html#categorias"
+            class="nav-button">
+
+            Comenzar a aprender
+
+        </a>
+
+    </div>
+
+</header>
+    <main>
+<section class="results-page">
+    <div class="container results-container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="../index.html">Inicio</a><span aria-hidden="true">›</span><span aria-current="page">Resultado del examen</span>
+        </nav>
+
+        <div class="results-intro">
+            <span class="section-label">EVALUACIÓN COMPLETADA</span>
+            <h1>Tu resultado</h1>
+            <p id="resultLead" aria-live="polite">Estamos preparando el resumen del examen.</p>
+        </div>
+
+        <section id="resultScoreCard" class="result-score-card" aria-labelledby="resultTitle" hidden>
+            <div id="resultScoreRing" class="result-score-ring"><span id="resultPercent">0%</span></div>
+            <div>
+                <h2 id="resultTitle"></h2>
+                <p id="resultScore"></p>
+                <p id="resultMessage"></p>
+            </div>
+        </section>
+
+        <section class="answer-review-section" aria-labelledby="reviewTitle">
+            <h2 id="reviewTitle">Revisión de respuestas</h2>
+            <div id="answerReview" class="answer-review-list"></div>
+        </section>
+
+        <div class="result-actions">
+            <a id="reviewLessonLink" class="btn-secondary" href="../index.html" hidden>Repasar la lección</a>
+            <a id="retryLessonLink" class="btn-primary" href="../index.html" hidden>Volver a intentar</a>
+            <a class="result-home-link" href="../index.html">Volver al inicio</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="../index.html" class="logo footer-logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <p>Aprende. Explora. Desarrolla.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="../index.html">
+                Inicio
+            </a>
+
+            <a href="../index.html#categorias">
+                Categorías
+            </a>
+
+            <a href="../index.html#nosotros">
+                Nosotros
+            </a>
+            <a href="../privacidad.html">Privacidad</a>
+            <a href="../cookies.html">Cookies</a>
+            <a href="../terminos.html">Términos</a>
+            <a href="../contacto.html">Contacto</a>
+            <a href="../creditos.html">Créditos visuales</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NEXORA. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba" title="Volver arriba" hidden>↑</button>
+
+<script src="../assets/js/results.js" defer></script>
+
+</body>
+</html>

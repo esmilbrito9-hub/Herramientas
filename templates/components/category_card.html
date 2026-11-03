@@ -1,0 +1,22 @@
+<article class="category-card"
+         data-search="{{ category.search }}">
+
+    <img class="category-card-image" src="{{ category.image.file }}" alt="{{ category.image.alt }}" width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon {{ category.color }}">
+        {{ category.icon }}
+    </div>
+
+    <span class="category-number">
+        {{ "%02d"|format(category_index) }}
+    </span>
+
+    <h3>{{ category.name }}</h3>
+
+    <p>{{ category.description }}</p>
+
+    <a href="{{ category.url }}" class="card-link">
+        {{ t.explore_category if locale == 'en' else 'Explorar categoría' }} <span>→</span>
+    </a>
+
+</article>

@@ -1,0 +1,46 @@
+{
+  "title": "Convierte una fracción a porcentaje y comprueba el resultado",
+  "description": "Interpreta una fracción como parte de cien y usa una calculadora para verificar el procedimiento.",
+  "category": "Herramientas y recursos",
+  "subcategory": "Calculadoras",
+  "introduction": "Una calculadora puede agilizar una operación, pero primero conviene entender qué se está calculando. Un porcentaje expresa una cantidad por cada cien y permite comparar partes de una misma unidad.",
+  "sections": [
+    {
+      "title": "Lee la fracción y busca equivalencias",
+      "paragraphs": [
+        "En la fracción 3/4, el denominador 4 indica en cuántas partes iguales se divide la unidad y el numerador 3 cuántas partes se consideran.",
+        "Una fracción representa una cantidad relativa. Para convertirla a porcentaje, necesitamos expresarla como una fracción equivalente cuyo denominador sea 100, o dividir el numerador entre el denominador y multiplicar por 100.",
+        "Para convertir 3/4, busca una fracción equivalente con denominador 100. Multiplicar numerador y denominador por 25 produce 75/100; por tanto, 3/4 equivale a 75%.",
+        "El numerador y el denominador deben multiplicarse por el mismo número para conservar el valor de la fracción.",
+        "Piensa en una barra dividida en partes iguales: el denominador dice cuántas partes tiene el entero y el numerador cuántas tomas. En 3/4 tomas tres de cuatro partes; la barra completa sería 4/4 = 100%."
+      ]
+    },
+    {
+      "title": "Calcula el porcentaje y comprueba el proceso",
+      "paragraphs": [
+        "Divide 3 entre 4: el resultado es 0.75. Multiplica 0.75 por 100 y obtienes 75. La calculadora confirma el resultado obtenido con fracciones equivalentes.",
+        "Introduce los valores con cuidado: si intercambias numerador y denominador, 4 ÷ 3 no representa la parte 3/4. Conserva la fracción original para revisar la operación.",
+        "Fórmula de emergencia: porcentaje = (numerador ÷ denominador) × 100. Para 18 de 24, calcula 18 ÷ 24 = 0.75 y 0.75 × 100 = 75%. Si la calculadora muestra muchos decimales, redondea solo al final y declara el redondeo."
+      ]
+    },
+    {
+      "title": "Estima el resultado y detecta errores",
+      "paragraphs": [
+        "Como 3/4 es mayor que 1/2 y menor que 1, su porcentaje debe ser mayor que 50% y menor que 100%. Este cálculo mental aproximado puede descubrir errores de entrada.",
+        "Si el numerador es mayor que el denominador, el porcentaje superará el 100%. Eso puede ser correcto cuando comparas una cantidad con una referencia menor.",
+        "Controla el resultado con referencias: una fracción menor que 1 da menos de 100%; una mitad equivale a 50%. Si el porcentaje contradice esa estimación, revisa si invertiste numerador y denominador o si digitaste mal."
+      ]
+    }
+  ],
+  "summary": "Para hallar un porcentaje, expresa la fracción sobre cien o divide numerador entre denominador y multiplica por 100. Estima el rango antes de aceptar el resultado de la calculadora.",
+  "practice": {
+    "question": "¿Qué porcentaje representa 1/4? Escribe el número seguido del símbolo %.",
+    "answer": "25%",
+    "hint": "Busca una fracción equivalente con denominador 100."
+  },
+  "tool": {
+    "type": "fraction-percent",
+    "title": "Calculadora de fracción a porcentaje",
+    "description": "Introduce numerador y denominador para comprobar el cálculo."
+  }
+}

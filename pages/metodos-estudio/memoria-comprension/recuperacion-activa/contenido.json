@@ -1,0 +1,41 @@
+{
+  "title": "Recuperación activa: estudiar intentando recordar",
+  "description": "Convierte la relectura en práctica de recuperación con preguntas, retroalimentación y repasos planificados.",
+  "category": "Métodos de estudio",
+  "subcategory": "Memoria y comprensión",
+  "introduction": "Al estudiar, releer puede hacer que una página parezca familiar. Para comprobar qué puedes recordar sin verla, cierra el material y reconstruye las ideas con tus propias palabras.",
+  "sections": [
+    {
+      "title": "Intenta recordar y formula preguntas",
+      "paragraphs": [
+        "Después de estudiar una sección, ocúltala y escribe tres ideas principales o responde una pregunta sin mirar. Luego vuelve al texto para detectar qué recordaste y qué omitiste.",
+        "El esfuerzo de intentar recordar forma parte de la práctica. Si no aparece una respuesta, consulta la fuente y vuelve a probar más tarde; no confundas dificultad con fracaso.",
+        "En vez de copiar definiciones, pregunta “¿por qué ocurre?”, “¿cómo se relacionan estas ideas?” o “¿qué ejemplo demuestra el concepto?”. Las preguntas explicativas ayudan a comprobar comprensión.",
+        "Para vocabulario o datos breves, las tarjetas pueden servir. Escribe una pregunta clara por tarjeta y comprueba la respuesta antes de darle la vuelta.",
+        "Prueba de cinco minutos: lee una idea, tapa el material y anota de memoria tres puntos o dibuja cómo se conectan. Después compara con la fuente usando otro color y corrige lo que faltó."
+      ]
+    },
+    {
+      "title": "Usa los errores como guía",
+      "paragraphs": [
+        "Compara tu respuesta con el material y corrige las partes incompletas o equivocadas. Una respuesta equivocada señala qué conviene revisar; no es una calificación de tu capacidad.",
+        "Anota una explicación breve de la corrección y crea una nueva pregunta. Evita repetir exactamente la misma respuesta sin comprender por qué es correcta.",
+        "Lleva un registro breve con tres columnas: pregunta que fallé, qué confundí y cómo lo explico ahora. Convierte cada confusión en una pregunta nueva; así el siguiente repaso se dirige a la laguna concreta."
+      ]
+    },
+    {
+      "title": "Distribuye y ajusta los repasos",
+      "paragraphs": [
+        "Vuelve a intentar recordar el contenido en más de una sesión, dejando tiempo entre repasos. Ajusta el intervalo según cuánto recuerdes y la fecha en que necesitas usar el conocimiento.",
+        "Una agenda posible es revisar al día siguiente y volver a practicar varios días después; no es una regla universal. Si fallas mucho, reduce el intervalo y revisa con más frecuencia.",
+        "Plan sencillo si tienes pocos días: intenta recordar hoy, vuelve mañana y haz otra práctica unos días después. Si una respuesta sale mal, consulta la explicación y acorta el intervalo; si sale fácil varias veces, puedes espaciarlo."
+      ]
+    }
+  ],
+  "summary": "Recuperación activa significa intentar recordar antes de consultar la fuente, revisar los errores y volver a practicar en sesiones separadas. Combina preguntas de explicación con comprobación y ajuste del plan.",
+  "practice": {
+    "question": "¿Qué haces primero para comprobar si recuerdas una explicación: abrir el libro o intentar reconstruirla sin mirar?",
+    "answer": "intentar reconstruirla sin mirar",
+    "hint": "La técnica consiste en recuperar la información antes de volver a consultarla."
+  }
+}

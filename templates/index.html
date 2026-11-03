@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block title %}
+NEXORA | {{ 'Learn. Explore. Develop.' if locale == 'en' else 'Aprende. Explora. Desarrolla.' }}
+{% endblock %}
+
+{% block content %}
+
+<!-- PRESENTACIÓN PRINCIPAL -->
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-label">
+                {{ 'A PLACE TO LEARN AND GROW' if locale == 'en' else 'UN ESPACIO PARA APRENDER Y CRECER' }}
+            </span>
+
+            <h1>
+                {% if locale == 'en' %}Knowledge<br>opens new <span>possibilities.</span>{% else %}El conocimiento<br>abre nuevas <span>posibilidades.</span>{% endif %}
+            </h1>
+
+            <p>
+                {% if locale == 'en' %}Explore technology, learn new skills, and build your knowledge with educational resources designed for you.{% else %}Explora el mundo de la tecnología, aprende nuevas habilidades y desarrolla tus conocimientos con recursos educativos diseñados para ti.{% endif %}
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#categorias" class="btn-primary">
+                    {{ t.browse_content if locale == 'en' else 'Explorar contenido' }}
+                </a>
+
+                <a href="#nosotros" class="btn-secondary">
+                    {{ t.meet_nexora if locale == 'en' else 'Conoce NEXORA' }}
+                </a>
+
+            </div>
+
+            <div class="random-learning" aria-label="{{ 'Learning suggestion' if locale == 'en' else 'Sugerencia de aprendizaje' }}">
+                <button id="randomLessonButton" class="suggestion-button" type="button" {% if not lesson_items %}disabled{% endif %}>
+                    ✦ {{ t.suggest_lesson if locale == 'en' else 'Sugiéreme una lección' }}
+                </button>
+                <p id="randomLessonStatus" aria-live="polite">{{ t.new_idea if locale == 'en' else 'Una idea nueva puede ser el primer paso.' }}</p>
+                <a id="suggestedLesson" class="suggested-lesson" href="#categorias" hidden></a>
+                <script type="application/json" id="lessonSuggestions">{{ lesson_items|tojson }}</script>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="learning-orbit" aria-hidden="true">
+                <span class="orbit-node orbit-node-learn">✦</span>
+                <span class="orbit-node orbit-node-explore">⌕</span>
+                <span class="orbit-node orbit-node-develop">⌘</span>
+            </div>
+
+            <div class="visual-card visual-main">
+
+                <div class="visual-icon">✦</div>
+
+                <h3>{{ t.learn_something if locale == 'en' else 'Aprende algo nuevo' }}</h3>
+
+                <p>
+                    {{ t.knowledge_tool if locale == 'en' else 'El conocimiento es una herramienta para avanzar.' }}
+                </p>
+
+            </div>
+
+            <div class="floating-card floating-one">
+                <span>⌘</span>
+                <p>{{ 'Programming' if locale == 'en' else 'Programación' }}</p>
+            </div>
+
+            <div class="floating-card floating-two">
+                <span>✧</span>
+                <p>{{ 'Artificial intelligence' if locale == 'en' else 'Inteligencia artificial' }}</p>
+            </div>
+
+            <div class="visual-circle"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BUSCADOR -->
+<section class="search-section" id="busqueda">
+
+    <div class="container search-container">
+
+        <div>
+            <span class="section-label">
+                {{ t.find_what if locale == 'en' else 'ENCUENTRA LO QUE BUSCAS' }}
+            </span>
+
+            <h2>{{ t.what_learn if locale == 'en' else '¿Qué quieres aprender hoy?' }}</h2>
+        </div>
+
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <label class="visually-hidden" for="categorySearch">{{ t.search_categories if locale == 'en' else 'Buscar categorías' }}</label>
+            <input
+                type="search"
+                id="categorySearch"
+                placeholder="{{ t.search_placeholder if locale == 'en' else 'Busca una categoría o lección...' }}"
+                aria-keyshortcuts="Control+K Meta+K"
+                autocomplete="off"
+            >
+
+            <button id="searchButton" type="button">
+                {{ t.search_button if locale == 'en' else 'Buscar' }}
+            </button>
+            <kbd class="search-shortcut" aria-hidden="true">Ctrl K</kbd>
+
+        </div>
+
+        <p id="searchMessage"
+           class="search-message"
+           aria-live="polite">
+        </p>
+        <ul class="site-search-results" id="siteSearchResults" aria-live="polite" hidden></ul>
+
+        <script type="application/json" id="searchIndex">{{ search_items|tojson }}</script>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORÍAS -->
+<section class="categories-section" id="categorias">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    {{ t.explore_nexora if locale == 'en' else 'EXPLORA NEXORA' }}
+                </span>
+
+                <h2>{{ t.discover_categories if locale == 'en' else 'Descubre nuestras categorías' }}</h2>
+
+                <p>
+                    {{ t.find_lessons if locale == 'en' else 'Encuentra información, lecciones y recursos para desarrollar nuevas habilidades.' }}
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="categories-grid" id="categoriesGrid">
+
+           {% for category in categories %}
+
+             {% set category_index = loop.index %}
+
+                {% include "components/category_card.html" %}
+
+            {% endfor %}
+
+        </div>
+
+        <p class="no-results" id="noResults" hidden>
+            {{ t.no_search if locale == 'en' else 'No encontramos resultados que coincidan con tu búsqueda.' }}
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SOBRE NEXORA -->
+<section class="about-section" id="nosotros">
+
+    <div class="container about-content">
+
+        <div class="about-decoration">
+
+            <div class="about-symbol">N.</div>
+
+            <div class="about-small-circle"></div>
+
+        </div>
+
+        <div class="about-text">
+
+            <span class="section-label">
+                {{ t.our_platform if locale == 'en' else 'NUESTRA PLATAFORMA' }}
+            </span>
+
+            <h2>
+                {{ t.learning_possibility if locale == 'en' else 'Aprender nunca debería dejar de ser una posibilidad.' }}
+            </h2>
+
+            <p>
+                {{ t.about_text if locale == 'en' else 'NEXORA es un espacio educativo y tecnológico creado para facilitar el acceso al conocimiento. Reunimos diferentes áreas de aprendizaje en un mismo lugar para que puedas explorar, practicar y desarrollar nuevas habilidades.' }}
+            </p>
+
+            <a href="#categorias" class="btn-primary">
+                {{ t.begin_explore if locale == 'en' else 'Comienza a explorar' }}
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- APRENDIZAJE -->
+<section class="learning-section">
+
+    <div class="container learning-content">
+
+        <span class="section-label">
+            {{ t.study_in_your_pace if locale == 'en' else 'APRENDE A TU RITMO' }}
+        </span>
+
+        <h2>
+            {% if locale == 'en' %}Learning is not just reading.<br>It is also about <span>practice.</span>{% else %}No se trata solamente de leer.<br>También se trata de <span>practicar.</span>{% endif %}
+        </h2>
+
+        <p>
+            {{ t.practice_detail if locale == 'en' else 'NEXORA incorporará lecciones, ejemplos, ejercicios y pequeños exámenes para ayudarte a comprobar lo que has aprendido.' }}
+        </p>
+
+        <a href="#categorias" class="btn-primary">
+            {{ t.discover_content if locale == 'en' else 'Descubrir contenidos' }}
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

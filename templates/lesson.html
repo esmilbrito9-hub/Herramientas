@@ -1,0 +1,202 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+    {{ lesson.title }} | NEXORA
+{% endblock %}
+
+{% block description %}
+    {{ lesson.description }}
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ base_path }}assets/css/lesson.css">
+{% endblock %}
+
+{% block content %}
+
+<section class="lesson-header">
+    <div class="container">
+
+        <nav class="lesson-breadcrumb">
+            <a href="{{ home_url }}">{{ t.home if locale == 'en' else 'Inicio' }}</a>
+            <span> / </span>
+            <span>{{ lesson.category }}</span>
+            <span> / </span>
+            <span>{{ lesson.title }}</span>
+        </nav>
+
+        <span class="lesson-label">{{ t.lesson if locale == 'en' else 'LECCIÓN EDUCATIVA' }}</span>
+
+        <h1>{{ lesson.title }}</h1>
+
+        <p>{{ lesson.description }}</p>
+        {% if category_image %}<figure class="lesson-image"><img src="{{ base_path }}{{ category_image.file }}" alt="{{ category_image.alt }}" width="900" height="560" fetchpriority="high"><figcaption><a href="{{ category_image.source }}" target="_blank" rel="noopener noreferrer">{{ category_image.credit }} · Ver imagen</a></figcaption></figure>{% endif %}
+
+    </div>
+</section>
+
+
+<section class="lesson-main">
+    <div class="container lesson-layout">
+
+        <article class="lesson-content">
+
+            <h2>{{ t.introduction if locale == 'en' else 'Introducción' }}</h2>
+
+            <p>{{ lesson.introduction }}</p>
+
+            <nav class="lesson-outline" aria-label="{{ t.lesson_sections if locale == 'en' else 'Apartados de la lección' }}">
+                <strong>{{ t.in_this_lesson if locale == 'en' else 'En esta lección' }}</strong>
+                {% for section in lesson.sections %}<a href="#topic-{{ loop.index }}">{{ loop.index }}. {{ section.title }}</a>{% endfor %}
+            </nav>
+
+            {% for section in lesson.sections %}
+
+                <section class="lesson-section" id="topic-{{ loop.index }}" aria-labelledby="topic-title-{{ loop.index }}">
+
+                    <h2 id="topic-title-{{ loop.index }}">{{ section.title }}</h2>
+
+                    {% for paragraph in section.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+
+                    {% if section.example %}
+
+                        <div class="lesson-example">
+
+                            <strong>{{ section.example.title }}</strong>
+
+                            <p>{{ section.example.operation }}</p>
+
+                            <p>{{ section.example.explanation }}</p>
+
+                            <strong>
+                                {{ t.result if locale == 'en' else 'Resultado:' }} {{ section.example.result }}
+                            </strong>
+
+                        </div>
+
+                    {% endif %}
+
+                </section>
+
+            {% endfor %}
+
+            <section class="lesson-summary">
+
+                <h2>{{ t.lesson_summary if locale == 'en' else 'Resumen de la lección' }}</h2>
+
+                <p>{{ lesson.summary }}</p>
+
+            </section>
+
+        </article>
+
+
+        <aside class="lesson-sidebar">
+
+            <div class="exam-card">
+
+                <span class="lesson-label">{{ t.test_learning if locale == 'en' else 'PON A PRUEBA LO APRENDIDO' }}</span>
+
+                <h2>{{ t.lesson_exam if locale == 'en' else 'Examen de la lección' }}</h2>
+
+                <p>
+                    {{ t.answer_check if locale == 'en' else 'Responde las preguntas para comprobar cuánto has aprendido.' }}
+                </p>
+
+                <a href="#exam" class="primary-button">
+                    {{ t.start_exam if locale == 'en' else 'Comenzar examen' }}
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+
+{% if lesson.practice %}
+<section class="quick-practice container" aria-labelledby="practice-title">
+    <div class="practice-card">
+        <span class="lesson-label">{{ t.quick_practice if locale == 'en' else 'PRÁCTICA RÁPIDA' }}</span>
+        <h2 id="practice-title">{{ t.check_understanding if locale == 'en' else 'Comprueba lo que entendiste' }}</h2>
+        <p>{{ lesson.practice.question }}</p>
+        <label for="quickAnswer">{{ t.your_answer if locale == 'en' else 'Tu respuesta' }}</label>
+        <div class="practice-controls">
+            <input id="quickAnswer" type="text" autocomplete="off">
+            <button id="checkQuickAnswer" class="primary-button" type="button" data-answer="{{ lesson.practice.answer }}">{{ t.check if locale == 'en' else 'Comprobar' }}</button>
+        </div>
+        <p id="practiceFeedback" aria-live="polite"></p>
+        {% if lesson.practice.hint %}<details><summary>{{ t.show_hint if locale == 'en' else 'Ver pista' }}</summary><p>{{ lesson.practice.hint }}</p></details>{% endif %}
+    </div>
+</section>
+{% endif %}
+
+{% if lesson.tool and lesson.tool.type == "fraction-percent" %}
+<section class="learning-tool container" aria-labelledby="tool-title">
+    <div class="tool-card">
+        <span class="lesson-label">{{ t.interactive_tool if locale == 'en' else 'HERRAMIENTA INTERACTIVA' }}</span>
+        <h2 id="tool-title">{{ lesson.tool.title }}</h2>
+        <p>{{ lesson.tool.description }}</p>
+        <div class="fraction-inputs">
+            <label>Numerador<input id="fractionNumerator" type="number" step="1" value="3"></label>
+            <span aria-hidden="true">/</span>
+            <label>Denominador<input id="fractionDenominator" type="number" step="1" min="1" value="4"></label>
+            <button id="convertFraction" type="button" class="primary-button">{{ t.convert if locale == 'en' else 'Convertir' }}</button>
+        </div>
+        <p id="fractionResult" aria-live="polite">Ejemplo: 3/4 equivale a 75%.</p>
+    </div>
+</section>
+{% endif %}
+
+<section class="exam-section" id="exam">
+
+    <div class="container">
+
+        <div class="exam-heading">
+            <span class="lesson-label">{{ t.exam if locale == 'en' else 'EVALUACIÓN' }}</span>
+            <h2>{{ t.check_knowledge if locale == 'en' else 'Comprueba tus conocimientos' }}</h2>
+            <p>{{ t.select_answer if locale == 'en' else 'Selecciona una respuesta para cada pregunta.' }}</p>
+        </div>
+
+        <div id="examContainer" class="exam-container" data-result-url="{{ result_url }}" data-lesson-title="{{ lesson.title }}" data-result-lesson-url="{{ result_lesson_url }}">
+
+            <div class="exam-progress-wrap">
+                <p class="exam-progress" id="examProgress" aria-live="polite">0 {{ 'questions answered' if locale == 'en' else 'preguntas respondidas' }}</p>
+                <div class="exam-progress-track" id="examProgressTrack" role="progressbar" aria-label="{{ 'Quiz progress' if locale == 'en' else 'Progreso del examen' }}" aria-valuemin="0" aria-valuemax="{{ exam.questions|length }}" aria-valuenow="0"><span></span></div>
+            </div>
+
+            <div id="examQuestions"></div>
+
+            <button id="submitExam" class="primary-button" type="button">
+                {{ t.submit_exam if locale == 'en' else 'Corregir examen' }}
+            </button>
+
+            <div id="examResults" hidden aria-live="polite"></div>
+
+            <button id="retryExam" class="secondary-button" type="button" hidden>
+                {{ t.retry_exam if locale == 'en' else 'Repetir examen' }}
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<nav class="lesson-pagination container" aria-label="{{ t.lesson_navigation if locale == 'en' else 'Navegación entre lecciones' }}">
+    {% if previous_lesson %}<a href="{{ previous_lesson.url }}">← {{ previous_lesson.title }}</a>{% else %}<span></span>{% endif %}
+    {% if next_lesson %}<a href="{{ next_lesson.url }}">{{ next_lesson.title }} →</a>{% endif %}
+</nav>
+
+<script type="application/json" id="examData">{{ exam|tojson }}</script>
+
+{% endblock %}
+
+
+{% block extra_js %}
+<script src="{{ base_path }}assets/js/exam.js" defer></script>
+{% endblock %}

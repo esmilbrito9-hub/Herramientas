@@ -1,0 +1,7 @@
+{"questions":[
+ {"question":"¿Qué hace la instrucción puntos = 8?","options":["Asigna el valor 8 a la variable puntos","Compara dos números","Convierte puntos a texto"],"answer":0,"explanation":"El signo igual asigna el valor de la derecha al nombre de la izquierda."},
+ {"question":"¿Qué tipo devuelve input() normalmente?","options":["int","str","bool"],"answer":1,"explanation":"input() entrega la entrada como texto; hay que convertirla para calcular con números."},
+ {"question":"¿Qué resultado produce '2' + '3' en Python?","options":["5","23","Un error siempre"],"answer":1,"explanation":"Entre cadenas, el operador + concatena el texto y forma '23'."},
+ {"question":"¿Qué tipo corresponde a True?","options":["bool","float","str"],"answer":0,"explanation":"True y False son valores booleanos del tipo bool."},
+ {"question":"¿Por qué puede fallar int(input())?","options":["Porque input nunca produce texto","Porque la entrada podría contener letras y no representar un entero","Porque int solo trabaja con decimales"],"answer":1,"explanation":"int no puede convertir una cadena que no represente un número entero válido."}
+]}

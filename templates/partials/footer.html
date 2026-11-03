@@ -1,0 +1,47 @@
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="{{ home_url|default('index.html') }}" class="logo footer-logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <p>{{ t.tagline if locale == 'en' else 'Aprende. Explora. Desarrolla.' }}</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="{{ home_url|default('index.html') }}">
+                {{ t.home if locale == 'en' else 'Inicio' }}
+            </a>
+
+            <a href="{{ home_url|default('index.html') }}#categorias">
+                {{ t.categories if locale == 'en' else 'Categorías' }}
+            </a>
+
+            <a href="{{ home_url|default('index.html') }}#nosotros">
+                {{ t.about if locale == 'en' else 'Nosotros' }}
+            </a>
+            <a href="{{ base_path|default('') }}privacidad.html">{{ t.privacy if locale == 'en' else 'Privacidad' }}</a>
+            <a href="{{ base_path|default('') }}cookies.html">{{ t.cookies if locale == 'en' else 'Cookies' }}</a>
+            <a href="{{ base_path|default('') }}terminos.html">{{ t.terms if locale == 'en' else 'Términos' }}</a>
+            <a href="{{ base_path|default('') }}contacto.html">{{ t.contact if locale == 'en' else 'Contacto' }}</a>
+            <a href="{{ base_path|default('') }}creditos.html">{{ t.visual_credits if locale == 'en' else 'Créditos visuales' }}</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © {{ current_year }} NEXORA. {{ t.footer_rights if locale == 'en' else 'Todos los derechos reservados.' }}
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>

@@ -1,0 +1,545 @@
+{
+  "inteligencia-artificial": {
+    "title": "Tipos de IA y guía para elegir herramientas",
+    "introduction": "La inteligencia artificial no es una sola clase de programa. Estas familias describen tareas y técnicas que pueden combinarse en un mismo producto; una herramienta de conversación, por ejemplo, puede generar texto, buscar en la web y analizar imágenes.",
+    "types": [
+      {
+        "name": "IA generativa",
+        "description": "Produce contenido nuevo —texto, imágenes, audio, video o código— a partir de instrucciones y ejemplos aprendidos. Revisa los datos y derechos antes de publicar lo que genera."
+      },
+      {
+        "name": "Procesamiento del lenguaje y asistentes",
+        "description": "Interpreta y genera lenguaje para resumir, traducir, explicar o conversar. Puede sonar segura y aun así equivocarse; pide fuentes y verifica los puntos importantes."
+      },
+      {
+        "name": "Visión por computadora",
+        "description": "Analiza fotografías y video para reconocer objetos, leer texto, detectar patrones o describir escenas. El resultado puede fallar con imágenes borrosas, contextos nuevos o detalles pequeños."
+      },
+      {
+        "name": "Voz y audio",
+        "description": "Convierte voz en texto, crea narración o identifica características del sonido. Comprueba nombres propios, acentos, puntuación y permisos de grabación."
+      },
+      {
+        "name": "Predicción y clasificación",
+        "description": "Usa datos para estimar una cantidad o asignar una etiqueta, por ejemplo detectar correo no deseado. Una correlación no demuestra causalidad y los datos sesgados producen resultados sesgados."
+      },
+      {
+        "name": "Recomendación y sistemas con herramientas",
+        "description": "Los recomendadores ordenan opciones según señales de uso; los agentes pueden planear pasos y llamar herramientas. Revisa criterios, permisos y acciones antes de aceptar decisiones automáticas."
+      }
+    ],
+    "ranking_note": "Orden editorial de NEXORA según ajuste a cada tarea, facilidad de uso y acceso disponible. No es una prueba universal de calidad: la respuesta depende del modelo, la instrucción, los límites de uso y la versión del producto.",
+    "checked": "2026-11-03",
+    "pricing_note": "Precios de lista aproximados en dólares estadounidenses para planes individuales, consultados el 3 de noviembre de 2026. Impuestos, moneda, promociones, facturación anual, elegibilidad y límites cambian según país y cuenta. Confirma el precio en la página oficial antes de contratar. Los planes gratuitos tienen topes y pueden cambiar.",
+    "free_groups": [
+      {
+        "task": "Explicar, estudiar y redactar",
+        "items": [
+          {
+            "name": "ChatGPT Free",
+            "price": "US$0; herramientas y límites variables",
+            "description": "Buena primera opción general para pedir explicaciones, revisar un borrador y trabajar con búsqueda o archivos con límites gratuitos.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+          },
+          {
+            "name": "Gemini (acceso gratuito)",
+            "price": "US$0; límites de uso",
+            "description": "Útil para preguntas generales y para quien ya utiliza los servicios de Google. La disponibilidad de funciones varía por cuenta y país.",
+            "site": "https://gemini.google.com/",
+            "source": "https://one.google.com/about/google-ai-plans/?gl=US"
+          },
+          {
+            "name": "Claude Free",
+            "price": "US$0; uso limitado",
+            "description": "Alternativa para leer, resumir y mejorar textos largos; el acceso depende de la región y puede limitarse cuando hay mucha demanda.",
+            "site": "https://claude.ai/",
+            "source": "https://www.anthropic.com/pricing"
+          },
+          {
+            "name": "DeepSeek",
+            "price": "US$0; acceso gratuito en su asistente web y aplicación",
+            "description": "Alternativa gratuita para explicaciones, razonamiento y consultas generales. Comprueba respuestas y evita subir datos sensibles; disponibilidad, funciones y tratamiento de datos dependen del servicio y la región.",
+            "site": "https://www.deepseek.com/",
+            "source": "https://www.deepseek.com/news/deepseek-app/"
+          }
+        ],
+        "task_key": "assistant"
+      },
+      {
+        "task": "Buscar información reciente",
+        "items": [
+          {
+            "name": "Perplexity Standard",
+            "price": "US$0; búsquedas avanzadas limitadas",
+            "description": "Primera opción para preguntas de actualidad porque organiza respuestas con enlaces a fuentes. Abre las fuentes y comprueba que respalden la afirmación.",
+            "site": "https://www.perplexity.ai/",
+            "source": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+          },
+          {
+            "name": "ChatGPT Free con búsqueda web",
+            "price": "US$0; límites variables",
+            "description": "Conveniente para combinar búsqueda, preguntas de seguimiento y explicación sencilla en una misma conversación.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+          },
+          {
+            "name": "Gemini (acceso gratuito)",
+            "price": "US$0; disponibilidad variable",
+            "description": "Otra opción para investigar y contrastar resultados; revisa fechas y abre los enlaces citados antes de usar los datos.",
+            "site": "https://gemini.google.com/",
+            "source": "https://one.google.com/about/google-ai-plans/?gl=US"
+          }
+        ],
+        "task_key": "research"
+      },
+      {
+        "task": "Aprender y escribir código",
+        "items": [
+          {
+            "name": "GitHub Copilot Free",
+            "price": "US$0; hasta 2.000 completados al mes y límites de chat/agentes",
+            "description": "La opción gratuita más directa dentro de editores compatibles: propone código mientras escribes. Lee, ejecuta y prueba cada sugerencia; el autocompletado no verifica la lógica.",
+            "site": "https://github.com/features/copilot/plans",
+            "source": "https://github.com/features/copilot/plans"
+          },
+          {
+            "name": "ChatGPT Free",
+            "price": "US$0; límites variables",
+            "description": "Útil para explicar un error o pedir un ejemplo pequeño fuera del editor. Comparte solo fragmentos sin claves ni información privada.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+          }
+        ],
+        "task_key": "coding"
+      },
+      {
+        "task": "Crear o editar imágenes",
+        "items": [
+          {
+            "name": "Adobe Firefly Free",
+            "price": "US$0; generaciones diarias limitadas",
+            "description": "Buena opción gratuita para probar generación y edición visual; los créditos y las funciones disponibles cambian por plan.",
+            "site": "https://firefly.adobe.com/",
+            "source": "https://www.adobe.com/products/firefly/plans.html"
+          },
+          {
+            "name": "ChatGPT Free",
+            "price": "US$0; generación con límites",
+            "description": "Práctico cuando quieres describir, generar y ajustar una imagen conversando. Los límites gratuitos pueden variar.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+          },
+          {
+            "name": "Canva AI Free",
+            "price": "US$0; acceso y usos de IA limitados según función",
+            "description": "Útil para crear diseños, imágenes y piezas visuales desde un mismo editor. Las funciones de IA consumen cuotas compartidas y varían por plan.",
+            "site": "https://www.canva.com/ai/",
+            "source": "https://www.canva.com/pricing/"
+          }
+        ],
+        "task_key": "images"
+      },
+      {
+        "task": "Estudiar apuntes, PDF y fuentes elegidas",
+        "items": [
+          {
+            "name": "Gemini Notebook",
+            "price": "US$0; funciones y límites pueden variar",
+            "description": "Trabaja con fuentes que tú aportas y ayuda a resumirlas, crear preguntas y estudiar con referencias a los materiales. Revisa cada cita en el documento original.",
+            "site": "https://notebooklm.google/",
+            "source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+          }
+        ],
+        "task_key": "study"
+      },
+      {
+        "task": "Traducir y mejorar textos",
+        "items": [
+          {
+            "name": "DeepL Translator",
+            "price": "US$0; límite de 50.000 caracteres por mes en la versión gratuita",
+            "description": "Especializado en traducir textos y documentos breves; permite comparar formulaciones en los idiomas admitidos. La traducción puede perder matices, así que revisa nombres, tono y vocabulario técnico.",
+            "site": "https://www.deepl.com/translator",
+            "source": "https://www.deepl.com/en/pro"
+          }
+        ],
+        "task_key": "translate"
+      },
+      {
+        "task": "Crear videos con IA",
+        "items": [
+          {
+            "name": "Runway Free",
+            "price": "US$0; 125 créditos de prueba de una sola vez",
+            "description": "Permite probar generación y edición de imagen, video y audio con créditos iniciales que no caducan. Úsalo para clips de prueba y comprueba el consumo antes de generar.",
+            "site": "https://runway.com/",
+            "source": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work"
+          }
+        ],
+        "task_key": "video"
+      },
+      {
+        "task": "Crear voz, narración o audio",
+        "items": [
+          {
+            "name": "ElevenLabs Free",
+            "price": "US$0; 10.000 créditos al mes",
+            "description": "Genera voz, transcripción, efectos y música con límites mensuales. Revisa derechos y consentimiento antes de clonar o publicar una voz.",
+            "site": "https://elevenlabs.io/",
+            "source": "https://elevenlabs.io/pricing"
+          }
+        ],
+        "task_key": "audio"
+      }
+    ],
+    "paid_groups": [
+      {
+        "task": "Asistencia general, estudio y escritura",
+        "items": [
+          {
+            "name": "ChatGPT Plus",
+            "price": "Aprox. US$20/mes",
+            "description": "Primera elección general por reunir conversación, razonamiento, archivos, voz e imágenes en una sola suscripción. Tiene topes de uso y la API se cobra aparte.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+          },
+          {
+            "name": "Claude Pro",
+            "price": "Aprox. US$20/mes; anual US$200 (equivale a unos US$17/mes, cobrado por adelantado)",
+            "description": "Muy buena alternativa para escribir, revisar documentos extensos y trabajar con proyectos; el acceso puede depender del país.",
+            "site": "https://claude.ai/upgrade",
+            "source": "https://www.anthropic.com/pricing"
+          },
+          {
+            "name": "Google AI Pro",
+            "price": "Aprox. US$19,99/mes; anual US$199,99",
+            "description": "Adecuada si valoras la integración con Gemini, Gmail, Docs y almacenamiento de Google; algunas ventajas varían por región.",
+            "site": "https://gemini.google.com/",
+            "source": "https://one.google.com/about/google-ai-plans/?gl=US"
+          }
+        ],
+        "task_key": "assistant"
+      },
+      {
+        "task": "Investigación web con fuentes",
+        "items": [
+          {
+            "name": "Perplexity Pro",
+            "price": "Aprox. US$20/mes o US$200/año",
+            "description": "Primera opción para investigar temas actuales: prioriza búsqueda web, citas, archivos y consultas de investigación con mayor capacidad que el plan gratis.",
+            "site": "https://www.perplexity.ai/pro",
+            "source": "https://www.perplexity.ai/es/hub/pricing"
+          },
+          {
+            "name": "ChatGPT Plus",
+            "price": "Aprox. US$20/mes",
+            "description": "Mejor si necesitas alternar investigación con análisis de archivos, razonamiento y redacción. Abre las fuentes: una cita automática también debe revisarse.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+          },
+          {
+            "name": "Google AI Pro",
+            "price": "Aprox. US$19,99/mes",
+            "description": "Buena opción si ya trabajas dentro de Google y quieres combinar Gemini con sus herramientas de productividad.",
+            "site": "https://gemini.google.com/",
+            "source": "https://one.google.com/about/google-ai-plans/?gl=US"
+          }
+        ],
+        "task_key": "research"
+      },
+      {
+        "task": "Programación y asistencia dentro del editor",
+        "items": [
+          {
+            "name": "GitHub Copilot Pro",
+            "price": "Aprox. US$10/mes; incluye una asignación de créditos de IA, con uso adicional sujeto a límites",
+            "description": "Primera elección por precio y autocompletado integrado en editores. Chat, agentes y modelos premium consumen créditos; revisa las cuotas antes de depender de ellos.",
+            "site": "https://github.com/features/copilot/plans",
+            "source": "https://github.com/features/copilot/plans"
+          },
+          {
+            "name": "Claude Pro",
+            "price": "Aprox. US$20/mes",
+            "description": "Útil para explicar código, planear cambios y revisar fragmentos largos en conversación; no sustituye ejecutar pruebas.",
+            "site": "https://claude.ai/upgrade",
+            "source": "https://www.anthropic.com/pricing"
+          },
+          {
+            "name": "ChatGPT Plus",
+            "price": "Aprox. US$20/mes",
+            "description": "Alternativa versátil para depurar, aprender conceptos y analizar archivos; confirma los cambios en tu propio entorno.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+          }
+        ],
+        "task_key": "coding"
+      },
+      {
+        "task": "Generación y edición de imágenes",
+        "items": [
+          {
+            "name": "Midjourney Basic",
+            "price": "Aprox. US$10/mes; anual US$96 (unos US$8/mes, cobrado por adelantado)",
+            "description": "Primera opción de esta lista para explorar estilos y crear imágenes con énfasis visual. El plan Basic tiene tiempo de generación limitado y no ofrece modo privado.",
+            "site": "https://www.midjourney.com/",
+            "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+          },
+          {
+            "name": "Adobe Firefly Standard",
+            "price": "Aprox. US$9,99/mes",
+            "description": "Muy conveniente para edición e integración con flujos creativos de Adobe; incluye créditos generativos para funciones premium.",
+            "site": "https://firefly.adobe.com/",
+            "source": "https://www.adobe.com/products/firefly/plans.html"
+          },
+          {
+            "name": "ChatGPT Plus",
+            "price": "Aprox. US$20/mes",
+            "description": "Conviene si quieres crear, ajustar y conversar sobre imágenes junto a tareas de texto, sin contratar un servicio dedicado solo a arte.",
+            "site": "https://chatgpt.com/",
+            "source": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+          }
+        ],
+        "task_key": "images"
+      },
+      {
+        "task": "Investigar y estudiar con fuentes",
+        "items": [
+          {
+            "name": "Google AI Pro con Gemini Notebook",
+            "price": "Aprox. US$19,99/mes o US$199,99/año en EE. UU.",
+            "description": "Añade límites más altos y funciones de Gemini y Gemini Notebook para investigar y trabajar con materiales. La disponibilidad cambia según país; verifica que las funciones estén habilitadas en tu cuenta.",
+            "site": "https://gemini.google.com/",
+            "source": "https://one.google.com/about/google-ai-plans/?gl=US"
+          }
+        ],
+        "task_key": "study"
+      },
+      {
+        "task": "Traducir y mejorar textos",
+        "items": [
+          {
+            "name": "DeepL Pro Individual",
+            "price": "Aprox. US$8,74/mes con facturación anual en EE. UU.",
+            "description": "Para traducción recurrente de documentos con funciones de privacidad, glosario y más volumen que el plan gratuito. El monto depende de región y facturación; la prueba y el precio pueden cambiar.",
+            "site": "https://www.deepl.com/en/pro",
+            "source": "https://www.deepl.com/en/pro"
+          }
+        ],
+        "task_key": "translate"
+      },
+      {
+        "task": "Crear videos con IA",
+        "items": [
+          {
+            "name": "Runway Standard",
+            "price": "Desde aprox. US$12/mes con facturación anual",
+            "description": "Incluye una asignación mensual de créditos para crear imagen, video y audio con más capacidad que la prueba gratuita. Evalúa créditos por generación y los derechos de uso antes de producir material comercial.",
+            "site": "https://runway.com/",
+            "source": "https://runway.com/pricing"
+          }
+        ],
+        "task_key": "video"
+      },
+      {
+        "task": "Crear voz, narración o audio",
+        "items": [
+          {
+            "name": "ElevenLabs Starter",
+            "price": "Aprox. US$6/mes después de una oferta inicial; 30.000 créditos mensuales",
+            "description": "Incluye más créditos y licencia comercial según el plan, además de clonación instantánea de voz. Revisa condiciones de consentimiento y licencia para cada uso.",
+            "site": "https://elevenlabs.io/",
+            "source": "https://elevenlabs.io/pricing"
+          }
+        ],
+        "task_key": "audio"
+      }
+    ],
+    "quick_task_labels": [
+      {
+        "id": "assistant",
+        "label": "Explicar, estudiar o redactar"
+      },
+      {
+        "id": "research",
+        "label": "Investigar en la web con fuentes"
+      },
+      {
+        "id": "study",
+        "label": "Estudiar mis apuntes o PDF"
+      },
+      {
+        "id": "coding",
+        "label": "Programar o corregir código"
+      },
+      {
+        "id": "translate",
+        "label": "Traducir o mejorar un texto"
+      },
+      {
+        "id": "images",
+        "label": "Crear o editar imágenes"
+      },
+      {
+        "id": "video",
+        "label": "Crear o editar videos"
+      },
+      {
+        "id": "audio",
+        "label": "Crear voz, narración o audio"
+      }
+    ]
+  },
+  "videojuegos": {
+    "title": "Videojuegos y experiencias para aprender",
+    "introduction": "Los videojuegos pueden servir para practicar muchas habilidades, no solo programación. Esta selección conecta cada recurso con las materias de NEXORA donde aporta una experiencia útil; cada ficha enlaza directamente con su web oficial o página de acceso.",
+    "filter_note": "Elige primero la habilidad que quieres practicar y revisa si la actividad es gratuita, tiene contenido de pago o necesita una licencia. Úsalos como complemento de lecciones y práctica.",
+    "recommendations": [
+      {
+        "name": "DragonBox Algebra",
+        "logo_domain": "dragonbox.com",
+        "skills": [
+          "academia"
+        ],
+        "skill_label": "Matemáticas · álgebra",
+        "level": "Inicial a intermedio",
+        "access": "license",
+        "access_label": "App de pago o acceso educativo; consulta tienda oficial",
+        "languages": "Álgebra visual e intuitiva",
+        "description": "Presenta ideas de álgebra como rompecabezas visuales: se manipulan símbolos y se descubren reglas equivalentes a las ecuaciones. Adecuado para construir intuición antes de formalizar procedimientos.",
+        "site": "https://dragonbox.com/products/algebra-5",
+        "source": "https://dragonbox.com/",
+        "link_label": "Ver juego oficial"
+      },
+      {
+        "name": "Influent",
+        "logo_domain": "playinfluent.com",
+        "skills": [
+          "idiomas"
+        ],
+        "skill_label": "Idiomas · vocabulario y pronunciación",
+        "level": "Principiante",
+        "access": "license",
+        "access_label": "Juego de pago en Steam",
+        "languages": "Más de 20 idiomas disponibles; consulta idiomas de aprendizaje en Steam",
+        "description": "Explora una casa 3D, selecciona objetos y aprende sus nombres con audio. Es especialmente útil para vocabulario cotidiano y pronunciación; no reemplaza una ruta completa de gramática o conversación.",
+        "site": "https://store.steampowered.com/app/274980/Influent/",
+        "source": "https://playinfluent.com/about-influent-language-learning-game/",
+        "link_label": "Abrir página de Steam"
+      },
+      {
+        "name": "Coddy",
+        "logo_domain": "coddy.tech",
+        "skills": [
+          "programacion"
+        ],
+        "skill_label": "Programación · fundamentos y práctica de código",
+        "level": "Principiante a intermedio",
+        "access": "freemium",
+        "access_label": "Cursos interactivos gratuitos; algunas funciones premium",
+        "languages": "Python, JavaScript y otros lenguajes; ejercicios en navegador",
+        "description": "Lecciones cortas con código ejecutable y ejercicios que comprueban tus respuestas. Tiene mecánicas de progreso y práctica; conviene combinarlo con proyectos propios para aplicar los conceptos.",
+        "site": "https://coddy.tech/landing/courses",
+        "source": "https://coddy.tech/landing",
+        "link_label": "Empezar en Coddy"
+      },
+      {
+        "name": "Blockly Games",
+        "logo_domain": "blockly.games",
+        "skills": [
+          "programacion"
+        ],
+        "skill_label": "Programación · lógica y pensamiento computacional",
+        "level": "Principiante",
+        "access": "free",
+        "access_label": "Gratis y de código abierto",
+        "languages": "Bloques; progresión hacia JavaScript",
+        "description": "Juegos breves para ensayar secuencias, ciclos, condiciones, funciones y lógica. La progresión permite pasar de bloques visuales a escribir instrucciones.",
+        "site": "https://blockly.games/",
+        "source": "https://blockly.games/about?lang=en",
+        "link_label": "Jugar Blockly Games"
+      },
+      {
+        "name": "CodeCombat",
+        "logo_domain": "codecombat.com",
+        "skills": [
+          "programacion"
+        ],
+        "skill_label": "Programación · resolución de problemas",
+        "level": "Principiante a intermedio",
+        "access": "freemium",
+        "access_label": "Introducción gratuita; cursos completos pueden ser de pago",
+        "languages": "Python y JavaScript",
+        "description": "Aventura donde escribes código para mover al personaje y superar niveles. La introducción ayuda a probar el formato; comprueba qué campañas están incluidas antes de avanzar.",
+        "site": "https://codecombat.com/",
+        "source": "https://codecombat.com/students",
+        "link_label": "Jugar CodeCombat"
+      },
+      {
+        "name": "Hora de IA: Generation AI",
+        "logo_domain": "education.minecraft.net",
+        "skills": [
+          "inteligencia-artificial",
+          "programacion"
+        ],
+        "skill_label": "IA y programación · alfabetización en IA",
+        "level": "Principiante · actividad de una hora",
+        "access": "free",
+        "access_label": "Demo gratuita; aplicación disponible para descarga",
+        "languages": "MakeCode por bloques o Python; actividad en inglés",
+        "description": "Misión de Minecraft Education para crear inventos con IA y resolver desafíos con código. Introduce pensamiento computacional, uso responsable y revisión de errores. Comprueba requisitos del dispositivo y del modo demo.",
+        "site": "https://education.minecraft.net/en-us/lessons/hour-of-ai-generation-ai",
+        "source": "https://education.minecraft.net/en-us/resources/hour-of-ai-the-first-night",
+        "link_label": "Abrir lección oficial"
+      },
+      {
+        "name": "Universe Sandbox",
+        "logo_domain": "universesandbox.com",
+        "skills": [
+          "ciencia-tecnologia"
+        ],
+        "skill_label": "Ciencia y tecnología · física y astronomía",
+        "level": "Exploración guiada · secundaria y superior",
+        "access": "license",
+        "access_label": "Software comercial; consulta demo y tienda oficial",
+        "languages": "Simulación visual de sistemas físicos",
+        "description": "Simulador para modificar masas, órbitas y condiciones de cuerpos celestes y observar consecuencias. Úsalo para explorar hipótesis sobre gravedad y sistemas planetarios; las simulaciones no sustituyen mediciones reales.",
+        "site": "https://www.universesandbox.com/",
+        "source": "https://www.universesandbox.com/education/",
+        "link_label": "Visitar Universe Sandbox"
+      },
+      {
+        "name": "Kahoot!",
+        "logo_domain": "kahoot.com",
+        "skills": [
+          "metodos-estudio"
+        ],
+        "skill_label": "Métodos de estudio · recuperación activa",
+        "level": "Todos los niveles · repaso breve",
+        "access": "freemium",
+        "access_label": "Modo gratuito con funciones y límites variables",
+        "languages": "Cuestionarios y repasos creados por docentes o usuarios",
+        "description": "Permite practicar recuperación de memoria mediante cuestionarios con tiempo y puntuación, en grupo o individualmente. El resultado depende de la calidad del cuestionario; crea preguntas que exijan recordar y explicar, no solo adivinar.",
+        "site": "https://kahoot.com/",
+        "source": "https://support.kahoot.com/hc/en-us/articles/115003072287-Kahoot-plans",
+        "link_label": "Crear o jugar un Kahoot"
+      },
+      {
+        "name": "CodinGame",
+        "logo_domain": "codingame.com",
+        "skills": [
+          "programacion"
+        ],
+        "skill_label": "Programación · retos algorítmicos",
+        "level": "Intermedio",
+        "access": "free",
+        "access_label": "Gratis para jugar; puede requerir cuenta",
+        "languages": "Varios lenguajes de programación",
+        "description": "Puzzles y desafíos competitivos en los que programas soluciones y comparas resultados. Es más provechoso después de aprender variables, condiciones y ciclos.",
+        "site": "https://www.codingame.com/start/",
+        "source": "https://www.codingame.com/signup",
+        "link_label": "Abrir CodinGame"
+      }
+    ]
+  }
+}

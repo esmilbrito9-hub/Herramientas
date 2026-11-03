@@ -1,0 +1,56 @@
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="{{ home_url|default('index.html') }}" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="{{ 'Open menu' if locale == 'en' else 'Abrir menú' }}"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="{{ home_url|default('index.html') }}">
+                {{ t.home if locale == 'en' else 'Inicio' }}
+            </a>
+
+            <a href="{{ home_url|default('index.html') }}#categorias">
+                {{ t.explore if locale == 'en' else 'Explorar' }}
+            </a>
+
+            <a href="{{ home_url|default('index.html') }}#nosotros">
+                {{ t.about if locale == 'en' else 'Nosotros' }}
+            </a>
+
+            <a href="{{ home_url|default('index.html') }}#busqueda">
+                {{ t.resources if locale == 'en' else 'Recursos' }}
+            </a>
+
+        </nav>
+
+        <a class="language-toggle" href="{{ language_url|default('en/index.html') }}" hreflang="{{ 'es' if locale == 'en' else 'en' }}" lang="{{ 'es' if locale == 'en' else 'en' }}" aria-label="{{ t.change_language if locale == 'en' else 'Cambiar idioma a inglés' }}">{{ t.language_switch if locale == 'en' else 'EN' }}</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="{{ 'Toggle dark mode' if locale == 'en' else 'Cambiar a modo oscuro' }}" title="{{ 'Change theme' if locale == 'en' else 'Cambiar tema' }}">☾</button>
+
+        <a
+            href="{{ home_url|default('index.html') }}#categorias"
+            class="nav-button">
+
+            {{ t.start_learning if locale == 'en' else 'Comenzar a aprender' }}
+
+        </a>
+
+    </div>
+
+</header>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ t.visual_credits if locale == 'en' else 'Créditos visuales' }} | NEXORA{% endblock %}
+{% block description %}Fuentes y créditos de las fotografías utilizadas en NEXORA.{% endblock %}
+{% block content %}
+<section class="category-hero"><div class="container"><nav class="breadcrumb" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">›</span><span aria-current="page">Créditos visuales</span></nav><span class="section-label">FUENTES VISUALES</span><h1>Créditos de imágenes</h1><p>Las fotografías de esta versión se sirven desde el proyecto local y enlazan a su publicación de origen.</p></div></section>
+<section class="category-content"><div class="container"><p class="license-note">Fotografías obtenidas de Unsplash y usadas bajo la <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">licencia de Unsplash</a>. Los créditos se incluyen para facilitar la consulta de cada fuente.</p><div class="credit-grid">
+{% for image in images %}<article class="credit-card"><img src="{{ image.file }}" alt="{{ image.alt }}" width="640" height="360" loading="lazy"><div><h2>{{ image.credit }}</h2><p>{{ image.alt }}</p><a href="{{ image.source }}" target="_blank" rel="noopener noreferrer">Abrir fuente de la imagen ↗</a></div></article>{% endfor %}
+</div></div></section>
+{% endblock %}

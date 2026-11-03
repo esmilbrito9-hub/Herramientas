@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuál es el resultado de 248 + 176?",
+      "options": [
+        "414",
+        "424",
+        "434"
+      ],
+      "answer": 1,
+      "explanation": "Al reagrupar 14 unidades y 12 decenas, el resultado correcto es 424. La resta 424 − 176 = 248 lo comprueba."
+    },
+    {
+      "question": "¿Cómo calcular 24 × 13 descomponiendo 13?",
+      "options": [
+        "(24 × 10) + (24 × 3) = 312",
+        "24 + 13 = 37",
+        "24 × 10 + 3 = 243"
+      ],
+      "answer": 0,
+      "explanation": "La propiedad distributiva permite calcular 24 × (10 + 3) como 240 + 72 = 312."
+    },
+    {
+      "question": "Al dividir 157 ÷ 12, ¿qué cociente y residuo obtienes?",
+      "options": [
+        "12 y sobra 13",
+        "13 y sobra 1",
+        "14 y sobra 1"
+      ],
+      "answer": 1,
+      "explanation": "12 × 13 = 156; queda 1. El residuo es menor que el divisor 12."
+    },
+    {
+      "question": "Hay 6 paquetes con 8 hojas cada uno. ¿Qué operación encuentra el total?",
+      "options": [
+        "6 + 8",
+        "6 × 8",
+        "8 ÷ 6"
+      ],
+      "answer": 1,
+      "explanation": "La misma cantidad de hojas se repite en seis paquetes, así que se multiplica: 6 × 8 = 48 hojas."
+    },
+    {
+      "question": "¿Cuál igualdad sirve para comprobar 157 ÷ 12 = 13, residuo 1?",
+      "options": [
+        "12 × 13 + 1 = 157",
+        "13 × 1 + 12 = 25",
+        "157 × 12 = 13"
+      ],
+      "answer": 0,
+      "explanation": "En una división con residuo, divisor × cociente + residuo debe reconstruir el dividendo."
+    }
+  ]
+}

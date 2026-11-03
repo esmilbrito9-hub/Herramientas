@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category.name }} | NEXORA{% endblock %}
+{% block description %}{{ category.description }}{% endblock %}
+
+{% block extra_css %}
+{% if category.guide %}<link rel="stylesheet" href="{{ base_path }}assets/css/guides.css">{% endif %}
+{% endblock %}
+
+{% block content %}
+<section class="category-hero">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="{{ 'Breadcrumb' if locale == 'en' else 'Ruta de navegación' }}"><a href="{{ home_url }}">{{ t.home if locale == 'en' else 'Inicio' }}</a><span aria-hidden="true">›</span><span aria-current="page">{{ category.name }}</span></nav>
+        <div class="category-hero-layout">
+            <div><span class="section-label">{{ t.explore_nexora if locale == 'en' else 'EXPLORA NEXORA' }}</span><h1>{{ category.name }}</h1><p>{{ category.description }}</p></div>
+            <figure class="category-hero-image"><img src="{{ base_path }}{{ category.image.file }}" alt="{{ category.image.alt }}" width="900" height="560" fetchpriority="high"><figcaption><a href="{{ category.image.source }}" target="_blank" rel="noopener noreferrer">{{ category.image.credit }} · Ver imagen</a></figcaption></figure>
+        </div>
+    </div>
+</section>
+{% if category.guide and category.guide.types %}
+<section class="learning-guide ai-guide" id="guia-ia" aria-labelledby="guide-title">
+    <div class="container">
+        <span class="section-label">{{ t.guide if locale == 'en' else 'GUÍA PRÁCTICA' }}</span>
+        <h2 id="guide-title">{{ category.guide.title }}</h2>
+        <p class="guide-introduction">{{ category.guide.introduction }}</p>
+        <h3>{{ t.family_ai if locale == 'en' else 'Familias y capacidades de la IA' }}</h3>
+        <div class="ai-type-grid">
+            {% for kind in category.guide.types %}<article class="ai-type-card"><h4>{{ kind.name }}</h4><p>{{ kind.description }}</p></article>{% endfor %}
+        </div>
+        <section class="ai-quick-finder" aria-labelledby="ai-quick-title">
+            <span class="section-label">ACCESO RÁPIDO</span>
+            <h3 id="ai-quick-title">{{ 'What do you need to do?' if locale == 'en' else '¿Qué necesitas hacer?' }}</h3>
+            <p>{{ 'Choose a task to compare free and paid options recommended for that use.' if locale == 'en' else 'Elige una tarea y compara opciones gratuitas y de pago recomendadas para ese uso.' }}</p>
+            <label for="aiTaskSelect">{{ t.ai_task_label if locale == 'en' else 'Necesito ayuda para…' }}</label>
+            <select id="aiTaskSelect" aria-controls="aiTaskResults">
+                <option value="">{{ t.ai_task_placeholder if locale == 'en' else 'Selecciona una tarea' }}</option>
+                {% for task in category.guide.quick_tasks %}<option value="{{ task.id }}">{{ task.label }}</option>{% endfor %}
+            </select>
+            <p class="ai-quick-status" id="aiTaskStatus" aria-live="polite">{{ t.ai_task_status if locale == 'en' else 'Selecciona una tarea para ver herramientas recomendadas.' }}</p>
+            <div class="ai-quick-results" id="aiTaskResults" aria-live="polite">
+                {% for task in category.guide.quick_tasks %}
+                <section class="ai-quick-panel" data-ai-task-panel="{{ task.id }}" aria-label="Recomendaciones: {{ task.label }}" hidden>
+                    {% for plan in ['free', 'paid'] if task[plan] %}
+                    <div class="ai-quick-group" data-ai-plan-group="{{ plan }}">
+                        <h4>{{ t.ai_free_heading if locale == 'en' and plan == 'free' else t.ai_paid_heading if locale == 'en' else 'Opciones gratuitas' if plan == 'free' else 'Opciones de pago' }}</h4>
+                        <div class="ai-quick-grid">
+                            {% for tool in task[plan] %}
+                            <article class="ai-quick-card" data-ai-plan="{{ plan }}">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://{{ tool.logo_domain }}&amp;sz=128" alt="Logo de {{ tool.name }}" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>{{ tool.name }}</h5>
+                                <span class="tool-price">{{ tool.price }}</span>
+                                <p>{{ tool.description }}</p>
+                                <div class="tool-links"><a href="{{ tool.site }}" target="_blank" rel="noopener noreferrer">{{ (t.ai_open ~ ' ' ~ tool.name) if locale == 'en' else ('Abrir ' ~ tool.name) }} ↗</a><a href="{{ tool.source }}" target="_blank" rel="noopener noreferrer">{{ t.ai_plan_details if locale == 'en' else 'Plan y detalles' }} ↗</a></div>
+                            </article>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+                {% endfor %}
+            </div>
+        </section>
+        <div class="guide-ranking">
+            <div class="guide-section-heading"><div><h3>{{ t.choose_task if locale == 'en' else 'Elige según la tarea' }}</h3><p>{{ category.guide.ranking_note }}</p></div></div>
+            <div class="guide-filters" role="group" aria-label="Filtrar herramientas por precio">
+                <button type="button" data-plan-filter="all" aria-pressed="true">{{ t.all if locale == 'en' else 'Todas' }}</button>
+                <button type="button" data-plan-filter="free" aria-pressed="false">{{ t.free if locale == 'en' else 'Gratis' }}</button>
+                <button type="button" data-plan-filter="paid" aria-pressed="false">{{ t.paid if locale == 'en' else 'Pagadas' }}</button>
+            </div>
+            <p class="guide-filter-status visually-hidden" id="planFilterStatus" aria-live="polite">Se muestran herramientas gratuitas y pagadas.</p>
+            <div class="plan-panels">
+                <section class="plan-panel" data-plan-panel="free" aria-labelledby="free-tools-title">
+                    <h3 id="free-tools-title">{{ t.free_options if locale == 'en' else 'Opciones gratuitas' }}</h3>
+                    <p>Ordenadas por utilidad para la tarea; el plan gratuito suele tener límites.</p>
+                    <div class="ai-task-grid">
+                    {% for group in category.guide.free_groups %}
+                        <details class="ai-task-card" {% if loop.first %}open{% endif %}><summary>{{ group.task }}</summary><ol>{% for tool in group["items"] %}<li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://{{ tool.logo_domain }}&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>{{ tool.name }}</strong><span class="tool-price">{{ tool.price }}</span><p>{{ tool.description }}</p><div class="tool-links"><a href="{{ tool.site }}" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="{{ tool.source }}" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li>{% endfor %}</ol></details>
+                    {% endfor %}
+                    </div>
+                </section>
+                <section class="plan-panel" data-plan-panel="paid" aria-labelledby="paid-tools-title">
+                    <h3 id="paid-tools-title">{{ t.paid_options if locale == 'en' else 'Opciones de pago' }}</h3>
+                    <p>Orden editorial de mejor ajuste a menor ajuste para cada tarea; considera primero las funciones que realmente usarás.</p>
+                    <div class="ai-task-grid">
+                    {% for group in category.guide.paid_groups %}
+                        <details class="ai-task-card" {% if loop.first %}open{% endif %}><summary>{{ group.task }}</summary><ol>{% for tool in group["items"] %}<li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://{{ tool.logo_domain }}&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>{{ tool.name }}</strong><span class="tool-price">{{ tool.price }}</span><p>{{ tool.description }}</p><div class="tool-links"><a href="{{ tool.site }}" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="{{ tool.source }}" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li>{% endfor %}</ol></details>
+                    {% endfor %}
+                    </div>
+                </section>
+            </div>
+            <p class="pricing-note">{{ category.guide.pricing_note }}</p>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% if category.game_recommendations %}
+<section class="learning-guide game-guide" id="juegos-aprendizaje" aria-labelledby="game-guide-title">
+    <div class="container">
+        {% if category.url == 'pages/videojuegos/index.html' %}
+        <span class="section-label">{{ t.learn_playing if locale == 'en' else 'APRENDER JUGANDO' }}</span>
+        <h2 id="game-guide-title">{{ category.guide.title }}</h2>
+        <p class="guide-introduction">{{ category.guide.introduction }}</p>
+        <p class="game-filter-note">{{ category.guide.filter_note }}</p>
+        {% else %}
+        <span class="section-label">{{ t.interactive_resources if locale == 'en' else 'RECURSOS INTERACTIVOS' }}</span>
+        <h2 id="game-guide-title">{{ ('Learn ' ~ category.name|lower ~ ' through games') if locale == 'en' else ('Aprende ' ~ category.name|lower ~ ' jugando') }}</h2>
+        <p class="guide-introduction">Estos juegos y experiencias pueden complementar esta materia con práctica interactiva. Revisa el enfoque y los requisitos de acceso en la página oficial.</p>
+        {% endif %}
+        <div class="guide-filters" role="group" aria-label="{{ t.game_access if locale == 'en' else 'Filtrar juegos por tipo de acceso' }}">
+            <button type="button" data-game-filter="all" aria-pressed="true">{{ t.all_games if locale == 'en' else 'Todos' }}</button>
+            <button type="button" data-game-filter="free" aria-pressed="false">{{ t.free_games if locale == 'en' else 'Gratis' }}</button>
+            <button type="button" data-game-filter="freemium" aria-pressed="false">{{ t.freemium_games if locale == 'en' else 'Con opción gratuita' }}</button>
+            <button type="button" data-game-filter="license" aria-pressed="false">{{ t.licensed_games if locale == 'en' else 'De pago o con licencia' }}</button>
+        </div>
+        <p class="guide-filter-status visually-hidden" id="gameFilterStatus" aria-live="polite">Se muestran todas las recomendaciones.</p>
+        <div class="game-recommendation-grid">
+            {% for game in category.game_recommendations %}
+            <article class="game-recommendation-card" data-game-access="{{ game.access }}">
+                <div class="game-card-topline"><span>{{ game.level }}</span><span class="access-badge access-{{ game.access }}">{{ game.access_label }}</span></div>
+                <img class="game-logo" src="https://www.google.com/s2/favicons?domain_url=https://{{ game.logo_domain }}&amp;sz=128" alt="Logo de {{ game.name }}" width="64" height="64" loading="lazy" decoding="async">
+                <h3>{{ game.name }}</h3>
+                <p>{{ game.description }}</p>
+                <dl><div><dt>Habilidad</dt><dd>{{ game.skill_label }}</dd></div><div><dt>Ideal para</dt><dd>{{ game.level }} · {{ game.languages }}</dd></div></dl>
+                <a href="{{ game.site }}" target="_blank" rel="noopener noreferrer">{{ game.link_label|default('Visitar plataforma') }} ↗</a>
+                <a class="resource-source" href="{{ game.source }}" target="_blank" rel="noopener noreferrer">Detalles oficiales ↗</a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+<section class="category-content">
+    <div class="container">
+        <h2>{{ t.learning_areas if locale == 'en' else 'Áreas de aprendizaje' }}</h2>
+        {% if lessons %}<div class="featured-learning"><p class="section-label">{{ t.start_here if locale == 'en' else 'EMPIEZA POR AQUÍ' }}</p><h3>{{ lessons[0].title }}</h3><p>{{ lessons[0].description }}</p><a class="btn-primary" href="{{ lessons[0].url }}">{{ t.open_lesson if locale == 'en' else 'Abrir lección y examen' }}</a></div>{% endif %}
+        {% if subcategories %}
+        <nav class="subcategory-nav" aria-label="{{ 'Subcategories of' if locale == 'en' else 'Subcategorías de' }} {{ category.name }}">
+            {% for item in subcategories %}<a href="#{{ item.slug }}">{{ item.name }}</a>{% endfor %}
+        </nav>
+        <div class="subcategory-list">
+            {% for item in subcategories %}
+            <section class="subcategory-section" id="{{ item.slug }}">
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.description }}</p>
+                {% set entries = lessons|selectattr('subcategory', 'equalto', item.name)|list %}
+                {% if entries %}
+                <ul class="lesson-link-list">
+                    {% for entry in entries %}<li><a href="{{ entry.url }}">{{ entry.title }} <span aria-hidden="true">→</span></a><p>{{ entry.description }}</p></li>{% endfor %}
+                </ul>
+                {% else %}<p class="topic-status">{{ t.coming_soon if locale == 'en' else 'Próximamente se publicarán aquí lecciones y recursos revisados.' }}</p>{% endif %}
+            </section>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="empty-state">{{ t.empty_category if locale == 'en' else 'Estamos preparando materiales revisados para esta categoría. Explora las demás áreas mientras publicamos nuevos contenidos.' }}</p>
+        {% endif %}
+        <h2 class="more-categories-heading">{{ t.other_categories if locale == 'en' else 'Otras categorías' }}</h2>
+        <nav class="category-nav" aria-label="{{ t.more_categories if locale == 'en' else 'Otras categorías' }}">
+            {% for item in categories if item.url != category.url %}
+            <a href="{{ base_path }}{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</section>
+{% endblock %}

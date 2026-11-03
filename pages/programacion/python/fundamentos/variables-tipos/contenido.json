@@ -1,0 +1,41 @@
+{
+  "title": "Python: variables y tipos de datos",
+  "description": "Usa nombres de variables, reconoce tipos básicos y convierte texto de entrada antes de calcular.",
+  "category": "Programación",
+  "subcategory": "Python",
+  "introduction": "Una variable es un nombre que permite reutilizar un valor en un programa. En Python el tipo del valor importa: sumar números no es lo mismo que unir textos.",
+  "sections": [
+    {
+      "title": "Asigna valores y elige nombres claros",
+      "paragraphs": [
+        "La instrucción edad = 12 guarda el entero 12 bajo el nombre edad. El signo igual asigna un valor; no es una afirmación matemática de igualdad.",
+        "Elige nombres que describan el dato, como precio_total o nombre. En Python, los nombres distinguen mayúsculas de minúsculas: edad y Edad son variables distintas.",
+        "Regla inmediata: un nombre de variable comienza con una letra o guion bajo, no con un número, y distingue mayúsculas. Ejemplos claros: precio_total e intentos; evita nombres ambiguos como x cuando el valor necesita contexto."
+      ]
+    },
+    {
+      "title": "Reconoce tipos y convierte entradas",
+      "paragraphs": [
+        "int representa enteros, float números con parte decimal, str texto y bool valores True o False.",
+        "Las comillas identifican texto: 12 es un entero, mientras que '12' es una cadena. Aunque ambos parezcan el mismo número, Python no los suma de la misma manera.",
+        "input() devuelve texto. Si pides una edad para realizar un cálculo, convierte la respuesta, por ejemplo con int(input(...)). Para cantidades con decimales puedes usar float.",
+        "Una conversión puede fallar si la persona escribe letras donde se espera un número. En programas que reciben datos reales, valida la entrada y explica cómo corregirla.",
+        "Si la conversión puede fallar, coloca la lectura dentro de un bloque try y maneja ValueError con except en una línea separada. Muestra un mensaje como Escribe un número entero válido y vuelve a pedir el dato; así una entrada incorrecta no detiene el programa sin explicación."
+      ]
+    },
+    {
+      "title": "Opera con los tipos correctos y depura",
+      "paragraphs": [
+        "La expresión 2 + 3 produce 5. La expresión '2' + '3' une dos cadenas y produce '23'.",
+        "Antes de operar, identifica qué representa cada valor y confirma su tipo. Convertir a texto con str() puede ser útil al mostrar un resultado, pero no debe sustituir la conversión numérica cuando necesitas calcular.",
+        "Antes de sumar, comprueba los tipos con type(valor). Si ves 23 donde esperabas 5, quizá sumaste las cadenas \"2\" y \"3\"; convierte a int antes de calcular. Si solo vas a mostrar un número junto a una etiqueta, convierte el número a str."
+      ]
+    }
+  ],
+  "summary": "Las variables nombran valores. Distingue int, float, str y bool; recuerda que input() produce texto y convierte la entrada antes de hacer operaciones numéricas.",
+  "practice": {
+    "question": "¿Qué expresión convierte el texto '7' en un entero en Python?",
+    "answer": "int('7')",
+    "hint": "La función int recibe un texto numérico y devuelve un entero."
+  }
+}

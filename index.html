@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="NEXORA: aprende sobre inteligencia artificial, ciencias, programación, idiomas y tecnología con recursos educativos y prácticos.">
+
+    <meta name="keywords" content="educación, inteligencia artificial, programación, idiomas, tecnología, aprendizaje">
+
+    <meta name="author" content="NEXORA">
+
+    <title>NEXORA | Aprende. Explora. Desarrolla.</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="#categorias">Explorar</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#recursos">Recursos</a>
+            </nav>
+
+            <a href="#categorias" class="nav-button">
+                Comenzar a aprender
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- PRESENTACIÓN PRINCIPAL -->
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-label">
+                        UN ESPACIO PARA APRENDER Y CRECER
+                    </span>
+
+                    <h1>
+                        El conocimiento<br>
+                        abre nuevas <span>posibilidades.</span>
+                    </h1>
+
+                    <p>
+                        Explora el mundo de la tecnología, aprende nuevas
+                        habilidades y desarrolla tus conocimientos con
+                        recursos educativos diseñados para ti.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#categorias" class="btn-primary">
+                            Explorar contenido
+                        </a>
+
+                        <a href="#nosotros" class="btn-secondary">
+                            Conoce NEXORA
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="visual-card visual-main">
+                        <div class="visual-icon">✦</div>
+                        <h3>Aprende algo nuevo</h3>
+                        <p>El conocimiento es una herramienta para avanzar.</p>
+                    </div>
+
+                    <div class="floating-card floating-one">
+                        <span>⌘</span>
+                        <p>Programación</p>
+                    </div>
+
+                    <div class="floating-card floating-two">
+                        <span>✧</span>
+                        <p>Inteligencia artificial</p>
+                    </div>
+
+                    <div class="visual-circle"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSCADOR -->
+        <section class="search-section" id="recursos">
+
+            <div class="container search-container">
+
+                <div>
+                    <span class="section-label">ENCUENTRA LO QUE BUSCAS</span>
+                    <h2>¿Qué quieres aprender hoy?</h2>
+                </div>
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        id="categorySearch"
+                        placeholder="Busca una categoría..."
+                        autocomplete="off"
+                    >
+
+                    <button id="searchButton" type="button">
+                        Buscar
+                    </button>
+                </div>
+
+                <p id="searchMessage" class="search-message" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORÍAS -->
+        <section class="categories-section" id="categorias">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">EXPLORA NEXORA</span>
+                        <h2>Descubre nuestras categorías</h2>
+
+                        <p>
+                            Encuentra información, lecciones y recursos
+                            para desarrollar nuevas habilidades.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="categories-grid" id="categoriesGrid">
+
+                    <!-- INTELIGENCIA ARTIFICIAL -->
+                    <article class="category-card" data-search="inteligencia artificial ia herramientas prompts chatbots">
+                        <div class="category-icon icon-purple">✧</div>
+
+                        <span class="category-number">01</span>
+
+                        <h3>Inteligencia Artificial</h3>
+
+                        <p>
+                            Descubre herramientas de IA, aprende a utilizarlas
+                            y comprende cómo funciona esta tecnología.
+                        </p>
+
+                        <a href="pages/inteligencia-artificial/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- ACADEMIA -->
+                    <article class="category-card" data-search="academia matematicas lenguaje ciencias historia geografia">
+                        <div class="category-icon icon-blue">▤</div>
+
+                        <span class="category-number">02</span>
+
+                        <h3>Academia</h3>
+
+                        <p>
+                            Aprende matemáticas, lenguaje, ciencias naturales
+                            y conocimientos sociales.
+                        </p>
+
+                        <a href="pages/academia/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- IDIOMAS -->
+                    <article class="category-card" data-search="idiomas ingles español frances vocabulario gramatica">
+                        <div class="category-icon icon-orange">文</div>
+
+                        <span class="category-number">03</span>
+
+                        <h3>Idiomas</h3>
+
+                        <p>
+                            Aprende inglés, español y francés mediante
+                            lecciones, ejercicios y evaluaciones.
+                        </p>
+
+                        <a href="pages/idiomas/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- PROGRAMACIÓN -->
+                    <article class="category-card" data-search="programacion python javascript html css desarrollo web">
+                        <div class="category-icon icon-green">&lt;/&gt;</div>
+
+                        <span class="category-number">04</span>
+
+                        <h3>Programación</h3>
+
+                        <p>
+                            Desarrolla habilidades de programación y aprende
+                            a construir tus propios proyectos.
+                        </p>
+
+                        <a href="pages/programacion/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- CIENCIA Y TECNOLOGÍA -->
+                    <article class="category-card" data-search="ciencia tecnologia robotica machine learning ciberseguridad">
+                        <div class="category-icon icon-cyan">⌬</div>
+
+                        <span class="category-number">05</span>
+
+                        <h3>Ciencia y tecnología</h3>
+
+                        <p>
+                            Explora los avances científicos, tecnológicos
+                            y las innovaciones del mundo actual.
+                        </p>
+
+                        <a href="pages/ciencia-tecnologia/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- MÉTODOS DE ESTUDIO -->
+                    <article class="category-card" data-search="metodos estudio aprendizaje memoria pomodoro organizacion">
+                        <div class="category-icon icon-yellow">◎</div>
+
+                        <span class="category-number">06</span>
+
+                        <h3>Métodos de estudio</h3>
+
+                        <p>
+                            Descubre técnicas para organizarte, comprender
+                            mejor y aprovechar tu tiempo de aprendizaje.
+                        </p>
+
+                        <a href="pages/metodos-estudio/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- VIDEOJUEGOS -->
+                    <article class="category-card" data-search="videojuegos juegos educativos logica estrategia">
+                        <div class="category-icon icon-red">▣</div>
+
+                        <span class="category-number">07</span>
+
+                        <h3>Videojuegos educativos</h3>
+
+                        <p>
+                            Aprende y desarrolla habilidades mediante
+                            juegos, desafíos y actividades interactivas.
+                        </p>
+
+                        <a href="pages/videojuegos/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+
+                    <!-- RECURSOS -->
+                    <article class="category-card" data-search="recursos calculadoras examenes ejercicios flashcards herramientas">
+                        <div class="category-icon icon-pink">⌘</div>
+
+                        <span class="category-number">08</span>
+
+                        <h3>Herramientas y recursos</h3>
+
+                        <p>
+                            Utiliza calculadoras, ejercicios, cuestionarios
+                            y otros recursos para practicar.
+                        </p>
+
+                        <a href="pages/recursos/index.html" class="card-link">
+                            Explorar categoría <span>→</span>
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="no-results" id="noResults" hidden>
+                    No encontramos categorías que coincidan con tu búsqueda.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE NEXORA -->
+        <section class="about-section" id="nosotros">
+
+            <div class="container about-content">
+
+                <div class="about-decoration">
+                    <div class="about-symbol">N.</div>
+                    <div class="about-small-circle"></div>
+                </div>
+
+                <div class="about-text">
+
+                    <span class="section-label">NUESTRA PLATAFORMA</span>
+
+                    <h2>Aprender nunca debería dejar de ser una posibilidad.</h2>
+
+                    <p>
+                        NEXORA es un espacio educativo y tecnológico
+                        creado para facilitar el acceso al conocimiento.
+                        Reunimos diferentes áreas de aprendizaje en un
+                        mismo lugar para que puedas explorar, practicar
+                        y desarrollar nuevas habilidades.
+                    </p>
+
+                    <a href="#categorias" class="btn-primary">
+                        Comienza a explorar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- APRENDIZAJE -->
+        <section class="learning-section">
+
+            <div class="container learning-content">
+
+                <span class="section-label">APRENDE A TU RITMO</span>
+
+                <h2>No se trata solamente de leer.<br>
+                    También se trata de <span>practicar.</span>
+                </h2>
+
+                <p>
+                    NEXORA incorporará lecciones, ejemplos, ejercicios
+                    y pequeños exámenes para ayudarte a comprobar
+                    lo que has aprendido.
+                </p>
+
+                <a href="#categorias" class="btn-primary">
+                    Descubrir contenidos
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    NEXORA<span>.</span>
+                </a>
+
+                <p>
+                    Aprende. Explora. Desarrolla.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#nosotros">Nosotros</a>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> NEXORA. Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

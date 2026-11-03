@@ -1,0 +1,7 @@
+{"questions":[
+ {"question":"¿Cuál opción delimita mejor una investigación?","options":["Las plantas","¿Cómo cambia la altura de plantas de frijol durante cuatro semanas?","La naturaleza es interesante"],"answer":1,"explanation":"La pregunta especifica qué se observa, en qué organismo y durante qué periodo."},
+ {"question":"Si mides altura, ¿qué ayuda a comparar mediciones?","options":["Cambiar la unidad cada día","Usar la misma unidad y un procedimiento consistente","Anotar solo el resultado que esperabas"],"answer":1,"explanation":"Un procedimiento consistente hace que las mediciones sean comparables."},
+ {"question":"¿Qué conviene hacer con resultados inesperados?","options":["Registrarlos y revisar qué evidencia ofrecen","Borrarlos para confirmar la predicción","Cambiar la pregunta después de ver el resultado sin explicarlo"],"answer":0,"explanation":"Los datos inesperados también son evidencia y pueden ayudar a revisar el método o la pregunta."},
+ {"question":"¿Qué debe reflejar una conclusión?","options":["La predicción inicial sin importar los datos","La evidencia y sus límites","La opinión más popular"],"answer":1,"explanation":"Una conclusión científica debe ajustarse a los datos y reconocer limitaciones."},
+ {"question":"¿Qué caracteriza un procedimiento repetible?","options":["Otra persona puede entender los pasos y condiciones","No necesita registrar materiales","Debe producir siempre el resultado esperado"],"answer":0,"explanation":"Describir materiales, pasos y registro permite que otra persona comprenda o repita el método."}
+]}

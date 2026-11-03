@@ -1,0 +1,41 @@
+{
+  "title": "English A1: saludar y presentarse",
+  "description": "Practica saludos sencillos, nombres y frases básicas para presentarte en inglés inicial.",
+  "category": "Idiomas",
+  "subcategory": "Inglés A1",
+  "introduction": "En una primera conversación puedes saludar, decir tu nombre y preguntar el nombre de otra persona. Trabajaremos expresiones breves y el verbo be en frases afirmativas y preguntas sencillas.",
+  "sections": [
+    {
+      "title": "Elige el saludo adecuado",
+      "paragraphs": [
+        "Hello y Hi son saludos comunes. Good morning suele usarse por la mañana; Good afternoon, por la tarde; y Good evening, al saludar por la noche.",
+        "Goodbye y Bye sirven para despedirse. Nice to meet you significa “encantado/a de conocerte”; se usa al conocer a alguien, no como saludo inicial.",
+        "Modelo útil: Hello! Good morning. Usa Hello o Hi en muchos contextos; si no sabes qué saludo elegir, Hello funciona como opción general. La respuesta habitual puede ser Hello! o Hi!."
+      ]
+    },
+    {
+      "title": "Preséntate con nombre y verbo be",
+      "paragraphs": [
+        "La estructura My name is Ana significa “Me llamo Ana”. También puedes decir I am Ana o la forma contraída I'm Ana.",
+        "Para preguntar el nombre, usa What's your name? En una conversación formal puedes decir May I have your name?, aunque esa frase es menos básica.",
+        "Con I usamos am: I am Luis. Con you usamos are: You are Maya. Las contracciones I'm y you're son habituales al hablar.",
+        "Para preguntar, cambia el orden: Are you Maya? La respuesta breve puede ser Yes, I am o No, I'm not. No respondas Yes, you are cuando te preguntan a ti.",
+        "Modelo intercambiable: My name is Lucía. I am from Santo Domingo. Puedes cambiar el nombre y el lugar; al hablar, My name is suele contraerse a My name's, e I am a student a I'm a student."
+      ]
+    },
+    {
+      "title": "Une las frases para una conversación breve",
+      "paragraphs": [
+        "Puedes unir las frases: Hello. I'm Ana. Nice to meet you. Para continuar, añade una información sencilla que conozcas y puedas expresar con seguridad.",
+        "Practica despacio y escucha la pronunciación. No necesitas memorizar un diálogo largo: aprende el patrón y cambia el nombre para crear frases nuevas.",
+        "Diálogo breve: A: Hi, I am Ana. What is your name? B: Hello, I am Leo. Nice to meet you. A: Nice to meet you, too. Practica cambiando los nombres; habla por frases y no traduzcas palabra por palabra."
+      ]
+    }
+  ],
+  "summary": "Para presentarte: saluda, di My name is… o I'm…, y responde Nice to meet you. Recuerda I am / I'm, you are / you're y el orden Are you…? en preguntas.",
+  "practice": {
+    "question": "Completa la frase: ___ Ana. (Me llamo Ana; usa la contracción)",
+    "answer": "i'm",
+    "hint": "La contracción de I am es I'm."
+  }
+}

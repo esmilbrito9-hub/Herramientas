@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Inteligencia Artificial",
+    "description": "Comprende los tipos de inteligencia artificial, verifica sus respuestas y compara herramientas adecuadas para cada tarea.",
+    "icon": "✧",
+    "color": "icon-purple",
+    "search": "inteligencia artificial ia herramientas prompts chatbots",
+    "url": "pages/inteligencia-artificial/index.html",
+    "subcategories": [
+      {
+        "name": "Fundamentos de IA",
+        "slug": "fundamentos",
+        "description": "Conceptos, historia, tipos de sistemas y límites de la inteligencia artificial."
+      },
+      {
+        "name": "Herramientas de IA",
+        "slug": "herramientas",
+        "description": "Usos y criterios para elegir herramientas de escritura, diseño, estudio y productividad."
+      },
+      {
+        "name": "Tutoriales",
+        "slug": "tutoriales",
+        "description": "Guías prácticas para formular instrucciones y trabajar con asistentes de IA."
+      },
+      {
+        "name": "Comparativas",
+        "slug": "comparativas",
+        "description": "Comparaciones basadas en capacidades, acceso, privacidad y casos de uso."
+      }
+    ]
+  },
+  {
+    "name": "Academia",
+    "description": "Aprende matemáticas, lenguaje, ciencias naturales y conocimientos sociales.",
+    "icon": "▤",
+    "color": "icon-blue",
+    "search": "academia matematicas lenguaje ciencias historia geografia",
+    "url": "pages/academia/index.html",
+    "subcategories": [
+      {
+        "name": "Matemáticas",
+        "slug": "matematicas",
+        "description": "Aritmética, álgebra, geometría y resolución razonada de problemas."
+      },
+      {
+        "name": "Lengua y literatura",
+        "slug": "lengua-literatura",
+        "description": "Lectura comprensiva, escritura, gramática y análisis de textos."
+      },
+      {
+        "name": "Ciencias naturales",
+        "slug": "ciencias-naturales",
+        "description": "Biología, física, química y comprensión del mundo natural."
+      },
+      {
+        "name": "Ciencias sociales",
+        "slug": "ciencias-sociales",
+        "description": "Historia, geografía, ciudadanía y análisis de sociedades."
+      }
+    ]
+  },
+  {
+    "name": "Idiomas",
+    "description": "Aprende inglés, español y francés mediante lecciones, ejercicios y evaluaciones.",
+    "icon": "文",
+    "color": "icon-orange",
+    "search": "idiomas ingles español frances vocabulario gramatica",
+    "url": "pages/idiomas/index.html",
+    "subcategories": [
+      {
+        "name": "Inglés A1",
+        "slug": "ingles-a1",
+        "description": "Nivel inicial del MCER: expresiones cotidianas y comunicación muy básica."
+      },
+      {
+        "name": "Inglés A2",
+        "slug": "ingles-a2",
+        "description": "Nivel básico del MCER: intercambios sencillos sobre temas familiares."
+      },
+      {
+        "name": "Inglés B1",
+        "slug": "ingles-b1",
+        "description": "Nivel intermedio del MCER: situaciones habituales y temas conocidos."
+      },
+      {
+        "name": "Inglés B2",
+        "slug": "ingles-b2",
+        "description": "Nivel intermedio alto del MCER: textos complejos y conversación fluida."
+      },
+      {
+        "name": "Inglés C1",
+        "slug": "ingles-c1",
+        "description": "Nivel avanzado del MCER: comprensión amplia y expresión flexible."
+      },
+      {
+        "name": "Inglés C2",
+        "slug": "ingles-c2",
+        "description": "Dominio avanzado del MCER: comprensión y expresión precisa en contextos complejos."
+      },
+      {
+        "name": "Español A1",
+        "slug": "espanol-a1",
+        "description": "Nivel inicial del MCER: expresiones cotidianas y comunicación muy básica."
+      },
+      {
+        "name": "Español A2",
+        "slug": "espanol-a2",
+        "description": "Nivel básico del MCER: intercambios sencillos sobre temas familiares."
+      },
+      {
+        "name": "Español B1",
+        "slug": "espanol-b1",
+        "description": "Nivel intermedio del MCER: situaciones habituales y temas conocidos."
+      },
+      {
+        "name": "Español B2",
+        "slug": "espanol-b2",
+        "description": "Nivel intermedio alto del MCER: textos complejos y conversación fluida."
+      },
+      {
+        "name": "Español C1",
+        "slug": "espanol-c1",
+        "description": "Nivel avanzado del MCER: comprensión amplia y expresión flexible."
+      },
+      {
+        "name": "Español C2",
+        "slug": "espanol-c2",
+        "description": "Dominio avanzado del MCER: comprensión y expresión precisa en contextos complejos."
+      },
+      {
+        "name": "Francés A1",
+        "slug": "frances-a1",
+        "description": "Nivel inicial del MCER: expresiones cotidianas y comunicación muy básica."
+      },
+      {
+        "name": "Francés A2",
+        "slug": "frances-a2",
+        "description": "Nivel básico del MCER: intercambios sencillos sobre temas familiares."
+      },
+      {
+        "name": "Francés B1",
+        "slug": "frances-b1",
+        "description": "Nivel intermedio del MCER: situaciones habituales y temas conocidos."
+      },
+      {
+        "name": "Francés B2",
+        "slug": "frances-b2",
+        "description": "Nivel intermedio alto del MCER: textos complejos y conversación fluida."
+      },
+      {
+        "name": "Francés C1",
+        "slug": "frances-c1",
+        "description": "Nivel avanzado del MCER: comprensión amplia y expresión flexible."
+      },
+      {
+        "name": "Francés C2",
+        "slug": "frances-c2",
+        "description": "Dominio avanzado del MCER: comprensión y expresión precisa en contextos complejos."
+      },
+      {
+        "name": "Cómo aprender idiomas",
+        "slug": "aprendizaje",
+        "description": "Estrategias de vocabulario, escucha, lectura y práctica comunicativa."
+      }
+    ]
+  },
+  {
+    "name": "Programación",
+    "description": "Desarrolla habilidades de programación y aprende a construir tus propios proyectos.",
+    "icon": "</>",
+    "color": "icon-green",
+    "search": "programacion python javascript html css desarrollo web",
+    "url": "pages/programacion/index.html",
+    "subcategories": [
+      {
+        "name": "Fundamentos",
+        "slug": "fundamentos",
+        "description": "Lógica, algoritmos, variables, condiciones y estructuras de repetición."
+      },
+      {
+        "name": "Python",
+        "slug": "python",
+        "description": "Sintaxis y resolución de problemas con el lenguaje Python."
+      },
+      {
+        "name": "Desarrollo web",
+        "slug": "desarrollo-web",
+        "description": "HTML, CSS y JavaScript para construir experiencias web accesibles."
+      },
+      {
+        "name": "Proyectos",
+        "slug": "proyectos",
+        "description": "Práctica guiada para planificar, construir y revisar proyectos."
+      }
+    ]
+  },
+  {
+    "name": "Ciencia y tecnología",
+    "description": "Explora los avances científicos, tecnológicos y las innovaciones del mundo actual.",
+    "icon": "⌬",
+    "color": "icon-cyan",
+    "search": "ciencia tecnologia robotica machine learning ciberseguridad",
+    "url": "pages/ciencia-tecnologia/index.html",
+    "subcategories": [
+      {
+        "name": "Ciencia",
+        "slug": "ciencia",
+        "description": "Método científico, disciplinas y lectura crítica de evidencias."
+      },
+      {
+        "name": "Tecnología",
+        "slug": "tecnologia",
+        "description": "Sistemas, dispositivos y principios detrás de tecnologías cotidianas."
+      },
+      {
+        "name": "Robótica",
+        "slug": "robotica",
+        "description": "Sensores, actuadores, control y diseño de sistemas robóticos."
+      },
+      {
+        "name": "Seguridad digital",
+        "slug": "seguridad-digital",
+        "description": "Prácticas básicas para proteger dispositivos, datos e identidad digital."
+      }
+    ]
+  },
+  {
+    "name": "Métodos de estudio",
+    "description": "Descubre técnicas para organizarte, comprender mejor y aprovechar tu tiempo.",
+    "icon": "◎",
+    "color": "icon-yellow",
+    "search": "metodos estudio aprendizaje memoria pomodoro organizacion",
+    "url": "pages/metodos-estudio/index.html",
+    "subcategories": [
+      {
+        "name": "Memoria y comprensión",
+        "slug": "memoria-comprension",
+        "description": "Recuperación activa, práctica espaciada y elaboración de conceptos."
+      },
+      {
+        "name": "Planificación",
+        "slug": "planificacion",
+        "description": "Organización del tiempo, objetivos y seguimiento del progreso."
+      },
+      {
+        "name": "Toma de apuntes",
+        "slug": "apuntes",
+        "description": "Métodos para registrar, relacionar y revisar información."
+      },
+      {
+        "name": "Preparación de exámenes",
+        "slug": "examenes",
+        "description": "Repaso, práctica con preguntas y estrategias para evaluaciones."
+      }
+    ]
+  },
+  {
+    "name": "Videojuegos para aprender",
+    "description": "Descubre videojuegos y experiencias interactivas que ayudan a practicar distintas habilidades de NEXORA, desde matemáticas e idiomas hasta programación y ciencia.",
+    "icon": "▣",
+    "color": "icon-red",
+    "search": "videojuegos juegos educativos matematicas idiomas ciencia programacion aprender habilidades",
+    "url": "pages/videojuegos/index.html",
+    "subcategories": [
+      {
+        "name": "Matemáticas y academia",
+        "slug": "matematicas-academia",
+        "description": "Juegos para explorar números, operaciones, álgebra y otros conceptos académicos."
+      },
+      {
+        "name": "Idiomas",
+        "slug": "idiomas",
+        "description": "Experiencias jugables para ampliar vocabulario y practicar pronunciación en otro idioma."
+      },
+      {
+        "name": "Programación e inteligencia artificial",
+        "slug": "programacion-ia",
+        "description": "Retos interactivos para practicar código, pensamiento computacional y alfabetización en IA."
+      },
+      {
+        "name": "Ciencia, tecnología y estudio",
+        "slug": "ciencia-estudio",
+        "description": "Simulaciones y juegos de repaso para explorar fenómenos y recordar lo aprendido."
+      }
+    ]
+  },
+  {
+    "name": "Herramientas y recursos",
+    "description": "Utiliza calculadoras, ejercicios, cuestionarios y otros recursos para practicar.",
+    "icon": "⌘",
+    "color": "icon-pink",
+    "search": "recursos calculadoras examenes ejercicios flashcards herramientas",
+    "url": "pages/recursos/index.html",
+    "subcategories": [
+      {
+        "name": "Calculadoras",
+        "slug": "calculadoras",
+        "description": "Herramientas de cálculo con operaciones y resultados explicados."
+      },
+      {
+        "name": "Cuestionarios",
+        "slug": "cuestionarios",
+        "description": "Evaluaciones autocorregibles para practicar contenidos publicados."
+      },
+      {
+        "name": "Material descargable",
+        "slug": "materiales",
+        "description": "Guías y hojas de práctica vinculadas a lecciones concretas."
+      },
+      {
+        "name": "Glosarios",
+        "slug": "glosarios",
+        "description": "Definiciones contextualizadas de términos por área de aprendizaje."
+      }
+    ]
+  }
+]

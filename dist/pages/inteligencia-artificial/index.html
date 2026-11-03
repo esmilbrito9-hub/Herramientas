@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Comprende los tipos de inteligencia artificial, verifica sus respuestas y compara herramientas adecuadas para cada tarea.">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="Inteligencia Artificial | NEXORA">
+    <meta property="og:description" content="Comprende los tipos de inteligencia artificial, verifica sus respuestas y compara herramientas adecuadas para cada tarea.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Inteligencia Artificial | NEXORA</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+<link rel="stylesheet" href="../../assets/css/guides.css">
+    <script src="../../assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="../../index.html" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../../index.html">
+                Inicio
+            </a>
+
+            <a href="../../index.html#categorias">
+                Explorar
+            </a>
+
+            <a href="../../index.html#nosotros">
+                Nosotros
+            </a>
+
+            <a href="../../index.html#busqueda">
+                Recursos
+            </a>
+
+        </nav>
+
+        <a class="language-toggle" href="../../en/pages/inteligencia-artificial/index.html" hreflang="en" lang="en" aria-label="Cambiar idioma a inglés">EN</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">☾</button>
+
+        <a
+            href="../../index.html#categorias"
+            class="nav-button">
+
+            Comenzar a aprender
+
+        </a>
+
+    </div>
+
+</header>
+    <main>
+<section class="category-hero">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="../../index.html">Inicio</a><span aria-hidden="true">›</span><span aria-current="page">Inteligencia Artificial</span></nav>
+        <div class="category-hero-layout">
+            <div><span class="section-label">EXPLORA NEXORA</span><h1>Inteligencia Artificial</h1><p>Comprende los tipos de inteligencia artificial, verifica sus respuestas y compara herramientas adecuadas para cada tarea.</p></div>
+            <figure class="category-hero-image"><img src="../../assets/images/inteligencia-artificial.jpg" alt="Robot blanco de diseño minimalista, como imagen de apertura para inteligencia artificial." width="900" height="560" fetchpriority="high"><figcaption><a href="https://unsplash.com/s/photos/ai-in-healthcare" target="_blank" rel="noopener noreferrer">Unsplash · Ver imagen</a></figcaption></figure>
+        </div>
+    </div>
+</section>
+<section class="learning-guide ai-guide" id="guia-ia" aria-labelledby="guide-title">
+    <div class="container">
+        <span class="section-label">GUÍA PRÁCTICA</span>
+        <h2 id="guide-title">Tipos de IA y guía para elegir herramientas</h2>
+        <p class="guide-introduction">La inteligencia artificial no es una sola clase de programa. Estas familias describen tareas y técnicas que pueden combinarse en un mismo producto; una herramienta de conversación, por ejemplo, puede generar texto, buscar en la web y analizar imágenes.</p>
+        <h3>Familias y capacidades de la IA</h3>
+        <div class="ai-type-grid">
+<article class="ai-type-card"><h4>IA generativa</h4><p>Produce contenido nuevo —texto, imágenes, audio, video o código— a partir de instrucciones y ejemplos aprendidos. Revisa los datos y derechos antes de publicar lo que genera.</p></article><article class="ai-type-card"><h4>Procesamiento del lenguaje y asistentes</h4><p>Interpreta y genera lenguaje para resumir, traducir, explicar o conversar. Puede sonar segura y aun así equivocarse; pide fuentes y verifica los puntos importantes.</p></article><article class="ai-type-card"><h4>Visión por computadora</h4><p>Analiza fotografías y video para reconocer objetos, leer texto, detectar patrones o describir escenas. El resultado puede fallar con imágenes borrosas, contextos nuevos o detalles pequeños.</p></article><article class="ai-type-card"><h4>Voz y audio</h4><p>Convierte voz en texto, crea narración o identifica características del sonido. Comprueba nombres propios, acentos, puntuación y permisos de grabación.</p></article><article class="ai-type-card"><h4>Predicción y clasificación</h4><p>Usa datos para estimar una cantidad o asignar una etiqueta, por ejemplo detectar correo no deseado. Una correlación no demuestra causalidad y los datos sesgados producen resultados sesgados.</p></article><article class="ai-type-card"><h4>Recomendación y sistemas con herramientas</h4><p>Los recomendadores ordenan opciones según señales de uso; los agentes pueden planear pasos y llamar herramientas. Revisa criterios, permisos y acciones antes de aceptar decisiones automáticas.</p></article>        </div>
+        <section class="ai-quick-finder" aria-labelledby="ai-quick-title">
+            <span class="section-label">ACCESO RÁPIDO</span>
+            <h3 id="ai-quick-title">¿Qué necesitas hacer?</h3>
+            <p>Elige una tarea y compara opciones gratuitas y de pago recomendadas para ese uso.</p>
+            <label for="aiTaskSelect">Necesito ayuda para…</label>
+            <select id="aiTaskSelect" aria-controls="aiTaskResults">
+                <option value="">Selecciona una tarea</option>
+<option value="assistant">Explicar, estudiar o redactar</option><option value="research">Investigar en la web con fuentes</option><option value="study">Estudiar mis apuntes o PDF</option><option value="coding">Programar o corregir código</option><option value="translate">Traducir o mejorar un texto</option><option value="images">Crear o editar imágenes</option><option value="video">Crear o editar videos</option><option value="audio">Crear voz, narración o audio</option>            </select>
+            <p class="ai-quick-status" id="aiTaskStatus" aria-live="polite">Selecciona una tarea para ver herramientas recomendadas.</p>
+            <div class="ai-quick-results" id="aiTaskResults" aria-live="polite">
+                <section class="ai-quick-panel" data-ai-task-panel="assistant" aria-label="Recomendaciones: Explicar, estudiar o redactar" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Free</h5>
+                                <span class="tool-price">US$0; herramientas y límites variables</span>
+                                <p>Buena primera opción general para pedir explicaciones, revisar un borrador y trabajar con búsqueda o archivos con límites gratuitos.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Free ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="Logo de Gemini (acceso gratuito)" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Gemini (acceso gratuito)</h5>
+                                <span class="tool-price">US$0; límites de uso</span>
+                                <p>Útil para preguntas generales y para quien ya utiliza los servicios de Google. La disponibilidad de funciones varía por cuenta y país.</p>
+                                <div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir Gemini (acceso gratuito) ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://claude.ai&amp;sz=128" alt="Logo de Claude Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Claude Free</h5>
+                                <span class="tool-price">US$0; uso limitado</span>
+                                <p>Alternativa para leer, resumir y mejorar textos largos; el acceso depende de la región y puede limitarse cuando hay mucha demanda.</p>
+                                <div class="tool-links"><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Abrir Claude Free ↗</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://deepseek.com&amp;sz=128" alt="Logo de DeepSeek" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>DeepSeek</h5>
+                                <span class="tool-price">US$0; acceso gratuito en su asistente web y aplicación</span>
+                                <p>Alternativa gratuita para explicaciones, razonamiento y consultas generales. Comprueba respuestas y evita subir datos sensibles; disponibilidad, funciones y tratamiento de datos dependen del servicio y la región.</p>
+                                <div class="tool-links"><a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">Abrir DeepSeek ↗</a><a href="https://www.deepseek.com/news/deepseek-app/" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Plus" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Plus</h5>
+                                <span class="tool-price">Aprox. US$20/mes</span>
+                                <p>Primera elección general por reunir conversación, razonamiento, archivos, voz e imágenes en una sola suscripción. Tiene topes de uso y la API se cobra aparte.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Plus ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://claude.ai&amp;sz=128" alt="Logo de Claude Pro" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Claude Pro</h5>
+                                <span class="tool-price">Aprox. US$20/mes; anual US$200 (equivale a unos US$17/mes, cobrado por adelantado)</span>
+                                <p>Muy buena alternativa para escribir, revisar documentos extensos y trabajar con proyectos; el acceso puede depender del país.</p>
+                                <div class="tool-links"><a href="https://claude.ai/upgrade" target="_blank" rel="noopener noreferrer">Abrir Claude Pro ↗</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="Logo de Google AI Pro" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Google AI Pro</h5>
+                                <span class="tool-price">Aprox. US$19,99/mes; anual US$199,99</span>
+                                <p>Adecuada si valoras la integración con Gemini, Gmail, Docs y almacenamiento de Google; algunas ventajas varían por región.</p>
+                                <div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir Google AI Pro ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="research" aria-label="Recomendaciones: Investigar en la web con fuentes" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://perplexity.ai&amp;sz=128" alt="Logo de Perplexity Standard" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Perplexity Standard</h5>
+                                <span class="tool-price">US$0; búsquedas avanzadas limitadas</span>
+                                <p>Primera opción para preguntas de actualidad porque organiza respuestas con enlaces a fuentes. Abre las fuentes y comprueba que respalden la afirmación.</p>
+                                <div class="tool-links"><a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Abrir Perplexity Standard ↗</a><a href="https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Free con búsqueda web" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Free con búsqueda web</h5>
+                                <span class="tool-price">US$0; límites variables</span>
+                                <p>Conveniente para combinar búsqueda, preguntas de seguimiento y explicación sencilla en una misma conversación.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Free con búsqueda web ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="Logo de Gemini (acceso gratuito)" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Gemini (acceso gratuito)</h5>
+                                <span class="tool-price">US$0; disponibilidad variable</span>
+                                <p>Otra opción para investigar y contrastar resultados; revisa fechas y abre los enlaces citados antes de usar los datos.</p>
+                                <div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir Gemini (acceso gratuito) ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://perplexity.ai&amp;sz=128" alt="Logo de Perplexity Pro" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Perplexity Pro</h5>
+                                <span class="tool-price">Aprox. US$20/mes o US$200/año</span>
+                                <p>Primera opción para investigar temas actuales: prioriza búsqueda web, citas, archivos y consultas de investigación con mayor capacidad que el plan gratis.</p>
+                                <div class="tool-links"><a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Abrir Perplexity Pro ↗</a><a href="https://www.perplexity.ai/es/hub/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Plus" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Plus</h5>
+                                <span class="tool-price">Aprox. US$20/mes</span>
+                                <p>Mejor si necesitas alternar investigación con análisis de archivos, razonamiento y redacción. Abre las fuentes: una cita automática también debe revisarse.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Plus ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="Logo de Google AI Pro" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Google AI Pro</h5>
+                                <span class="tool-price">Aprox. US$19,99/mes</span>
+                                <p>Buena opción si ya trabajas dentro de Google y quieres combinar Gemini con sus herramientas de productividad.</p>
+                                <div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir Google AI Pro ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="study" aria-label="Recomendaciones: Estudiar mis apuntes o PDF" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://notebooklm.google&amp;sz=128" alt="Logo de Gemini Notebook" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Gemini Notebook</h5>
+                                <span class="tool-price">US$0; funciones y límites pueden variar</span>
+                                <p>Trabaja con fuentes que tú aportas y ayuda a resumirlas, crear preguntas y estudiar con referencias a los materiales. Revisa cada cita en el documento original.</p>
+                                <div class="tool-links"><a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">Abrir Gemini Notebook ↗</a><a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="Logo de Google AI Pro con Gemini Notebook" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Google AI Pro con Gemini Notebook</h5>
+                                <span class="tool-price">Aprox. US$19,99/mes o US$199,99/año en EE. UU.</span>
+                                <p>Añade límites más altos y funciones de Gemini y Gemini Notebook para investigar y trabajar con materiales. La disponibilidad cambia según país; verifica que las funciones estén habilitadas en tu cuenta.</p>
+                                <div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir Google AI Pro con Gemini Notebook ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="coding" aria-label="Recomendaciones: Programar o corregir código" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://github.com&amp;sz=128" alt="Logo de GitHub Copilot Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>GitHub Copilot Free</h5>
+                                <span class="tool-price">US$0; hasta 2.000 completados al mes y límites de chat/agentes</span>
+                                <p>La opción gratuita más directa dentro de editores compatibles: propone código mientras escribes. Lee, ejecuta y prueba cada sugerencia; el autocompletado no verifica la lógica.</p>
+                                <div class="tool-links"><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Abrir GitHub Copilot Free ↗</a><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Free</h5>
+                                <span class="tool-price">US$0; límites variables</span>
+                                <p>Útil para explicar un error o pedir un ejemplo pequeño fuera del editor. Comparte solo fragmentos sin claves ni información privada.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Free ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://github.com&amp;sz=128" alt="Logo de GitHub Copilot Pro" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>GitHub Copilot Pro</h5>
+                                <span class="tool-price">Aprox. US$10/mes; incluye una asignación de créditos de IA, con uso adicional sujeto a límites</span>
+                                <p>Primera elección por precio y autocompletado integrado en editores. Chat, agentes y modelos premium consumen créditos; revisa las cuotas antes de depender de ellos.</p>
+                                <div class="tool-links"><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Abrir GitHub Copilot Pro ↗</a><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://claude.ai&amp;sz=128" alt="Logo de Claude Pro" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Claude Pro</h5>
+                                <span class="tool-price">Aprox. US$20/mes</span>
+                                <p>Útil para explicar código, planear cambios y revisar fragmentos largos en conversación; no sustituye ejecutar pruebas.</p>
+                                <div class="tool-links"><a href="https://claude.ai/upgrade" target="_blank" rel="noopener noreferrer">Abrir Claude Pro ↗</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Plus" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Plus</h5>
+                                <span class="tool-price">Aprox. US$20/mes</span>
+                                <p>Alternativa versátil para depurar, aprender conceptos y analizar archivos; confirma los cambios en tu propio entorno.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Plus ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="translate" aria-label="Recomendaciones: Traducir o mejorar un texto" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://deepl.com&amp;sz=128" alt="Logo de DeepL Translator" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>DeepL Translator</h5>
+                                <span class="tool-price">US$0; límite de 50.000 caracteres por mes en la versión gratuita</span>
+                                <p>Especializado en traducir textos y documentos breves; permite comparar formulaciones en los idiomas admitidos. La traducción puede perder matices, así que revisa nombres, tono y vocabulario técnico.</p>
+                                <div class="tool-links"><a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer">Abrir DeepL Translator ↗</a><a href="https://www.deepl.com/en/pro" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://deepl.com&amp;sz=128" alt="Logo de DeepL Pro Individual" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>DeepL Pro Individual</h5>
+                                <span class="tool-price">Aprox. US$8,74/mes con facturación anual en EE. UU.</span>
+                                <p>Para traducción recurrente de documentos con funciones de privacidad, glosario y más volumen que el plan gratuito. El monto depende de región y facturación; la prueba y el precio pueden cambiar.</p>
+                                <div class="tool-links"><a href="https://www.deepl.com/en/pro" target="_blank" rel="noopener noreferrer">Abrir DeepL Pro Individual ↗</a><a href="https://www.deepl.com/en/pro" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="images" aria-label="Recomendaciones: Crear o editar imágenes" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://firefly.adobe.com&amp;sz=128" alt="Logo de Adobe Firefly Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Adobe Firefly Free</h5>
+                                <span class="tool-price">US$0; generaciones diarias limitadas</span>
+                                <p>Buena opción gratuita para probar generación y edición visual; los créditos y las funciones disponibles cambian por plan.</p>
+                                <div class="tool-links"><a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Abrir Adobe Firefly Free ↗</a><a href="https://www.adobe.com/products/firefly/plans.html" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Free</h5>
+                                <span class="tool-price">US$0; generación con límites</span>
+                                <p>Práctico cuando quieres describir, generar y ajustar una imagen conversando. Los límites gratuitos pueden variar.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Free ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://canva.com&amp;sz=128" alt="Logo de Canva AI Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Canva AI Free</h5>
+                                <span class="tool-price">US$0; acceso y usos de IA limitados según función</span>
+                                <p>Útil para crear diseños, imágenes y piezas visuales desde un mismo editor. Las funciones de IA consumen cuotas compartidas y varían por plan.</p>
+                                <div class="tool-links"><a href="https://www.canva.com/ai/" target="_blank" rel="noopener noreferrer">Abrir Canva AI Free ↗</a><a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://midjourney.com&amp;sz=128" alt="Logo de Midjourney Basic" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Midjourney Basic</h5>
+                                <span class="tool-price">Aprox. US$10/mes; anual US$96 (unos US$8/mes, cobrado por adelantado)</span>
+                                <p>Primera opción de esta lista para explorar estilos y crear imágenes con énfasis visual. El plan Basic tiene tiempo de generación limitado y no ofrece modo privado.</p>
+                                <div class="tool-links"><a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer">Abrir Midjourney Basic ↗</a><a href="https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://firefly.adobe.com&amp;sz=128" alt="Logo de Adobe Firefly Standard" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Adobe Firefly Standard</h5>
+                                <span class="tool-price">Aprox. US$9,99/mes</span>
+                                <p>Muy conveniente para edición e integración con flujos creativos de Adobe; incluye créditos generativos para funciones premium.</p>
+                                <div class="tool-links"><a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Abrir Adobe Firefly Standard ↗</a><a href="https://www.adobe.com/products/firefly/plans.html" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="Logo de ChatGPT Plus" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ChatGPT Plus</h5>
+                                <span class="tool-price">Aprox. US$20/mes</span>
+                                <p>Conviene si quieres crear, ajustar y conversar sobre imágenes junto a tareas de texto, sin contratar un servicio dedicado solo a arte.</p>
+                                <div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Plus ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="video" aria-label="Recomendaciones: Crear o editar videos" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://runway.com&amp;sz=128" alt="Logo de Runway Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Runway Free</h5>
+                                <span class="tool-price">US$0; 125 créditos de prueba de una sola vez</span>
+                                <p>Permite probar generación y edición de imagen, video y audio con créditos iniciales que no caducan. Úsalo para clips de prueba y comprueba el consumo antes de generar.</p>
+                                <div class="tool-links"><a href="https://runway.com/" target="_blank" rel="noopener noreferrer">Abrir Runway Free ↗</a><a href="https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://runway.com&amp;sz=128" alt="Logo de Runway Standard" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>Runway Standard</h5>
+                                <span class="tool-price">Desde aprox. US$12/mes con facturación anual</span>
+                                <p>Incluye una asignación mensual de créditos para crear imagen, video y audio con más capacidad que la prueba gratuita. Evalúa créditos por generación y los derechos de uso antes de producir material comercial.</p>
+                                <div class="tool-links"><a href="https://runway.com/" target="_blank" rel="noopener noreferrer">Abrir Runway Standard ↗</a><a href="https://runway.com/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="ai-quick-panel" data-ai-task-panel="audio" aria-label="Recomendaciones: Crear voz, narración o audio" hidden>
+                    <div class="ai-quick-group" data-ai-plan-group="free">
+                        <h4>Opciones gratuitas</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="free">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://elevenlabs.io&amp;sz=128" alt="Logo de ElevenLabs Free" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ElevenLabs Free</h5>
+                                <span class="tool-price">US$0; 10.000 créditos al mes</span>
+                                <p>Genera voz, transcripción, efectos y música con límites mensuales. Revisa derechos y consentimiento antes de clonar o publicar una voz.</p>
+                                <div class="tool-links"><a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">Abrir ElevenLabs Free ↗</a><a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="ai-quick-group" data-ai-plan-group="paid">
+                        <h4>Opciones de pago</h4>
+                        <div class="ai-quick-grid">
+                            <article class="ai-quick-card" data-ai-plan="paid">
+                                <img src="https://www.google.com/s2/favicons?domain_url=https://elevenlabs.io&amp;sz=128" alt="Logo de ElevenLabs Starter" width="56" height="56" loading="lazy" decoding="async">
+                                <h5>ElevenLabs Starter</h5>
+                                <span class="tool-price">Aprox. US$6/mes después de una oferta inicial; 30.000 créditos mensuales</span>
+                                <p>Incluye más créditos y licencia comercial según el plan, además de clonación instantánea de voz. Revisa condiciones de consentimiento y licencia para cada uso.</p>
+                                <div class="tool-links"><a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">Abrir ElevenLabs Starter ↗</a><a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Plan y detalles ↗</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="guide-ranking">
+            <div class="guide-section-heading"><div><h3>Elige según la tarea</h3><p>Orden editorial de NEXORA según ajuste a cada tarea, facilidad de uso y acceso disponible. No es una prueba universal de calidad: la respuesta depende del modelo, la instrucción, los límites de uso y la versión del producto.</p></div></div>
+            <div class="guide-filters" role="group" aria-label="Filtrar herramientas por precio">
+                <button type="button" data-plan-filter="all" aria-pressed="true">Todas</button>
+                <button type="button" data-plan-filter="free" aria-pressed="false">Gratis</button>
+                <button type="button" data-plan-filter="paid" aria-pressed="false">Pagadas</button>
+            </div>
+            <p class="guide-filter-status visually-hidden" id="planFilterStatus" aria-live="polite">Se muestran herramientas gratuitas y pagadas.</p>
+            <div class="plan-panels">
+                <section class="plan-panel" data-plan-panel="free" aria-labelledby="free-tools-title">
+                    <h3 id="free-tools-title">Opciones gratuitas</h3>
+                    <p>Ordenadas por utilidad para la tarea; el plan gratuito suele tener límites.</p>
+                    <div class="ai-task-grid">
+                        <details class="ai-task-card" open><summary>Explicar, estudiar y redactar</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Free</strong><span class="tool-price">US$0; herramientas y límites variables</span><p>Buena primera opción general para pedir explicaciones, revisar un borrador y trabajar con búsqueda o archivos con límites gratuitos.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Gemini (acceso gratuito)</strong><span class="tool-price">US$0; límites de uso</span><p>Útil para preguntas generales y para quien ya utiliza los servicios de Google. La disponibilidad de funciones varía por cuenta y país.</p><div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://claude.ai&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Claude Free</strong><span class="tool-price">US$0; uso limitado</span><p>Alternativa para leer, resumir y mejorar textos largos; el acceso depende de la región y puede limitarse cuando hay mucha demanda.</p><div class="tool-links"><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://deepseek.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>DeepSeek</strong><span class="tool-price">US$0; acceso gratuito en su asistente web y aplicación</span><p>Alternativa gratuita para explicaciones, razonamiento y consultas generales. Comprueba respuestas y evita subir datos sensibles; disponibilidad, funciones y tratamiento de datos dependen del servicio y la región.</p><div class="tool-links"><a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://www.deepseek.com/news/deepseek-app/" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Buscar información reciente</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://perplexity.ai&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Perplexity Standard</strong><span class="tool-price">US$0; búsquedas avanzadas limitadas</span><p>Primera opción para preguntas de actualidad porque organiza respuestas con enlaces a fuentes. Abre las fuentes y comprueba que respalden la afirmación.</p><div class="tool-links"><a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Free con búsqueda web</strong><span class="tool-price">US$0; límites variables</span><p>Conveniente para combinar búsqueda, preguntas de seguimiento y explicación sencilla en una misma conversación.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Gemini (acceso gratuito)</strong><span class="tool-price">US$0; disponibilidad variable</span><p>Otra opción para investigar y contrastar resultados; revisa fechas y abre los enlaces citados antes de usar los datos.</p><div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Aprender y escribir código</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://github.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>GitHub Copilot Free</strong><span class="tool-price">US$0; hasta 2.000 completados al mes y límites de chat/agentes</span><p>La opción gratuita más directa dentro de editores compatibles: propone código mientras escribes. Lee, ejecuta y prueba cada sugerencia; el autocompletado no verifica la lógica.</p><div class="tool-links"><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Free</strong><span class="tool-price">US$0; límites variables</span><p>Útil para explicar un error o pedir un ejemplo pequeño fuera del editor. Comparte solo fragmentos sin claves ni información privada.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Crear o editar imágenes</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://firefly.adobe.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Adobe Firefly Free</strong><span class="tool-price">US$0; generaciones diarias limitadas</span><p>Buena opción gratuita para probar generación y edición visual; los créditos y las funciones disponibles cambian por plan.</p><div class="tool-links"><a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://www.adobe.com/products/firefly/plans.html" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Free</strong><span class="tool-price">US$0; generación con límites</span><p>Práctico cuando quieres describir, generar y ajustar una imagen conversando. Los límites gratuitos pueden variar.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://canva.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Canva AI Free</strong><span class="tool-price">US$0; acceso y usos de IA limitados según función</span><p>Útil para crear diseños, imágenes y piezas visuales desde un mismo editor. Las funciones de IA consumen cuotas compartidas y varían por plan.</p><div class="tool-links"><a href="https://www.canva.com/ai/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Estudiar apuntes, PDF y fuentes elegidas</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://notebooklm.google&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Gemini Notebook</strong><span class="tool-price">US$0; funciones y límites pueden variar</span><p>Trabaja con fuentes que tú aportas y ayuda a resumirlas, crear preguntas y estudiar con referencias a los materiales. Revisa cada cita en el documento original.</p><div class="tool-links"><a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Traducir y mejorar textos</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://deepl.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>DeepL Translator</strong><span class="tool-price">US$0; límite de 50.000 caracteres por mes en la versión gratuita</span><p>Especializado en traducir textos y documentos breves; permite comparar formulaciones en los idiomas admitidos. La traducción puede perder matices, así que revisa nombres, tono y vocabulario técnico.</p><div class="tool-links"><a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://www.deepl.com/en/pro" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Crear videos con IA</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://runway.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Runway Free</strong><span class="tool-price">US$0; 125 créditos de prueba de una sola vez</span><p>Permite probar generación y edición de imagen, video y audio con créditos iniciales que no caducan. Úsalo para clips de prueba y comprueba el consumo antes de generar.</p><div class="tool-links"><a href="https://runway.com/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Crear voz, narración o audio</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://elevenlabs.io&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ElevenLabs Free</strong><span class="tool-price">US$0; 10.000 créditos al mes</span><p>Genera voz, transcripción, efectos y música con límites mensuales. Revisa derechos y consentimiento antes de clonar o publicar una voz.</p><div class="tool-links"><a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">Probar herramienta ↗</a><a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Plan y límites oficiales ↗</a></div></li></ol></details>
+                    </div>
+                </section>
+                <section class="plan-panel" data-plan-panel="paid" aria-labelledby="paid-tools-title">
+                    <h3 id="paid-tools-title">Opciones de pago</h3>
+                    <p>Orden editorial de mejor ajuste a menor ajuste para cada tarea; considera primero las funciones que realmente usarás.</p>
+                    <div class="ai-task-grid">
+                        <details class="ai-task-card" open><summary>Asistencia general, estudio y escritura</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Plus</strong><span class="tool-price">Aprox. US$20/mes</span><p>Primera elección general por reunir conversación, razonamiento, archivos, voz e imágenes en una sola suscripción. Tiene topes de uso y la API se cobra aparte.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://claude.ai&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Claude Pro</strong><span class="tool-price">Aprox. US$20/mes; anual US$200 (equivale a unos US$17/mes, cobrado por adelantado)</span><p>Muy buena alternativa para escribir, revisar documentos extensos y trabajar con proyectos; el acceso puede depender del país.</p><div class="tool-links"><a href="https://claude.ai/upgrade" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Google AI Pro</strong><span class="tool-price">Aprox. US$19,99/mes; anual US$199,99</span><p>Adecuada si valoras la integración con Gemini, Gmail, Docs y almacenamiento de Google; algunas ventajas varían por región.</p><div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Investigación web con fuentes</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://perplexity.ai&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Perplexity Pro</strong><span class="tool-price">Aprox. US$20/mes o US$200/año</span><p>Primera opción para investigar temas actuales: prioriza búsqueda web, citas, archivos y consultas de investigación con mayor capacidad que el plan gratis.</p><div class="tool-links"><a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://www.perplexity.ai/es/hub/pricing" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Plus</strong><span class="tool-price">Aprox. US$20/mes</span><p>Mejor si necesitas alternar investigación con análisis de archivos, razonamiento y redacción. Abre las fuentes: una cita automática también debe revisarse.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Google AI Pro</strong><span class="tool-price">Aprox. US$19,99/mes</span><p>Buena opción si ya trabajas dentro de Google y quieres combinar Gemini con sus herramientas de productividad.</p><div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Programación y asistencia dentro del editor</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://github.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>GitHub Copilot Pro</strong><span class="tool-price">Aprox. US$10/mes; incluye una asignación de créditos de IA, con uso adicional sujeto a límites</span><p>Primera elección por precio y autocompletado integrado en editores. Chat, agentes y modelos premium consumen créditos; revisa las cuotas antes de depender de ellos.</p><div class="tool-links"><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://claude.ai&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Claude Pro</strong><span class="tool-price">Aprox. US$20/mes</span><p>Útil para explicar código, planear cambios y revisar fragmentos largos en conversación; no sustituye ejecutar pruebas.</p><div class="tool-links"><a href="https://claude.ai/upgrade" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Plus</strong><span class="tool-price">Aprox. US$20/mes</span><p>Alternativa versátil para depurar, aprender conceptos y analizar archivos; confirma los cambios en tu propio entorno.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Generación y edición de imágenes</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://midjourney.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Midjourney Basic</strong><span class="tool-price">Aprox. US$10/mes; anual US$96 (unos US$8/mes, cobrado por adelantado)</span><p>Primera opción de esta lista para explorar estilos y crear imágenes con énfasis visual. El plan Basic tiene tiempo de generación limitado y no ofrece modo privado.</p><div class="tool-links"><a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://firefly.adobe.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Adobe Firefly Standard</strong><span class="tool-price">Aprox. US$9,99/mes</span><p>Muy conveniente para edición e integración con flujos creativos de Adobe; incluye créditos generativos para funciones premium.</p><div class="tool-links"><a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://www.adobe.com/products/firefly/plans.html" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://chatgpt.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ChatGPT Plus</strong><span class="tool-price">Aprox. US$20/mes</span><p>Conviene si quieres crear, ajustar y conversar sobre imágenes junto a tareas de texto, sin contratar un servicio dedicado solo a arte.</p><div class="tool-links"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Investigar y estudiar con fuentes</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://gemini.google.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Google AI Pro con Gemini Notebook</strong><span class="tool-price">Aprox. US$19,99/mes o US$199,99/año en EE. UU.</span><p>Añade límites más altos y funciones de Gemini y Gemini Notebook para investigar y trabajar con materiales. La disponibilidad cambia según país; verifica que las funciones estén habilitadas en tu cuenta.</p><div class="tool-links"><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://one.google.com/about/google-ai-plans/?gl=US" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Traducir y mejorar textos</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://deepl.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>DeepL Pro Individual</strong><span class="tool-price">Aprox. US$8,74/mes con facturación anual en EE. UU.</span><p>Para traducción recurrente de documentos con funciones de privacidad, glosario y más volumen que el plan gratuito. El monto depende de región y facturación; la prueba y el precio pueden cambiar.</p><div class="tool-links"><a href="https://www.deepl.com/en/pro" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://www.deepl.com/en/pro" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Crear videos con IA</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://runway.com&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>Runway Standard</strong><span class="tool-price">Desde aprox. US$12/mes con facturación anual</span><p>Incluye una asignación mensual de créditos para crear imagen, video y audio con más capacidad que la prueba gratuita. Evalúa créditos por generación y los derechos de uso antes de producir material comercial.</p><div class="tool-links"><a href="https://runway.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://runway.com/pricing" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                        <details class="ai-task-card" ><summary>Crear voz, narración o audio</summary><ol><li><img class="ai-inline-logo" src="https://www.google.com/s2/favicons?domain_url=https://elevenlabs.io&amp;sz=128" alt="" width="36" height="36" loading="lazy" decoding="async"><strong>ElevenLabs Starter</strong><span class="tool-price">Aprox. US$6/mes después de una oferta inicial; 30.000 créditos mensuales</span><p>Incluye más créditos y licencia comercial según el plan, además de clonación instantánea de voz. Revisa condiciones de consentimiento y licencia para cada uso.</p><div class="tool-links"><a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a><a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Ver precio oficial ↗</a></div></li></ol></details>
+                    </div>
+                </section>
+            </div>
+            <p class="pricing-note">Precios de lista aproximados en dólares estadounidenses para planes individuales, consultados el 3 de noviembre de 2026. Impuestos, moneda, promociones, facturación anual, elegibilidad y límites cambian según país y cuenta. Confirma el precio en la página oficial antes de contratar. Los planes gratuitos tienen topes y pueden cambiar.</p>
+        </div>
+    </div>
+</section>
+<section class="learning-guide game-guide" id="juegos-aprendizaje" aria-labelledby="game-guide-title">
+    <div class="container">
+        <span class="section-label">RECURSOS INTERACTIVOS</span>
+        <h2 id="game-guide-title">Aprende inteligencia artificial jugando</h2>
+        <p class="guide-introduction">Estos juegos y experiencias pueden complementar esta materia con práctica interactiva. Revisa el enfoque y los requisitos de acceso en la página oficial.</p>
+        <div class="guide-filters" role="group" aria-label="Filtrar juegos por tipo de acceso">
+            <button type="button" data-game-filter="all" aria-pressed="true">Todos</button>
+            <button type="button" data-game-filter="free" aria-pressed="false">Gratis</button>
+            <button type="button" data-game-filter="freemium" aria-pressed="false">Con opción gratuita</button>
+            <button type="button" data-game-filter="license" aria-pressed="false">De pago o con licencia</button>
+        </div>
+        <p class="guide-filter-status visually-hidden" id="gameFilterStatus" aria-live="polite">Se muestran todas las recomendaciones.</p>
+        <div class="game-recommendation-grid">
+            <article class="game-recommendation-card" data-game-access="free">
+                <div class="game-card-topline"><span>Principiante · actividad de una hora</span><span class="access-badge access-free">Demo gratuita; aplicación disponible para descarga</span></div>
+                <img class="game-logo" src="https://www.google.com/s2/favicons?domain_url=https://education.minecraft.net&amp;sz=128" alt="Logo de Hora de IA: Generation AI" width="64" height="64" loading="lazy" decoding="async">
+                <h3>Hora de IA: Generation AI</h3>
+                <p>Misión de Minecraft Education para crear inventos con IA y resolver desafíos con código. Introduce pensamiento computacional, uso responsable y revisión de errores. Comprueba requisitos del dispositivo y del modo demo.</p>
+                <dl><div><dt>Habilidad</dt><dd>IA y programación · alfabetización en IA</dd></div><div><dt>Ideal para</dt><dd>Principiante · actividad de una hora · MakeCode por bloques o Python; actividad en inglés</dd></div></dl>
+                <a href="https://education.minecraft.net/en-us/lessons/hour-of-ai-generation-ai" target="_blank" rel="noopener noreferrer">Abrir lección oficial ↗</a>
+                <a class="resource-source" href="https://education.minecraft.net/en-us/resources/hour-of-ai-the-first-night" target="_blank" rel="noopener noreferrer">Detalles oficiales ↗</a>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="category-content">
+    <div class="container">
+        <h2>Áreas de aprendizaje</h2>
+<div class="featured-learning"><p class="section-label">EMPIEZA POR AQUÍ</p><h3>Cómo verificar una respuesta de inteligencia artificial</h3><p>Aprende a revisar afirmaciones, fuentes y límites antes de reutilizar una respuesta generada por IA.</p><a class="btn-primary" href="fundamentos/verificar-respuestas/index.html">Abrir lección y examen</a></div>        <nav class="subcategory-nav" aria-label="Subcategorías de Inteligencia Artificial">
+<a href="#fundamentos">Fundamentos de IA</a><a href="#herramientas">Herramientas de IA</a><a href="#tutoriales">Tutoriales</a><a href="#comparativas">Comparativas</a>        </nav>
+        <div class="subcategory-list">
+            <section class="subcategory-section" id="fundamentos">
+                <h3>Fundamentos de IA</h3>
+                <p>Conceptos, historia, tipos de sistemas y límites de la inteligencia artificial.</p>
+                <ul class="lesson-link-list">
+<li><a href="fundamentos/verificar-respuestas/index.html">Cómo verificar una respuesta de inteligencia artificial <span aria-hidden="true">→</span></a><p>Aprende a revisar afirmaciones, fuentes y límites antes de reutilizar una respuesta generada por IA.</p></li>                </ul>
+            </section>
+            <section class="subcategory-section" id="herramientas">
+                <h3>Herramientas de IA</h3>
+                <p>Usos y criterios para elegir herramientas de escritura, diseño, estudio y productividad.</p>
+<p class="topic-status">Próximamente se publicarán aquí lecciones y recursos revisados.</p>            </section>
+            <section class="subcategory-section" id="tutoriales">
+                <h3>Tutoriales</h3>
+                <p>Guías prácticas para formular instrucciones y trabajar con asistentes de IA.</p>
+<p class="topic-status">Próximamente se publicarán aquí lecciones y recursos revisados.</p>            </section>
+            <section class="subcategory-section" id="comparativas">
+                <h3>Comparativas</h3>
+                <p>Comparaciones basadas en capacidades, acceso, privacidad y casos de uso.</p>
+<p class="topic-status">Próximamente se publicarán aquí lecciones y recursos revisados.</p>            </section>
+        </div>
+        <h2 class="more-categories-heading">Otras categorías</h2>
+        <nav class="category-nav" aria-label="Otras categorías">
+            <a href="../../pages/academia/index.html">Academia</a>
+            <a href="../../pages/idiomas/index.html">Idiomas</a>
+            <a href="../../pages/programacion/index.html">Programación</a>
+            <a href="../../pages/ciencia-tecnologia/index.html">Ciencia y tecnología</a>
+            <a href="../../pages/metodos-estudio/index.html">Métodos de estudio</a>
+            <a href="../../pages/videojuegos/index.html">Videojuegos para aprender</a>
+            <a href="../../pages/recursos/index.html">Herramientas y recursos</a>
+        </nav>
+    </div>
+</section>
+    </main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="../../index.html" class="logo footer-logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <p>Aprende. Explora. Desarrolla.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="../../index.html">
+                Inicio
+            </a>
+
+            <a href="../../index.html#categorias">
+                Categorías
+            </a>
+
+            <a href="../../index.html#nosotros">
+                Nosotros
+            </a>
+            <a href="../../privacidad.html">Privacidad</a>
+            <a href="../../cookies.html">Cookies</a>
+            <a href="../../terminos.html">Términos</a>
+            <a href="../../contacto.html">Contacto</a>
+            <a href="../../creditos.html">Créditos visuales</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NEXORA. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba" title="Volver arriba" hidden>↑</button>
+
+
+</body>
+</html>

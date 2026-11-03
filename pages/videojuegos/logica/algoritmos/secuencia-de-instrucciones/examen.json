@@ -1,0 +1,7 @@
+{"questions":[
+ {"question":"¿Qué conviene definir antes de planificar un recorrido?","options":["La meta, el inicio y las acciones permitidas","El color de la pantalla","La puntuación final solamente"],"answer":0,"explanation":"El objetivo y las reglas determinan qué secuencias pueden resolver el reto."},
+ {"question":"Si un personaje mira al norte y gira a la derecha, ¿hacia dónde queda mirando?","options":["Oeste","Este","Sur"],"answer":1,"explanation":"Un giro a la derecha desde el norte orienta al personaje hacia el este."},
+ {"question":"¿Cómo conviene depurar una secuencia que falla?","options":["Cambiar muchos pasos a la vez","Encontrar la primera instrucción que causa el error y corregirla","Eliminar la meta"],"answer":1,"explanation":"Localizar el primer paso incorrecto ayuda a identificar la causa del fallo."},
+ {"question":"¿Qué debes hacer después de corregir un movimiento?","options":["Volver a probar la secuencia desde el inicio","Asumir que ya funciona","Cambiar las reglas"],"answer":0,"explanation":"La nueva secuencia debe probarse completa para comprobar que llega a la meta."},
+ {"question":"¿Qué hace útil a un bloque de repetición?","options":["Repite una acción definida la cantidad indicada","Cambia las reglas del tablero","Elimina la necesidad de probar el algoritmo"],"answer":0,"explanation":"La repetición resume acciones y requiere comprobar que la cantidad de iteraciones sea adecuada."}
+]}

@@ -1,0 +1,58 @@
+{
+  "inteligencia-artificial": {
+    "file": "assets/images/inteligencia-artificial.jpg",
+    "url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Robot blanco de diseño minimalista, como imagen de apertura para inteligencia artificial.",
+    "credit": "Unsplash",
+    "source": "https://unsplash.com/s/photos/ai-in-healthcare"
+  },
+  "academia": {
+    "file": "assets/images/academia.jpg",
+    "url": "https://images.unsplash.com/photo-1695774165691-8a01a6045952?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Libros apilados sobre una mesa, asociados al aprendizaje académico.",
+    "credit": "Beau Carpenter / Unsplash",
+    "source": "https://unsplash.com/photos/a-stack-of-books-sitting-on-top-of-each-other-pTaQDMpOZn0"
+  },
+  "idiomas": {
+    "file": "assets/images/idiomas.jpg",
+    "url": "https://images.unsplash.com/photo-1673515324976-edc94ae391f6?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Persona estudiando en un portátil desde una perspectiva cenital, para representar el aprendizaje de idiomas.",
+    "credit": "Ling App / Unsplash",
+    "source": "https://unsplash.com/photos/a-woman-using-a-laptop-computer-on-a-marble-table-tzJKdu4bxuM"
+  },
+  "programacion": {
+    "file": "assets/images/programacion.jpg",
+    "url": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Portátil con un editor de código abierto en pantalla.",
+    "credit": "Unsplash",
+    "source": "https://unsplash.com/s/photos/computer-programming"
+  },
+  "ciencia-tecnologia": {
+    "file": "assets/images/ciencia-tecnologia.jpg",
+    "url": "https://images.unsplash.com/photo-1581093577421-f561a654a353?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Científica trabaja con un portátil en un laboratorio.",
+    "credit": "ThisisEngineering / Unsplash",
+    "source": "https://unsplash.com/photos/scientist-using-laptop-in-laboratory-8yS04veb1TQ"
+  },
+  "metodos-estudio": {
+    "file": "assets/images/metodos-estudio.jpg",
+    "url": "https://images.unsplash.com/photo-1759984782211-3a02ca78e6ac?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Estudiante toma notas frente a un escritorio con portátil mientras estudia.",
+    "credit": "Julio Lopez / Unsplash",
+    "source": "https://unsplash.com/photos/a-young-woman-studying-and-writing-notes-at-a-desk-Juj-Mi2b0DA"
+  },
+  "videojuegos": {
+    "file": "assets/images/videojuegos.jpg",
+    "url": "https://images.unsplash.com/photo-1727846990874-a0e0503d9dde?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Mano sostiene un mando de videojuegos durante una partida.",
+    "credit": "Jakub Żerdzicki / Unsplash",
+    "source": "https://unsplash.com/photos/a-person-holding-a-video-game-controller-in-their-hand-IhoBZOjhMNk"
+  },
+  "recursos": {
+    "file": "assets/images/recursos.jpg",
+    "url": "https://images.unsplash.com/photo-1763991345257-a1f4313be3dc?auto=format&fit=crop&fm=jpg&w=1400&q=82",
+    "alt": "Portátil, tableta y teléfono organizados sobre un escritorio.",
+    "credit": "Tai Bui / Unsplash",
+    "source": "https://unsplash.com/photos/laptop-tablet-and-phone-on-a-wooden-desk-e360X6dHp1c"
+  }
+}

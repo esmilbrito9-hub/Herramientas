@@ -1,0 +1,41 @@
+{
+  "title": "Diseña una secuencia de instrucciones para resolver un reto",
+  "description": "Practica pensamiento computacional con secuencias claras, prueba de casos y corrección de errores.",
+  "category": "Videojuegos para aprender",
+  "subcategory": "Programación e inteligencia artificial",
+  "introduction": "En un juego de recorrido, un personaje sigue instrucciones como avanzar o girar. El desafío consiste en ordenar los pasos para alcanzar una meta sin añadir movimientos innecesarios.",
+  "sections": [
+    {
+      "title": "Define las reglas y descompón el reto",
+      "paragraphs": [
+        "Antes de elegir movimientos, identifica la posición inicial, la meta y qué acciones están permitidas. Una instrucción como “avanzar” debe tener un significado preciso: una casilla, un paso o hasta encontrar un obstáculo.",
+        "Escribe las reglas del tablero. Si el personaje no puede atravesar una pared, esa restricción forma parte del problema y debe respetarse en cada paso.",
+        "Divide el trayecto en segmentos sencillos: llegar al pasillo, girar y avanzar hasta la meta. Resolver una parte cada vez hace que el plan sea más fácil de revisar.",
+        "Mantén una representación de la orientación. Después de girar a la izquierda, “avanzar” apunta en una dirección distinta; no confundas el giro con un desplazamiento.",
+        "Escribe el problema como entrada, meta y restricciones: dónde empieza el personaje, dónde debe acabar y qué obstáculos no puede cruzar. Si una instrucción no se entiende igual cada vez, define exactamente qué significa antes de programarla."
+      ]
+    },
+    {
+      "title": "Simula cada instrucción y depura",
+      "paragraphs": [
+        "Prueba el plan desde la posición inicial y ejecuta una instrucción cada vez. Anota la casilla y la orientación después de cada paso.",
+        "Si la secuencia sale del tablero o choca con una pared, localiza la primera instrucción que produce el error. Corrige ese paso y vuelve a ejecutar la secuencia desde el inicio.",
+        "Traza el algoritmo en una tabla: número de paso, posición, orientación e instrucción. Ejecuta una orden por fila; si la casilla final no coincide con la esperada, puedes localizar el primer paso donde divergieron."
+      ]
+    },
+    {
+      "title": "Compara rutas y reduce pasos",
+      "paragraphs": [
+        "Puede haber varias secuencias que alcancen la meta. Compara si todas son válidas y cuál usa menos instrucciones sin perder claridad.",
+        "Cuando una acción se repite muchas veces, algunos juegos permiten usar un bloque de repetición. Comprueba que el número de repeticiones coincide exactamente con el recorrido.",
+        "Primero busca una secuencia correcta; después compara su longitud o cantidad de giros. Si usas repetir, comprueba el límite: repetir cuatro veces avanza cuatro casillas, no tres ni cinco. Vuelve a probar desde el inicio tras cada cambio."
+      ]
+    }
+  ],
+  "summary": "Un algoritmo de juego necesita un objetivo y reglas precisas. Divide el recorrido, conserva la orientación, simula cada paso y depura desde el primer movimiento que produce un resultado incorrecto.",
+  "practice": {
+    "question": "Si el personaje mira al norte y gira a la derecha, ¿hacia dónde mira después?",
+    "answer": "este",
+    "hint": "Al girar a la derecha desde el norte, queda frente al este."
+  }
+}

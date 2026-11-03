@@ -1,0 +1,57 @@
+{
+  "title": "Suma, multiplicación y división: operaciones básicas",
+  "description": "Repasa tres operaciones esenciales, cuándo usar cada una y cómo comprobar los resultados con ejemplos claros.",
+  "category": "Academia",
+  "subcategory": "Matemáticas",
+  "introduction": "Cuando un problema numérico parece urgente, identifica qué ocurre: juntar cantidades, repetir grupos iguales o repartir en partes iguales. Esa decisión suele ser más importante que hacer la cuenta rápido. Los ejemplos usan números naturales y muestran un procedimiento que puedes aplicar paso a paso.",
+  "sections": [
+    {
+      "title": "Suma: juntar cantidades y reagrupar",
+      "paragraphs": [
+        "La suma combina cantidades para obtener un total. Alinea las cifras por valor posicional: unidades debajo de unidades, decenas debajo de decenas y centenas debajo de centenas.",
+        "Ejemplo: 248 + 176. En unidades, 8 + 6 = 14: escribe 4 y lleva 1 decena. En decenas, 4 + 7 + 1 = 12: escribe 2 y lleva 1 centena. En centenas, 2 + 1 + 1 = 4. El resultado es 424.",
+        "Comprueba con la operación inversa: 424 − 176 = 248. Si sumas precios o medidas, conserva la unidad; con decimales, alinea también los puntos decimales."
+      ],
+      "example": {
+        "title": "Cuándo usar la suma",
+        "operation": "En una caja hay 248 piezas y se agregan 176 piezas.",
+        "explanation": "Las cantidades se juntan y usan la misma unidad, así que se suman: 248 + 176.",
+        "result": "424 piezas"
+      }
+    },
+    {
+      "title": "Multiplicación: grupos iguales y productos",
+      "paragraphs": [
+        "Multiplica cuando se repite el mismo tamaño de grupo o cuando necesitas hallar el total de filas y columnas iguales. Cuatro bolsas con 7 canicas cada una son 4 × 7 = 28 canicas.",
+        "Para calcular 24 × 13, descompón 13 en 10 + 3: 24 × 10 = 240 y 24 × 3 = 72. Suma los productos parciales: 240 + 72 = 312. Así conservas el valor de posición de las decenas.",
+        "El orden de los factores no cambia el producto, pero sí puede cambiar qué representa cada uno en el problema. Estima antes: 24 × 13 debe estar cerca de 24 × 10 = 240, así que 312 es razonable."
+      ],
+      "example": {
+        "title": "Cuándo usar la multiplicación",
+        "operation": "13 cajas con 24 lápices cada una: 24 × 13.",
+        "explanation": "Calcula 24 × 10 y 24 × 3; luego suma 240 + 72.",
+        "result": "312 lápices"
+      }
+    },
+    {
+      "title": "División: repartir y formar grupos",
+      "paragraphs": [
+        "Divide para repartir una cantidad en partes iguales o averiguar cuántos grupos de cierto tamaño caben. En 84 ÷ 7, puedes repartir 84 objetos entre 7 personas (12 cada una) o formar grupos de 7 (12 grupos).",
+        "En una división, dividendo ÷ divisor = cociente. Si sobran elementos, se expresa también el residuo. Por ejemplo, 157 ÷ 12 = 13 y sobra 1, porque 12 × 13 = 156.",
+        "Comprueba con divisor × cociente + residuo = dividendo: 12 × 13 + 1 = 157; además, el residuo debe ser menor que el divisor. No se puede dividir entre cero. Si repartes objetos indivisibles, decide según el contexto si dejas el resto, lo expresas como fracción o cuentas solo grupos completos."
+      ],
+      "example": {
+        "title": "Cuándo usar la división",
+        "operation": "Se reparten 157 cuadernos en cajas de 12.",
+        "explanation": "12 × 13 = 156, así que se llenan 13 cajas y queda 1 cuaderno.",
+        "result": "13 cajas completas y 1 sobrante"
+      }
+    }
+  ],
+  "summary": "Suma para juntar cantidades, multiplica para contar grupos iguales y divide para repartir o formar grupos. Estima el resultado y compruébalo con la operación inversa; conserva unidades y explica cualquier residuo.",
+  "practice": {
+    "question": "Repartes 50 fichas en grupos de 8. ¿Cuántos grupos completos formas?",
+    "answer": "6",
+    "hint": "8 × 6 = 48; comprueba que el resto sea menor que 8."
+  }
+}

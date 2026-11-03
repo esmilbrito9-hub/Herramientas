@@ -1,0 +1,41 @@
+{
+  "title": "Cómo verificar una respuesta de inteligencia artificial",
+  "description": "Aprende a revisar afirmaciones, fuentes y límites antes de reutilizar una respuesta generada por IA.",
+  "category": "Inteligencia Artificial",
+  "subcategory": "Fundamentos de IA",
+  "introduction": "Un asistente de IA puede redactar una respuesta clara y, aun así, equivocarse. La fluidez del texto no demuestra que sus datos sean ciertos. Esta unidad propone un método de verificación que puedes aplicar a herramientas distintas.",
+  "sections": [
+    {
+      "title": "Desglosa la respuesta y contrasta fuentes",
+      "paragraphs": [
+        "Subraya cada dato comprobable: nombres, fechas, cifras, citas y relaciones de causa y efecto. Una respuesta extensa puede mezclar información correcta con una sola afirmación errónea.",
+        "Convierte cada afirmación en una pregunta concreta. Por ejemplo: en vez de comprobar todo un resumen, confirma por separado la fecha, el autor y la conclusión atribuida a una fuente.",
+        "Contrasta los datos con fuentes primarias cuando existan: documentos oficiales, publicaciones originales, normas técnicas o datos del organismo responsable. Una respuesta que solo cita otras respuestas de IA no aporta verificación independiente.",
+        "Comprueba que la fuente realmente diga lo que se le atribuye. Revisa título, autor, fecha, contexto y, si es una cifra, cómo se obtuvo.",
+        "Haz una lista de comprobación antes de reutilizar el texto: afirmación, evidencia encontrada y estado (confirmada, dudosa o no confirmada). Si no aparece evidencia suficiente, conserva la duda en vez de convertirla en un hecho."
+      ]
+    },
+    {
+      "title": "Comprueba la calidad y la incertidumbre",
+      "paragraphs": [
+        "Desconfía de citas sin enlace, títulos que no aparecen al buscarlos, porcentajes muy precisos sin método y afirmaciones absolutas en temas con excepciones.",
+        "Pide a la herramienta que distinga hechos, inferencias y dudas, pero trata esa explicación como otra respuesta que también debes verificar.",
+        "Para una cifra, revisa fecha, unidad, población medida y método. Dos páginas que repiten el mismo comunicado no son necesariamente dos confirmaciones independientes; intenta llegar al documento o conjunto de datos original."
+      ]
+    },
+    {
+      "title": "Protege los datos y decide qué reutilizar",
+      "paragraphs": [
+        "No introduzcas datos personales, contraseñas, expedientes ni información confidencial en una herramienta sin entender cómo la procesa.",
+        "Si vas a publicar o entregar el resultado, corrige errores, conserva las fuentes consultadas y explica el uso de IA cuando las reglas del contexto lo exijan.",
+        "Un flujo rápido y seguro es: pregunta concreta, fuente externa, comparación con la respuesta y edición propia. No pegues información privada y no presentes como cita literal una frase que no hayas encontrado en la fuente."
+      ]
+    }
+  ],
+  "summary": "Verificar una respuesta significa descomponerla en afirmaciones, consultar evidencia independiente y revisar contexto, fecha y procedencia. La IA puede ayudarte a explorar una pregunta, pero la responsabilidad de confirmar y usar la información sigue siendo de quien la presenta.",
+  "practice": {
+    "question": "Una respuesta incluye una cifra exacta pero no cita su fuente. ¿Cuál es el siguiente paso más sólido?",
+    "answer": "buscar una fuente primaria independiente",
+    "hint": "La fluidez o la precisión aparente no reemplazan una fuente comprobable."
+  }
+}

@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="    Practica pensamiento computacional con secuencias claras, prueba de casos y corrección de errores.
+">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="Diseña una secuencia de instrucciones para resolver un reto | NEXORA">
+    <meta property="og:description" content="Practica pensamiento computacional con secuencias claras, prueba de casos y corrección de errores.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+
+    <title>    Diseña una secuencia de instrucciones para resolver un reto | NEXORA
+</title>
+
+    <link rel="stylesheet" href="../../../../../assets/css/style.css">
+
+<link rel="stylesheet" href="../../../../../assets/css/lesson.css">
+
+    <script src="../../../../../assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="../../../../../index.html" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../../../../../index.html">
+                Inicio
+            </a>
+
+            <a href="../../../../../index.html#categorias">
+                Explorar
+            </a>
+
+            <a href="../../../../../index.html#nosotros">
+                Nosotros
+            </a>
+
+            <a href="../../../../../index.html#busqueda">
+                Recursos
+            </a>
+
+        </nav>
+
+        <a class="language-toggle" href="../../../../../en/pages/videojuegos/logica/algoritmos/secuencia-de-instrucciones/index.html" hreflang="en" lang="en" aria-label="Cambiar idioma a inglés">EN</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">☾</button>
+
+        <a
+            href="../../../../../index.html#categorias"
+            class="nav-button">
+
+            Comenzar a aprender
+
+        </a>
+
+    </div>
+
+</header>
+    <main>
+
+<section class="lesson-header">
+    <div class="container">
+
+        <nav class="lesson-breadcrumb">
+            <a href="../../../../../index.html">Inicio</a>
+            <span> / </span>
+            <span>Videojuegos para aprender</span>
+            <span> / </span>
+            <span>Diseña una secuencia de instrucciones para resolver un reto</span>
+        </nav>
+
+        <span class="lesson-label">LECCIÓN EDUCATIVA</span>
+
+        <h1>Diseña una secuencia de instrucciones para resolver un reto</h1>
+
+        <p>Practica pensamiento computacional con secuencias claras, prueba de casos y corrección de errores.</p>
+<figure class="lesson-image"><img src="../../../../../assets/images/videojuegos.jpg" alt="Mano sostiene un mando de videojuegos durante una partida." width="900" height="560" fetchpriority="high"><figcaption><a href="https://unsplash.com/photos/a-person-holding-a-video-game-controller-in-their-hand-IhoBZOjhMNk" target="_blank" rel="noopener noreferrer">Jakub Żerdzicki / Unsplash · Ver imagen</a></figcaption></figure>
+    </div>
+</section>
+
+
+<section class="lesson-main">
+    <div class="container lesson-layout">
+
+        <article class="lesson-content">
+
+            <h2>Introducción</h2>
+
+            <p>En un juego de recorrido, un personaje sigue instrucciones como avanzar o girar. El desafío consiste en ordenar los pasos para alcanzar una meta sin añadir movimientos innecesarios.</p>
+
+            <nav class="lesson-outline" aria-label="Apartados de la lección">
+                <strong>En esta lección</strong>
+<a href="#topic-1">1. Define las reglas y descompón el reto</a><a href="#topic-2">2. Simula cada instrucción y depura</a><a href="#topic-3">3. Compara rutas y reduce pasos</a>            </nav>
+
+
+                <section class="lesson-section" id="topic-1" aria-labelledby="topic-title-1">
+
+                    <h2 id="topic-title-1">Define las reglas y descompón el reto</h2>
+
+                        <p>Antes de elegir movimientos, identifica la posición inicial, la meta y qué acciones están permitidas. Una instrucción como “avanzar” debe tener un significado preciso: una casilla, un paso o hasta encontrar un obstáculo.</p>
+                        <p>Escribe las reglas del tablero. Si el personaje no puede atravesar una pared, esa restricción forma parte del problema y debe respetarse en cada paso.</p>
+                        <p>Divide el trayecto en segmentos sencillos: llegar al pasillo, girar y avanzar hasta la meta. Resolver una parte cada vez hace que el plan sea más fácil de revisar.</p>
+                        <p>Mantén una representación de la orientación. Después de girar a la izquierda, “avanzar” apunta en una dirección distinta; no confundas el giro con un desplazamiento.</p>
+                        <p>Escribe el problema como entrada, meta y restricciones: dónde empieza el personaje, dónde debe acabar y qué obstáculos no puede cruzar. Si una instrucción no se entiende igual cada vez, define exactamente qué significa antes de programarla.</p>
+
+
+                </section>
+
+
+                <section class="lesson-section" id="topic-2" aria-labelledby="topic-title-2">
+
+                    <h2 id="topic-title-2">Simula cada instrucción y depura</h2>
+
+                        <p>Prueba el plan desde la posición inicial y ejecuta una instrucción cada vez. Anota la casilla y la orientación después de cada paso.</p>
+                        <p>Si la secuencia sale del tablero o choca con una pared, localiza la primera instrucción que produce el error. Corrige ese paso y vuelve a ejecutar la secuencia desde el inicio.</p>
+                        <p>Traza el algoritmo en una tabla: número de paso, posición, orientación e instrucción. Ejecuta una orden por fila; si la casilla final no coincide con la esperada, puedes localizar el primer paso donde divergieron.</p>
+
+
+                </section>
+
+
+                <section class="lesson-section" id="topic-3" aria-labelledby="topic-title-3">
+
+                    <h2 id="topic-title-3">Compara rutas y reduce pasos</h2>
+
+                        <p>Puede haber varias secuencias que alcancen la meta. Compara si todas son válidas y cuál usa menos instrucciones sin perder claridad.</p>
+                        <p>Cuando una acción se repite muchas veces, algunos juegos permiten usar un bloque de repetición. Comprueba que el número de repeticiones coincide exactamente con el recorrido.</p>
+                        <p>Primero busca una secuencia correcta; después compara su longitud o cantidad de giros. Si usas repetir, comprueba el límite: repetir cuatro veces avanza cuatro casillas, no tres ni cinco. Vuelve a probar desde el inicio tras cada cambio.</p>
+
+
+                </section>
+
+
+            <section class="lesson-summary">
+
+                <h2>Resumen de la lección</h2>
+
+                <p>Un algoritmo de juego necesita un objetivo y reglas precisas. Divide el recorrido, conserva la orientación, simula cada paso y depura desde el primer movimiento que produce un resultado incorrecto.</p>
+
+            </section>
+
+        </article>
+
+
+        <aside class="lesson-sidebar">
+
+            <div class="exam-card">
+
+                <span class="lesson-label">PON A PRUEBA LO APRENDIDO</span>
+
+                <h2>Examen de la lección</h2>
+
+                <p>
+                    Responde las preguntas para comprobar cuánto has aprendido.
+                </p>
+
+                <a href="#exam" class="primary-button">
+                    Comenzar examen
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+
+<section class="quick-practice container" aria-labelledby="practice-title">
+    <div class="practice-card">
+        <span class="lesson-label">PRÁCTICA RÁPIDA</span>
+        <h2 id="practice-title">Comprueba lo que entendiste</h2>
+        <p>Si el personaje mira al norte y gira a la derecha, ¿hacia dónde mira después?</p>
+        <label for="quickAnswer">Tu respuesta</label>
+        <div class="practice-controls">
+            <input id="quickAnswer" type="text" autocomplete="off">
+            <button id="checkQuickAnswer" class="primary-button" type="button" data-answer="este">Comprobar</button>
+        </div>
+        <p id="practiceFeedback" aria-live="polite"></p>
+<details><summary>Ver pista</summary><p>Al girar a la derecha desde el norte, queda frente al este.</p></details>    </div>
+</section>
+
+
+<section class="exam-section" id="exam">
+
+    <div class="container">
+
+        <div class="exam-heading">
+            <span class="lesson-label">EVALUACIÓN</span>
+            <h2>Comprueba tus conocimientos</h2>
+            <p>Selecciona una respuesta para cada pregunta.</p>
+        </div>
+
+        <div id="examContainer" class="exam-container" data-result-url="../../../../../resultados/index.html" data-lesson-title="Diseña una secuencia de instrucciones para resolver un reto" data-result-lesson-url="../pages/videojuegos/logica/algoritmos/secuencia-de-instrucciones/">
+
+            <div class="exam-progress-wrap">
+                <p class="exam-progress" id="examProgress" aria-live="polite">0 preguntas respondidas</p>
+                <div class="exam-progress-track" id="examProgressTrack" role="progressbar" aria-label="Progreso del examen" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span></span></div>
+            </div>
+
+            <div id="examQuestions"></div>
+
+            <button id="submitExam" class="primary-button" type="button">
+                Corregir examen
+            </button>
+
+            <div id="examResults" hidden aria-live="polite"></div>
+
+            <button id="retryExam" class="secondary-button" type="button" hidden>
+                Repetir examen
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<nav class="lesson-pagination container" aria-label="Navegación entre lecciones">
+<a href="../../../../recursos/calculadoras/fracciones/fraccion-a-porcentaje/">← Convierte una fracción a porcentaje y comprueba el resultado</a></nav>
+
+<script type="application/json" id="examData">{"questions": [{"answer": 0, "explanation": "El objetivo y las reglas determinan qu\u00e9 secuencias pueden resolver el reto.", "options": ["La meta, el inicio y las acciones permitidas", "El color de la pantalla", "La puntuaci\u00f3n final solamente"], "question": "\u00bfQu\u00e9 conviene definir antes de planificar un recorrido?"}, {"answer": 1, "explanation": "Un giro a la derecha desde el norte orienta al personaje hacia el este.", "options": ["Oeste", "Este", "Sur"], "question": "Si un personaje mira al norte y gira a la derecha, \u00bfhacia d\u00f3nde queda mirando?"}, {"answer": 1, "explanation": "Localizar el primer paso incorrecto ayuda a identificar la causa del fallo.", "options": ["Cambiar muchos pasos a la vez", "Encontrar la primera instrucci\u00f3n que causa el error y corregirla", "Eliminar la meta"], "question": "\u00bfC\u00f3mo conviene depurar una secuencia que falla?"}, {"answer": 0, "explanation": "La nueva secuencia debe probarse completa para comprobar que llega a la meta.", "options": ["Volver a probar la secuencia desde el inicio", "Asumir que ya funciona", "Cambiar las reglas"], "question": "\u00bfQu\u00e9 debes hacer despu\u00e9s de corregir un movimiento?"}, {"answer": 0, "explanation": "La repetici\u00f3n resume acciones y requiere comprobar que la cantidad de iteraciones sea adecuada.", "options": ["Repite una acci\u00f3n definida la cantidad indicada", "Cambia las reglas del tablero", "Elimina la necesidad de probar el algoritmo"], "question": "\u00bfQu\u00e9 hace \u00fatil a un bloque de repetici\u00f3n?"}]}</script>
+
+    </main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="../../../../../index.html" class="logo footer-logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <p>Aprende. Explora. Desarrolla.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="../../../../../index.html">
+                Inicio
+            </a>
+
+            <a href="../../../../../index.html#categorias">
+                Categorías
+            </a>
+
+            <a href="../../../../../index.html#nosotros">
+                Nosotros
+            </a>
+            <a href="../../../../../privacidad.html">Privacidad</a>
+            <a href="../../../../../cookies.html">Cookies</a>
+            <a href="../../../../../terminos.html">Términos</a>
+            <a href="../../../../../contacto.html">Contacto</a>
+            <a href="../../../../../creditos.html">Créditos visuales</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NEXORA. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba" title="Volver arriba" hidden>↑</button>
+
+<script src="../../../../../assets/js/exam.js" defer></script>
+
+</body>
+</html>

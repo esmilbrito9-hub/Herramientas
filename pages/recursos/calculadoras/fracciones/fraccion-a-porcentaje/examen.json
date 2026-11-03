@@ -1,0 +1,7 @@
+{"questions":[
+ {"question":"¿Qué indica el denominador de una fracción?","options":["Cuántas partes iguales forman la unidad","Cuántas partes se eligen","El porcentaje final siempre"],"answer":0,"explanation":"El denominador indica en cuántas partes iguales se divide la unidad."},
+ {"question":"¿A qué porcentaje equivale 3/4?","options":["34%","75%","300%"],"answer":1,"explanation":"3/4 = 75/100, por tanto equivale al 75%."},
+ {"question":"¿Qué operación convierte 0.6 en porcentaje?","options":["Multiplicar por 100","Dividir por 100","Restar 100"],"answer":0,"explanation":"0.6 × 100 = 60, por lo que 0.6 equivale a 60%."},
+ {"question":"Si la fracción es 1/4, ¿qué rango debe tener su porcentaje?","options":["Entre 0% y 50%","Entre 50% y 100%","Más de 100%"],"answer":0,"explanation":"Un cuarto es menor que la mitad, así que corresponde a menos de 50%; su valor es 25%."},
+ {"question":"¿Qué condición mantiene una fracción equivalente?","options":["Multiplicar numerador y denominador por el mismo número","Sumar números distintos a cada parte","Cambiar solo el denominador"],"answer":0,"explanation":"Multiplicar ambas partes por el mismo factor conserva el valor de la fracción."}
+]}

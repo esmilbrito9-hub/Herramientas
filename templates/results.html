@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.exam_result if locale == 'en' else 'Resultado del examen' }} | NEXORA{% endblock %}
+{% block description %}{{ 'Review your score, answers, and explanations from your NEXORA quiz.' if locale == 'en' else 'Consulta tu puntuación, las respuestas y las explicaciones del examen de NEXORA.' }}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ base_path }}assets/css/results.css">
+{% endblock %}
+
+{% block content %}
+<section class="results-page">
+    <div class="container results-container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="{{ home_url }}">{{ t.home if locale == 'en' else 'Inicio' }}</a><span aria-hidden="true">›</span><span aria-current="page">{{ t.exam_result if locale == 'en' else 'Resultado del examen' }}</span>
+        </nav>
+
+        <div class="results-intro">
+            <span class="section-label">{{ t.completed if locale == 'en' else 'EVALUACIÓN COMPLETADA' }}</span>
+            <h1>{{ t.your_result if locale == 'en' else 'Tu resultado' }}</h1>
+            <p id="resultLead" aria-live="polite">{{ t.preparing_result if locale == 'en' else 'Estamos preparando el resumen del examen.' }}</p>
+        </div>
+
+        <section id="resultScoreCard" class="result-score-card" aria-labelledby="resultTitle" hidden>
+            <div id="resultScoreRing" class="result-score-ring"><span id="resultPercent">0%</span></div>
+            <div>
+                <h2 id="resultTitle"></h2>
+                <p id="resultScore"></p>
+                <p id="resultMessage"></p>
+            </div>
+        </section>
+
+        <section class="answer-review-section" aria-labelledby="reviewTitle">
+            <h2 id="reviewTitle">{{ t.review_answers if locale == 'en' else 'Revisión de respuestas' }}</h2>
+            <div id="answerReview" class="answer-review-list"></div>
+        </section>
+
+        <div class="result-actions">
+            <a id="reviewLessonLink" class="btn-secondary" href="{{ home_url }}" hidden>{{ t.review_lesson if locale == 'en' else 'Repasar la lección' }}</a>
+            <a id="retryLessonLink" class="btn-primary" href="{{ home_url }}" hidden>{{ t.retry_lesson if locale == 'en' else 'Volver a intentar' }}</a>
+            <a class="result-home-link" href="{{ home_url }}">{{ t.back_home if locale == 'en' else 'Volver al inicio' }}</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ base_path }}assets/js/results.js" defer></script>
+{% endblock %}

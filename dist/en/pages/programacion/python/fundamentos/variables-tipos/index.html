@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="    Usa nombres de variables, reconoce tipos básicos y convierte texto de entrada antes de calcular.
+">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="Python: variables y tipos de datos | NEXORA">
+    <meta property="og:description" content="Usa nombres de variables, reconoce tipos básicos y convierte texto de entrada antes de calcular.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+
+    <title>    Python: variables y tipos de datos | NEXORA
+</title>
+
+    <link rel="stylesheet" href="../../../../../assets/css/style.css">
+
+<link rel="stylesheet" href="../../../../../assets/css/lesson.css">
+
+    <script src="../../../../../assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="../../../../../index.html" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../../../../../index.html">
+                Home
+            </a>
+
+            <a href="../../../../../index.html#categorias">
+                Explore
+            </a>
+
+            <a href="../../../../../index.html#nosotros">
+                About
+            </a>
+
+            <a href="../../../../../index.html#busqueda">
+                Resources
+            </a>
+
+        </nav>
+
+        <a class="language-toggle" href="../../../../../../pages/programacion/python/fundamentos/variables-tipos/index.html" hreflang="es" lang="es" aria-label="Change language to Spanish">Español</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Change theme">☾</button>
+
+        <a
+            href="../../../../../index.html#categorias"
+            class="nav-button">
+
+            Start learning
+
+        </a>
+
+    </div>
+
+</header>
+    <main>
+
+<section class="lesson-header">
+    <div class="container">
+
+        <nav class="lesson-breadcrumb">
+            <a href="../../../../../index.html">Home</a>
+            <span> / </span>
+            <span>Programación</span>
+            <span> / </span>
+            <span>Python: variables y tipos de datos</span>
+        </nav>
+
+        <span class="lesson-label">LEARNING LESSON</span>
+
+        <h1>Python: variables y tipos de datos</h1>
+
+        <p>Usa nombres de variables, reconoce tipos básicos y convierte texto de entrada antes de calcular.</p>
+<figure class="lesson-image"><img src="../../../../../assets/images/programacion.jpg" alt="Portátil con un editor de código abierto en pantalla." width="900" height="560" fetchpriority="high"><figcaption><a href="https://unsplash.com/s/photos/computer-programming" target="_blank" rel="noopener noreferrer">Unsplash · Ver imagen</a></figcaption></figure>
+    </div>
+</section>
+
+
+<section class="lesson-main">
+    <div class="container lesson-layout">
+
+        <article class="lesson-content">
+
+            <h2>Introduction</h2>
+
+            <p>Una variable es un nombre que permite reutilizar un valor en un programa. En Python el tipo del valor importa: sumar números no es lo mismo que unir textos.</p>
+
+            <nav class="lesson-outline" aria-label="Lesson sections">
+                <strong>In this lesson</strong>
+<a href="#topic-1">1. Asigna valores y elige nombres claros</a><a href="#topic-2">2. Reconoce tipos y convierte entradas</a><a href="#topic-3">3. Opera con los tipos correctos y depura</a>            </nav>
+
+
+                <section class="lesson-section" id="topic-1" aria-labelledby="topic-title-1">
+
+                    <h2 id="topic-title-1">Asigna valores y elige nombres claros</h2>
+
+                        <p>La instrucción edad = 12 guarda el entero 12 bajo el nombre edad. El signo igual asigna un valor; no es una afirmación matemática de igualdad.</p>
+                        <p>Elige nombres que describan el dato, como precio_total o nombre. En Python, los nombres distinguen mayúsculas de minúsculas: edad y Edad son variables distintas.</p>
+                        <p>Regla inmediata: un nombre de variable comienza con una letra o guion bajo, no con un número, y distingue mayúsculas. Ejemplos claros: precio_total e intentos; evita nombres ambiguos como x cuando el valor necesita contexto.</p>
+
+
+                </section>
+
+
+                <section class="lesson-section" id="topic-2" aria-labelledby="topic-title-2">
+
+                    <h2 id="topic-title-2">Reconoce tipos y convierte entradas</h2>
+
+                        <p>int representa enteros, float números con parte decimal, str texto y bool valores True o False.</p>
+                        <p>Las comillas identifican texto: 12 es un entero, mientras que &#39;12&#39; es una cadena. Aunque ambos parezcan el mismo número, Python no los suma de la misma manera.</p>
+                        <p>input() devuelve texto. Si pides una edad para realizar un cálculo, convierte la respuesta, por ejemplo con int(input(...)). Para cantidades con decimales puedes usar float.</p>
+                        <p>Una conversión puede fallar si la persona escribe letras donde se espera un número. En programas que reciben datos reales, valida la entrada y explica cómo corregirla.</p>
+                        <p>Si la conversión puede fallar, coloca la lectura dentro de un bloque try y maneja ValueError con except en una línea separada. Muestra un mensaje como Escribe un número entero válido y vuelve a pedir el dato; así una entrada incorrecta no detiene el programa sin explicación.</p>
+
+
+                </section>
+
+
+                <section class="lesson-section" id="topic-3" aria-labelledby="topic-title-3">
+
+                    <h2 id="topic-title-3">Opera con los tipos correctos y depura</h2>
+
+                        <p>La expresión 2 + 3 produce 5. La expresión &#39;2&#39; + &#39;3&#39; une dos cadenas y produce &#39;23&#39;.</p>
+                        <p>Antes de operar, identifica qué representa cada valor y confirma su tipo. Convertir a texto con str() puede ser útil al mostrar un resultado, pero no debe sustituir la conversión numérica cuando necesitas calcular.</p>
+                        <p>Antes de sumar, comprueba los tipos con type(valor). Si ves 23 donde esperabas 5, quizá sumaste las cadenas &#34;2&#34; y &#34;3&#34;; convierte a int antes de calcular. Si solo vas a mostrar un número junto a una etiqueta, convierte el número a str.</p>
+
+
+                </section>
+
+
+            <section class="lesson-summary">
+
+                <h2>Lesson summary</h2>
+
+                <p>Las variables nombran valores. Distingue int, float, str y bool; recuerda que input() produce texto y convierte la entrada antes de hacer operaciones numéricas.</p>
+
+            </section>
+
+        </article>
+
+
+        <aside class="lesson-sidebar">
+
+            <div class="exam-card">
+
+                <span class="lesson-label">TEST YOUR LEARNING</span>
+
+                <h2>Lesson quiz</h2>
+
+                <p>
+                    Answer the questions to check what you have learned.
+                </p>
+
+                <a href="#exam" class="primary-button">
+                    Start quiz
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+
+<section class="quick-practice container" aria-labelledby="practice-title">
+    <div class="practice-card">
+        <span class="lesson-label">QUICK PRACTICE</span>
+        <h2 id="practice-title">Check your understanding</h2>
+        <p>¿Qué expresión convierte el texto &#39;7&#39; en un entero en Python?</p>
+        <label for="quickAnswer">Your answer</label>
+        <div class="practice-controls">
+            <input id="quickAnswer" type="text" autocomplete="off">
+            <button id="checkQuickAnswer" class="primary-button" type="button" data-answer="int(&#39;7&#39;)">Check</button>
+        </div>
+        <p id="practiceFeedback" aria-live="polite"></p>
+<details><summary>Show hint</summary><p>La función int recibe un texto numérico y devuelve un entero.</p></details>    </div>
+</section>
+
+
+<section class="exam-section" id="exam">
+
+    <div class="container">
+
+        <div class="exam-heading">
+            <span class="lesson-label">QUIZ</span>
+            <h2>Check your knowledge</h2>
+            <p>Select one answer for each question.</p>
+        </div>
+
+        <div id="examContainer" class="exam-container" data-result-url="../../../../../resultados/index.html" data-lesson-title="Python: variables y tipos de datos" data-result-lesson-url="../pages/programacion/python/fundamentos/variables-tipos/">
+
+            <div class="exam-progress-wrap">
+                <p class="exam-progress" id="examProgress" aria-live="polite">0 questions answered</p>
+                <div class="exam-progress-track" id="examProgressTrack" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span></span></div>
+            </div>
+
+            <div id="examQuestions"></div>
+
+            <button id="submitExam" class="primary-button" type="button">
+                Submit quiz
+            </button>
+
+            <div id="examResults" hidden aria-live="polite"></div>
+
+            <button id="retryExam" class="secondary-button" type="button" hidden>
+                Try again
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<nav class="lesson-pagination container" aria-label="Navigate between lessons">
+<a href="../../../../metodos-estudio/memoria-comprension/recuperacion-activa/">← Recuperación activa: estudiar intentando recordar</a><a href="../../../../recursos/calculadoras/fracciones/fraccion-a-porcentaje/">Convierte una fracción a porcentaje y comprueba el resultado →</a></nav>
+
+<script type="application/json" id="examData">{"questions": [{"answer": 0, "explanation": "El signo igual asigna el valor de la derecha al nombre de la izquierda.", "options": ["Asigna el valor 8 a la variable puntos", "Compara dos n\u00fameros", "Convierte puntos a texto"], "question": "\u00bfQu\u00e9 hace la instrucci\u00f3n puntos = 8?"}, {"answer": 1, "explanation": "input() entrega la entrada como texto; hay que convertirla para calcular con n\u00fameros.", "options": ["int", "str", "bool"], "question": "\u00bfQu\u00e9 tipo devuelve input() normalmente?"}, {"answer": 1, "explanation": "Entre cadenas, el operador + concatena el texto y forma \u002723\u0027.", "options": ["5", "23", "Un error siempre"], "question": "\u00bfQu\u00e9 resultado produce \u00272\u0027 + \u00273\u0027 en Python?"}, {"answer": 0, "explanation": "True y False son valores booleanos del tipo bool.", "options": ["bool", "float", "str"], "question": "\u00bfQu\u00e9 tipo corresponde a True?"}, {"answer": 1, "explanation": "int no puede convertir una cadena que no represente un n\u00famero entero v\u00e1lido.", "options": ["Porque input nunca produce texto", "Porque la entrada podr\u00eda contener letras y no representar un entero", "Porque int solo trabaja con decimales"], "question": "\u00bfPor qu\u00e9 puede fallar int(input())?"}]}</script>
+
+    </main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="../../../../../index.html" class="logo footer-logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <p>Learn. Explore. Develop.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="../../../../../index.html">
+                Home
+            </a>
+
+            <a href="../../../../../index.html#categorias">
+                Categories
+            </a>
+
+            <a href="../../../../../index.html#nosotros">
+                About
+            </a>
+            <a href="../../../../../privacidad.html">Privacy</a>
+            <a href="../../../../../cookies.html">Cookies</a>
+            <a href="../../../../../terminos.html">Terms</a>
+            <a href="../../../../../contacto.html">Contact</a>
+            <a href="../../../../../creditos.html">Image credits</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NEXORA. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top" hidden>↑</button>
+
+<script src="../../../../../assets/js/exam.js" defer></script>
+
+</body>
+</html>

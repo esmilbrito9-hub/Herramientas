@@ -1,0 +1,7 @@
+{"questions":[
+ {"question":"¿Qué expresión significa “Me llamo Ana”?","options":["My name is Ana","Your name is Ana","Name my Ana"],"answer":0,"explanation":"My name is Ana es una forma básica de decir “Me llamo Ana”."},
+ {"question":"¿Qué saludo se usa normalmente por la mañana?","options":["Good morning","Goodbye","Good night"],"answer":0,"explanation":"Good morning es el saludo habitual de la mañana."},
+ {"question":"Completa: I ___ Luis.","options":["are","am","is"],"answer":1,"explanation":"El verbo be se conjuga am con el pronombre I."},
+ {"question":"¿Cuál es el orden correcto para preguntar “¿Eres Maya?”?","options":["You are Maya?","Are you Maya?","Is you Maya?"],"answer":1,"explanation":"En esta pregunta, are va antes del pronombre you."},
+ {"question":"¿Qué significa Nice to meet you?","options":["Buenos días","Encantado/a de conocerte","¿Cómo te llamas?"],"answer":1,"explanation":"Nice to meet you es una expresión para responder al conocer a alguien."}
+]}

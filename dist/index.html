@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NEXORA: aprende, explora y desarrolla nuevas habilidades.">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="NEXORA | Aprende. Explora. Desarrolla.">
+    <meta property="og:description" content="NEXORA: aprende, explora y desarrolla nuevas habilidades.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+
+    <title>NEXORA | Aprende. Explora. Desarrolla.
+</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navMenu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="index.html#categorias">
+                Explorar
+            </a>
+
+            <a href="index.html#nosotros">
+                Nosotros
+            </a>
+
+            <a href="index.html#busqueda">
+                Recursos
+            </a>
+
+        </nav>
+
+        <a class="language-toggle" href="en/index.html" hreflang="en" lang="en" aria-label="Cambiar idioma a inglés">EN</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">☾</button>
+
+        <a
+            href="index.html#categorias"
+            class="nav-button">
+
+            Comenzar a aprender
+
+        </a>
+
+    </div>
+
+</header>
+    <main>
+
+<!-- PRESENTACIÓN PRINCIPAL -->
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-label">
+                UN ESPACIO PARA APRENDER Y CRECER
+            </span>
+
+            <h1>
+El conocimiento<br>abre nuevas <span>posibilidades.</span>            </h1>
+
+            <p>
+Explora el mundo de la tecnología, aprende nuevas habilidades y desarrolla tus conocimientos con recursos educativos diseñados para ti.            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#categorias" class="btn-primary">
+                    Explorar contenido
+                </a>
+
+                <a href="#nosotros" class="btn-secondary">
+                    Conoce NEXORA
+                </a>
+
+            </div>
+
+            <div class="random-learning" aria-label="Sugerencia de aprendizaje">
+                <button id="randomLessonButton" class="suggestion-button" type="button" >
+                    ✦ Sugiéreme una lección
+                </button>
+                <p id="randomLessonStatus" aria-live="polite">Una idea nueva puede ser el primer paso.</p>
+                <a id="suggestedLesson" class="suggested-lesson" href="#categorias" hidden></a>
+                <script type="application/json" id="lessonSuggestions">[{"description": "Repasa tres operaciones esenciales, cu\u00e1ndo usar cada una y c\u00f3mo comprobar los resultados con ejemplos claros.", "search": "", "title": "Suma, multiplicaci\u00f3n y divisi\u00f3n: operaciones b\u00e1sicas", "url": "pages/academia/matematica/aritmetica/multiplicacion/"}, {"description": "Formula preguntas que puedan responderse mediante observaciones y evidencia verificable.", "search": "", "title": "Ciencia: convertir una curiosidad en una pregunta investigable", "url": "pages/ciencia-tecnologia/ciencia/investigar/pregunta-investigable/"}, {"description": "Practica saludos sencillos, nombres y frases b\u00e1sicas para presentarte en ingl\u00e9s inicial.", "search": "", "title": "English A1: saludar y presentarse", "url": "pages/idiomas/ingles/a1/presentarse/"}, {"description": "Aprende a revisar afirmaciones, fuentes y l\u00edmites antes de reutilizar una respuesta generada por IA.", "search": "", "title": "C\u00f3mo verificar una respuesta de inteligencia artificial", "url": "pages/inteligencia-artificial/fundamentos/verificar-respuestas/"}, {"description": "Convierte la relectura en pr\u00e1ctica de recuperaci\u00f3n con preguntas, retroalimentaci\u00f3n y repasos planificados.", "search": "", "title": "Recuperaci\u00f3n activa: estudiar intentando recordar", "url": "pages/metodos-estudio/memoria-comprension/recuperacion-activa/"}, {"description": "Usa nombres de variables, reconoce tipos b\u00e1sicos y convierte texto de entrada antes de calcular.", "search": "", "title": "Python: variables y tipos de datos", "url": "pages/programacion/python/fundamentos/variables-tipos/"}, {"description": "Interpreta una fracci\u00f3n como parte de cien y usa una calculadora para verificar el procedimiento.", "search": "", "title": "Convierte una fracci\u00f3n a porcentaje y comprueba el resultado", "url": "pages/recursos/calculadoras/fracciones/fraccion-a-porcentaje/"}, {"description": "Practica pensamiento computacional con secuencias claras, prueba de casos y correcci\u00f3n de errores.", "search": "", "title": "Dise\u00f1a una secuencia de instrucciones para resolver un reto", "url": "pages/videojuegos/logica/algoritmos/secuencia-de-instrucciones/"}]</script>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="learning-orbit" aria-hidden="true">
+                <span class="orbit-node orbit-node-learn">✦</span>
+                <span class="orbit-node orbit-node-explore">⌕</span>
+                <span class="orbit-node orbit-node-develop">⌘</span>
+            </div>
+
+            <div class="visual-card visual-main">
+
+                <div class="visual-icon">✦</div>
+
+                <h3>Aprende algo nuevo</h3>
+
+                <p>
+                    El conocimiento es una herramienta para avanzar.
+                </p>
+
+            </div>
+
+            <div class="floating-card floating-one">
+                <span>⌘</span>
+                <p>Programación</p>
+            </div>
+
+            <div class="floating-card floating-two">
+                <span>✧</span>
+                <p>Inteligencia artificial</p>
+            </div>
+
+            <div class="visual-circle"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BUSCADOR -->
+<section class="search-section" id="busqueda">
+
+    <div class="container search-container">
+
+        <div>
+            <span class="section-label">
+                ENCUENTRA LO QUE BUSCAS
+            </span>
+
+            <h2>¿Qué quieres aprender hoy?</h2>
+        </div>
+
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <label class="visually-hidden" for="categorySearch">Buscar categorías</label>
+            <input
+                type="search"
+                id="categorySearch"
+                placeholder="Busca una categoría o lección..."
+                aria-keyshortcuts="Control+K Meta+K"
+                autocomplete="off"
+            >
+
+            <button id="searchButton" type="button">
+                Buscar
+            </button>
+            <kbd class="search-shortcut" aria-hidden="true">Ctrl K</kbd>
+
+        </div>
+
+        <p id="searchMessage"
+           class="search-message"
+           aria-live="polite">
+        </p>
+        <ul class="site-search-results" id="siteSearchResults" aria-live="polite" hidden></ul>
+
+        <script type="application/json" id="searchIndex">[{"description": "Comprende los tipos de inteligencia artificial, verifica sus respuestas y compara herramientas adecuadas para cada tarea.", "search": "inteligencia artificial ia herramientas prompts chatbots", "title": "Inteligencia Artificial", "url": "pages/inteligencia-artificial/index.html"}, {"description": "Aprende matem\u00e1ticas, lenguaje, ciencias naturales y conocimientos sociales.", "search": "academia matematicas lenguaje ciencias historia geografia", "title": "Academia", "url": "pages/academia/index.html"}, {"description": "Aprende ingl\u00e9s, espa\u00f1ol y franc\u00e9s mediante lecciones, ejercicios y evaluaciones.", "search": "idiomas ingles espa\u00f1ol frances vocabulario gramatica", "title": "Idiomas", "url": "pages/idiomas/index.html"}, {"description": "Desarrolla habilidades de programaci\u00f3n y aprende a construir tus propios proyectos.", "search": "programacion python javascript html css desarrollo web", "title": "Programaci\u00f3n", "url": "pages/programacion/index.html"}, {"description": "Explora los avances cient\u00edficos, tecnol\u00f3gicos y las innovaciones del mundo actual.", "search": "ciencia tecnologia robotica machine learning ciberseguridad", "title": "Ciencia y tecnolog\u00eda", "url": "pages/ciencia-tecnologia/index.html"}, {"description": "Descubre t\u00e9cnicas para organizarte, comprender mejor y aprovechar tu tiempo.", "search": "metodos estudio aprendizaje memoria pomodoro organizacion", "title": "M\u00e9todos de estudio", "url": "pages/metodos-estudio/index.html"}, {"description": "Descubre videojuegos y experiencias interactivas que ayudan a practicar distintas habilidades de NEXORA, desde matem\u00e1ticas e idiomas hasta programaci\u00f3n y ciencia.", "search": "videojuegos juegos educativos matematicas idiomas ciencia programacion aprender habilidades", "title": "Videojuegos para aprender", "url": "pages/videojuegos/index.html"}, {"description": "Utiliza calculadoras, ejercicios, cuestionarios y otros recursos para practicar.", "search": "recursos calculadoras examenes ejercicios flashcards herramientas", "title": "Herramientas y recursos", "url": "pages/recursos/index.html"}, {"description": "Conceptos, historia, tipos de sistemas y l\u00edmites de la inteligencia artificial.", "search": "", "title": "Fundamentos de IA", "url": "pages/inteligencia-artificial/index.html#fundamentos"}, {"description": "Usos y criterios para elegir herramientas de escritura, dise\u00f1o, estudio y productividad.", "search": "", "title": "Herramientas de IA", "url": "pages/inteligencia-artificial/index.html#herramientas"}, {"description": "Gu\u00edas pr\u00e1cticas para formular instrucciones y trabajar con asistentes de IA.", "search": "", "title": "Tutoriales", "url": "pages/inteligencia-artificial/index.html#tutoriales"}, {"description": "Comparaciones basadas en capacidades, acceso, privacidad y casos de uso.", "search": "", "title": "Comparativas", "url": "pages/inteligencia-artificial/index.html#comparativas"}, {"description": "Aritm\u00e9tica, \u00e1lgebra, geometr\u00eda y resoluci\u00f3n razonada de problemas.", "search": "", "title": "Matem\u00e1ticas", "url": "pages/academia/index.html#matematicas"}, {"description": "Lectura comprensiva, escritura, gram\u00e1tica y an\u00e1lisis de textos.", "search": "", "title": "Lengua y literatura", "url": "pages/academia/index.html#lengua-literatura"}, {"description": "Biolog\u00eda, f\u00edsica, qu\u00edmica y comprensi\u00f3n del mundo natural.", "search": "", "title": "Ciencias naturales", "url": "pages/academia/index.html#ciencias-naturales"}, {"description": "Historia, geograf\u00eda, ciudadan\u00eda y an\u00e1lisis de sociedades.", "search": "", "title": "Ciencias sociales", "url": "pages/academia/index.html#ciencias-sociales"}, {"description": "Nivel inicial del MCER: expresiones cotidianas y comunicaci\u00f3n muy b\u00e1sica.", "search": "", "title": "Ingl\u00e9s A1", "url": "pages/idiomas/index.html#ingles-a1"}, {"description": "Nivel b\u00e1sico del MCER: intercambios sencillos sobre temas familiares.", "search": "", "title": "Ingl\u00e9s A2", "url": "pages/idiomas/index.html#ingles-a2"}, {"description": "Nivel intermedio del MCER: situaciones habituales y temas conocidos.", "search": "", "title": "Ingl\u00e9s B1", "url": "pages/idiomas/index.html#ingles-b1"}, {"description": "Nivel intermedio alto del MCER: textos complejos y conversaci\u00f3n fluida.", "search": "", "title": "Ingl\u00e9s B2", "url": "pages/idiomas/index.html#ingles-b2"}, {"description": "Nivel avanzado del MCER: comprensi\u00f3n amplia y expresi\u00f3n flexible.", "search": "", "title": "Ingl\u00e9s C1", "url": "pages/idiomas/index.html#ingles-c1"}, {"description": "Dominio avanzado del MCER: comprensi\u00f3n y expresi\u00f3n precisa en contextos complejos.", "search": "", "title": "Ingl\u00e9s C2", "url": "pages/idiomas/index.html#ingles-c2"}, {"description": "Nivel inicial del MCER: expresiones cotidianas y comunicaci\u00f3n muy b\u00e1sica.", "search": "", "title": "Espa\u00f1ol A1", "url": "pages/idiomas/index.html#espanol-a1"}, {"description": "Nivel b\u00e1sico del MCER: intercambios sencillos sobre temas familiares.", "search": "", "title": "Espa\u00f1ol A2", "url": "pages/idiomas/index.html#espanol-a2"}, {"description": "Nivel intermedio del MCER: situaciones habituales y temas conocidos.", "search": "", "title": "Espa\u00f1ol B1", "url": "pages/idiomas/index.html#espanol-b1"}, {"description": "Nivel intermedio alto del MCER: textos complejos y conversaci\u00f3n fluida.", "search": "", "title": "Espa\u00f1ol B2", "url": "pages/idiomas/index.html#espanol-b2"}, {"description": "Nivel avanzado del MCER: comprensi\u00f3n amplia y expresi\u00f3n flexible.", "search": "", "title": "Espa\u00f1ol C1", "url": "pages/idiomas/index.html#espanol-c1"}, {"description": "Dominio avanzado del MCER: comprensi\u00f3n y expresi\u00f3n precisa en contextos complejos.", "search": "", "title": "Espa\u00f1ol C2", "url": "pages/idiomas/index.html#espanol-c2"}, {"description": "Nivel inicial del MCER: expresiones cotidianas y comunicaci\u00f3n muy b\u00e1sica.", "search": "", "title": "Franc\u00e9s A1", "url": "pages/idiomas/index.html#frances-a1"}, {"description": "Nivel b\u00e1sico del MCER: intercambios sencillos sobre temas familiares.", "search": "", "title": "Franc\u00e9s A2", "url": "pages/idiomas/index.html#frances-a2"}, {"description": "Nivel intermedio del MCER: situaciones habituales y temas conocidos.", "search": "", "title": "Franc\u00e9s B1", "url": "pages/idiomas/index.html#frances-b1"}, {"description": "Nivel intermedio alto del MCER: textos complejos y conversaci\u00f3n fluida.", "search": "", "title": "Franc\u00e9s B2", "url": "pages/idiomas/index.html#frances-b2"}, {"description": "Nivel avanzado del MCER: comprensi\u00f3n amplia y expresi\u00f3n flexible.", "search": "", "title": "Franc\u00e9s C1", "url": "pages/idiomas/index.html#frances-c1"}, {"description": "Dominio avanzado del MCER: comprensi\u00f3n y expresi\u00f3n precisa en contextos complejos.", "search": "", "title": "Franc\u00e9s C2", "url": "pages/idiomas/index.html#frances-c2"}, {"description": "Estrategias de vocabulario, escucha, lectura y pr\u00e1ctica comunicativa.", "search": "", "title": "C\u00f3mo aprender idiomas", "url": "pages/idiomas/index.html#aprendizaje"}, {"description": "L\u00f3gica, algoritmos, variables, condiciones y estructuras de repetici\u00f3n.", "search": "", "title": "Fundamentos", "url": "pages/programacion/index.html#fundamentos"}, {"description": "Sintaxis y resoluci\u00f3n de problemas con el lenguaje Python.", "search": "", "title": "Python", "url": "pages/programacion/index.html#python"}, {"description": "HTML, CSS y JavaScript para construir experiencias web accesibles.", "search": "", "title": "Desarrollo web", "url": "pages/programacion/index.html#desarrollo-web"}, {"description": "Pr\u00e1ctica guiada para planificar, construir y revisar proyectos.", "search": "", "title": "Proyectos", "url": "pages/programacion/index.html#proyectos"}, {"description": "M\u00e9todo cient\u00edfico, disciplinas y lectura cr\u00edtica de evidencias.", "search": "", "title": "Ciencia", "url": "pages/ciencia-tecnologia/index.html#ciencia"}, {"description": "Sistemas, dispositivos y principios detr\u00e1s de tecnolog\u00edas cotidianas.", "search": "", "title": "Tecnolog\u00eda", "url": "pages/ciencia-tecnologia/index.html#tecnologia"}, {"description": "Sensores, actuadores, control y dise\u00f1o de sistemas rob\u00f3ticos.", "search": "", "title": "Rob\u00f3tica", "url": "pages/ciencia-tecnologia/index.html#robotica"}, {"description": "Pr\u00e1cticas b\u00e1sicas para proteger dispositivos, datos e identidad digital.", "search": "", "title": "Seguridad digital", "url": "pages/ciencia-tecnologia/index.html#seguridad-digital"}, {"description": "Recuperaci\u00f3n activa, pr\u00e1ctica espaciada y elaboraci\u00f3n de conceptos.", "search": "", "title": "Memoria y comprensi\u00f3n", "url": "pages/metodos-estudio/index.html#memoria-comprension"}, {"description": "Organizaci\u00f3n del tiempo, objetivos y seguimiento del progreso.", "search": "", "title": "Planificaci\u00f3n", "url": "pages/metodos-estudio/index.html#planificacion"}, {"description": "M\u00e9todos para registrar, relacionar y revisar informaci\u00f3n.", "search": "", "title": "Toma de apuntes", "url": "pages/metodos-estudio/index.html#apuntes"}, {"description": "Repaso, pr\u00e1ctica con preguntas y estrategias para evaluaciones.", "search": "", "title": "Preparaci\u00f3n de ex\u00e1menes", "url": "pages/metodos-estudio/index.html#examenes"}, {"description": "Juegos para explorar n\u00fameros, operaciones, \u00e1lgebra y otros conceptos acad\u00e9micos.", "search": "", "title": "Matem\u00e1ticas y academia", "url": "pages/videojuegos/index.html#matematicas-academia"}, {"description": "Experiencias jugables para ampliar vocabulario y practicar pronunciaci\u00f3n en otro idioma.", "search": "", "title": "Idiomas", "url": "pages/videojuegos/index.html#idiomas"}, {"description": "Retos interactivos para practicar c\u00f3digo, pensamiento computacional y alfabetizaci\u00f3n en IA.", "search": "", "title": "Programaci\u00f3n e inteligencia artificial", "url": "pages/videojuegos/index.html#programacion-ia"}, {"description": "Simulaciones y juegos de repaso para explorar fen\u00f3menos y recordar lo aprendido.", "search": "", "title": "Ciencia, tecnolog\u00eda y estudio", "url": "pages/videojuegos/index.html#ciencia-estudio"}, {"description": "Herramientas de c\u00e1lculo con operaciones y resultados explicados.", "search": "", "title": "Calculadoras", "url": "pages/recursos/index.html#calculadoras"}, {"description": "Evaluaciones autocorregibles para practicar contenidos publicados.", "search": "", "title": "Cuestionarios", "url": "pages/recursos/index.html#cuestionarios"}, {"description": "Gu\u00edas y hojas de pr\u00e1ctica vinculadas a lecciones concretas.", "search": "", "title": "Material descargable", "url": "pages/recursos/index.html#materiales"}, {"description": "Definiciones contextualizadas de t\u00e9rminos por \u00e1rea de aprendizaje.", "search": "", "title": "Glosarios", "url": "pages/recursos/index.html#glosarios"}, {"description": "Repasa tres operaciones esenciales, cu\u00e1ndo usar cada una y c\u00f3mo comprobar los resultados con ejemplos claros.", "search": "", "title": "Suma, multiplicaci\u00f3n y divisi\u00f3n: operaciones b\u00e1sicas", "url": "pages/academia/matematica/aritmetica/multiplicacion/index.html"}, {"description": "Formula preguntas que puedan responderse mediante observaciones y evidencia verificable.", "search": "", "title": "Ciencia: convertir una curiosidad en una pregunta investigable", "url": "pages/ciencia-tecnologia/ciencia/investigar/pregunta-investigable/index.html"}, {"description": "Practica saludos sencillos, nombres y frases b\u00e1sicas para presentarte en ingl\u00e9s inicial.", "search": "", "title": "English A1: saludar y presentarse", "url": "pages/idiomas/ingles/a1/presentarse/index.html"}, {"description": "Aprende a revisar afirmaciones, fuentes y l\u00edmites antes de reutilizar una respuesta generada por IA.", "search": "", "title": "C\u00f3mo verificar una respuesta de inteligencia artificial", "url": "pages/inteligencia-artificial/fundamentos/verificar-respuestas/index.html"}, {"description": "Convierte la relectura en pr\u00e1ctica de recuperaci\u00f3n con preguntas, retroalimentaci\u00f3n y repasos planificados.", "search": "", "title": "Recuperaci\u00f3n activa: estudiar intentando recordar", "url": "pages/metodos-estudio/memoria-comprension/recuperacion-activa/index.html"}, {"description": "Usa nombres de variables, reconoce tipos b\u00e1sicos y convierte texto de entrada antes de calcular.", "search": "", "title": "Python: variables y tipos de datos", "url": "pages/programacion/python/fundamentos/variables-tipos/index.html"}, {"description": "Interpreta una fracci\u00f3n como parte de cien y usa una calculadora para verificar el procedimiento.", "search": "", "title": "Convierte una fracci\u00f3n a porcentaje y comprueba el resultado", "url": "pages/recursos/calculadoras/fracciones/fraccion-a-porcentaje/index.html"}, {"description": "Practica pensamiento computacional con secuencias claras, prueba de casos y correcci\u00f3n de errores.", "search": "", "title": "Dise\u00f1a una secuencia de instrucciones para resolver un reto", "url": "pages/videojuegos/logica/algoritmos/secuencia-de-instrucciones/index.html"}]</script>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORÍAS -->
+<section class="categories-section" id="categorias">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    EXPLORA NEXORA
+                </span>
+
+                <h2>Descubre nuestras categorías</h2>
+
+                <p>
+                    Encuentra información, lecciones y recursos para desarrollar nuevas habilidades.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="categories-grid" id="categoriesGrid">
+
+
+
+<article class="category-card"
+         data-search="inteligencia artificial ia herramientas prompts chatbots">
+
+    <img class="category-card-image" src="assets/images/inteligencia-artificial.jpg" alt="Robot blanco de diseño minimalista, como imagen de apertura para inteligencia artificial." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-purple">
+        ✧
+    </div>
+
+    <span class="category-number">
+        01
+    </span>
+
+    <h3>Inteligencia Artificial</h3>
+
+    <p>Comprende los tipos de inteligencia artificial, verifica sus respuestas y compara herramientas adecuadas para cada tarea.</p>
+
+    <a href="pages/inteligencia-artificial/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="academia matematicas lenguaje ciencias historia geografia">
+
+    <img class="category-card-image" src="assets/images/academia.jpg" alt="Libros apilados sobre una mesa, asociados al aprendizaje académico." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-blue">
+        ▤
+    </div>
+
+    <span class="category-number">
+        02
+    </span>
+
+    <h3>Academia</h3>
+
+    <p>Aprende matemáticas, lenguaje, ciencias naturales y conocimientos sociales.</p>
+
+    <a href="pages/academia/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="idiomas ingles español frances vocabulario gramatica">
+
+    <img class="category-card-image" src="assets/images/idiomas.jpg" alt="Persona estudiando en un portátil desde una perspectiva cenital, para representar el aprendizaje de idiomas." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-orange">
+        文
+    </div>
+
+    <span class="category-number">
+        03
+    </span>
+
+    <h3>Idiomas</h3>
+
+    <p>Aprende inglés, español y francés mediante lecciones, ejercicios y evaluaciones.</p>
+
+    <a href="pages/idiomas/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="programacion python javascript html css desarrollo web">
+
+    <img class="category-card-image" src="assets/images/programacion.jpg" alt="Portátil con un editor de código abierto en pantalla." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-green">
+        &lt;/&gt;
+    </div>
+
+    <span class="category-number">
+        04
+    </span>
+
+    <h3>Programación</h3>
+
+    <p>Desarrolla habilidades de programación y aprende a construir tus propios proyectos.</p>
+
+    <a href="pages/programacion/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="ciencia tecnologia robotica machine learning ciberseguridad">
+
+    <img class="category-card-image" src="assets/images/ciencia-tecnologia.jpg" alt="Científica trabaja con un portátil en un laboratorio." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-cyan">
+        ⌬
+    </div>
+
+    <span class="category-number">
+        05
+    </span>
+
+    <h3>Ciencia y tecnología</h3>
+
+    <p>Explora los avances científicos, tecnológicos y las innovaciones del mundo actual.</p>
+
+    <a href="pages/ciencia-tecnologia/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="metodos estudio aprendizaje memoria pomodoro organizacion">
+
+    <img class="category-card-image" src="assets/images/metodos-estudio.jpg" alt="Estudiante toma notas frente a un escritorio con portátil mientras estudia." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-yellow">
+        ◎
+    </div>
+
+    <span class="category-number">
+        06
+    </span>
+
+    <h3>Métodos de estudio</h3>
+
+    <p>Descubre técnicas para organizarte, comprender mejor y aprovechar tu tiempo.</p>
+
+    <a href="pages/metodos-estudio/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="videojuegos juegos educativos matematicas idiomas ciencia programacion aprender habilidades">
+
+    <img class="category-card-image" src="assets/images/videojuegos.jpg" alt="Mano sostiene un mando de videojuegos durante una partida." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-red">
+        ▣
+    </div>
+
+    <span class="category-number">
+        07
+    </span>
+
+    <h3>Videojuegos para aprender</h3>
+
+    <p>Descubre videojuegos y experiencias interactivas que ayudan a practicar distintas habilidades de NEXORA, desde matemáticas e idiomas hasta programación y ciencia.</p>
+
+    <a href="pages/videojuegos/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+
+<article class="category-card"
+         data-search="recursos calculadoras examenes ejercicios flashcards herramientas">
+
+    <img class="category-card-image" src="assets/images/recursos.jpg" alt="Portátil, tableta y teléfono organizados sobre un escritorio." width="640" height="360" loading="lazy" decoding="async">
+
+    <div class="category-icon icon-pink">
+        ⌘
+    </div>
+
+    <span class="category-number">
+        08
+    </span>
+
+    <h3>Herramientas y recursos</h3>
+
+    <p>Utiliza calculadoras, ejercicios, cuestionarios y otros recursos para practicar.</p>
+
+    <a href="pages/recursos/index.html" class="card-link">
+        Explorar categoría <span>→</span>
+    </a>
+
+</article>
+
+        </div>
+
+        <p class="no-results" id="noResults" hidden>
+            No encontramos resultados que coincidan con tu búsqueda.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SOBRE NEXORA -->
+<section class="about-section" id="nosotros">
+
+    <div class="container about-content">
+
+        <div class="about-decoration">
+
+            <div class="about-symbol">N.</div>
+
+            <div class="about-small-circle"></div>
+
+        </div>
+
+        <div class="about-text">
+
+            <span class="section-label">
+                NUESTRA PLATAFORMA
+            </span>
+
+            <h2>
+                Aprender nunca debería dejar de ser una posibilidad.
+            </h2>
+
+            <p>
+                NEXORA es un espacio educativo y tecnológico creado para facilitar el acceso al conocimiento. Reunimos diferentes áreas de aprendizaje en un mismo lugar para que puedas explorar, practicar y desarrollar nuevas habilidades.
+            </p>
+
+            <a href="#categorias" class="btn-primary">
+                Comienza a explorar
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- APRENDIZAJE -->
+<section class="learning-section">
+
+    <div class="container learning-content">
+
+        <span class="section-label">
+            APRENDE A TU RITMO
+        </span>
+
+        <h2>
+No se trata solamente de leer.<br>También se trata de <span>practicar.</span>        </h2>
+
+        <p>
+            NEXORA incorporará lecciones, ejemplos, ejercicios y pequeños exámenes para ayudarte a comprobar lo que has aprendido.
+        </p>
+
+        <a href="#categorias" class="btn-primary">
+            Descubrir contenidos
+        </a>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo footer-logo">
+                NEXORA<span>.</span>
+            </a>
+
+            <p>Aprende. Explora. Desarrolla.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="index.html#categorias">
+                Categorías
+            </a>
+
+            <a href="index.html#nosotros">
+                Nosotros
+            </a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="terminos.html">Términos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="creditos.html">Créditos visuales</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NEXORA. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba" title="Volver arriba" hidden>↑</button>
+
+
+</body>
+</html>
